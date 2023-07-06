@@ -1,0 +1,90 @@
+.upper_navbar {
+    z-index: 999;
+    background-color: #f47421;
+}
+
+.upper_navbar_text {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.inner_navbar {
+    z-index: 999;
+    left: 0;
+    right: 0;
+    transform: translate(0px, -45px);
+    background: white;
+}
+
+.navbar_linkFont {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0px;
+    cursor: pointer;
+    color: black;
+}
+
+
+.parent_link {
+    position: relative;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 3rem;
+}
+
+.hover_box {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.parent_link:hover .navbar_linkFont {
+    color:#f47421;
+    cursor: pointer;
+}
+
+.inner_linkFont:hover{
+    color:#f47421;
+    cursor: pointer;
+}
+
+.parent_link:hover .hover_box {
+    background: radial-gradient(50% 50% at 50% 50%,#f47421 0%, rgba(120, 13, 189, 0) 100%);
+    opacity: 0.2;
+    cursor: pointer;
+}
+.main_button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+    background-color:#f47421;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid rgb(168, 168, 168);
+    background-color: #f9f9f9;
+    min-width: 277px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
