@@ -1,0 +1,41 @@
+.head_line {
+    color: #AE79D9;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0px;
+}
+
+.inner_paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.main_content {
+    right: 53px;
+}
+
+.inner_check_Content {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+    color: black;
+}
+
+.main_button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0px;
+    background-color: #CA1FA3;
+}
+
+.image_position {
+    width: -webkit-fill-available;
+    position: absolute;
+    right: 0;
+    transform: translate(29px, 30px);
+    height: -webkit-fill-available;
+}

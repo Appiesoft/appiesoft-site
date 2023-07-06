@@ -1,0 +1,47 @@
+.inner_navbar {
+    z-index: 999;
+    /* left: 56px;
+    right: 123px; */
+    left: 0;
+    right: 0;
+    transform: translate(0px, -45px);
+    background: white;
+}
+
+.navbar_linkFont {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+
+.parent_link {
+    position: relative;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 3rem;
+}
+
+.hover_box {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.parent_link:hover .navbar_linkFont {
+    color: #CA1FA3;
+    cursor: pointer;
+}
+
+.parent_link:hover .hover_box {
+    background: radial-gradient(50% 50% at 50% 50%, #CA1FA3 0%, rgba(120, 13, 189, 0) 100%);
+    opacity: 0.2;
+    cursor: pointer;
+}

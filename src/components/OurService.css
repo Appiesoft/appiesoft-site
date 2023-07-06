@@ -1,0 +1,32 @@
+.why-us .content-item {
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: -1px;
+}
+
+.why-us .content-item span {
+    text-align: -webkit-center;
+}
+
+.inner_head_line {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0px;
+}
+
+.inner_service_para {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+}
+
+.why-us .content-item p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}

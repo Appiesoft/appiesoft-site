@@ -1,0 +1,23 @@
+.googleImg {
+    text-align: -webkit-center;
+}
+
+.bg_color_input {
+    background: linear-gradient(135.46deg, #780DBD 44.1%, #9313B5 77.44%, #CA1FA3 101.23%);
+    border-radius: 15px;
+}
+
+.input_field_names {
+    flex: 1;
+}
+
+.input_field_names input {
+    width: -webkit-fill-available;
+}
+
+.Talk_size {
+    font-size: 32px !important;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0px;
+}
