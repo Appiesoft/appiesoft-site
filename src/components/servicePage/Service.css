@@ -1,0 +1,68 @@
+.service-bg-Img{
+    background-color: #f47421 !important;
+}
+.service_text{
+    font-size: 32px;
+    font-weight: 700;
+}
+.service_para{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: -webkit-center;
+}
+.card_bg{
+
+    box-shadow:0px 0px 37px -15px rgb(143, 143, 143);
+    border-bottom: 9px solid #f47421;
+}
+.ourService{
+    font-size: 48px;
+    font-weight: 700;
+
+}
+
+.card_bg:hover{
+    box-shadow:0px 0px 37px -15px rgb(143, 143, 143);
+    border-bottom: 9px solid #f47421;
+    background-color: #f47421;
+}
+
+
+
+.why-us .content-item {
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: -1px;
+}
+
+.why-us .content-item span {
+    text-align: -webkit-center;
+}
+
+.inner_head_line {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0px;
+}
+
+.inner_service_para {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+}
+
+.why-us .content-item p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+@media only screen and (min-width: 1146px) and (max-width: 1662px)  {
+    /* .card_bg{
+        width: 50%;
+    } */
+}
