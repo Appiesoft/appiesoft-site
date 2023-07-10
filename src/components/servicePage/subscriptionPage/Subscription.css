@@ -1,0 +1,27 @@
+.subscription_para {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: -webkit-start;
+}
+
+.bg_sub_banner {
+    background-color: #f47421;
+}
+
+.bg_sub_banner h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sub_title h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sub_title span {
+    color: #f47421;
+    font-size: 18px;
+    font-weight: 700;
+}

@@ -27,15 +27,15 @@ const MainSection = () => {
                   Talk To An Expert Now
                 </Button>
               </div>
-              
+
             </Col>
           </Row>
         </Container>
       </section>
       <div className="bg-ligt">
-      <section class="d-flex align-items-center pt-5 bg-light">
-        <div className="container mt-5 ">
-          <Row className="bg-light">
+        <section class="d-flex align-items-center pt-5 bg-light">
+          <div className="container mt-5 ">
+            <Row className="bg-light">
               <Col lg={6} className="position-relative">
                 <img src={fourimgg} className="image_position" alt="" />
               </Col>
@@ -51,7 +51,7 @@ const MainSection = () => {
                 <p className="inner_paragraph mt-4">
                   We at Appiesoft Web Solutions are answering real business
                   challenges for our clients through innovation and deep
-                  industry knowledge. <br/> Appiesoft Web Solutions is a team of
+                  industry knowledge. <br /> Appiesoft Web Solutions is a team of
                   Digital Marketing experts, Website Designers, and Developers
                   that understand the value of your Brand or Product. As a
                   Digital Marketing expert/Website Design and Development
@@ -65,13 +65,13 @@ const MainSection = () => {
                   items over the advanced range.
                 </p>
                 <button className=" main_button rounded-2 border-0 text-white py-3 px-5 mt-5">
-                    Read More
-                  </button>
+                  Read More
+                </button>
               </Col>
-          </Row>
-        </div>
-      </section>
-    </div>
+            </Row>
+          </div>
+        </section>
+      </div>
     </>
   );
 };

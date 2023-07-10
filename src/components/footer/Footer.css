@@ -14,8 +14,7 @@
 .inner_footer_info {
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
 }
 
 .head_links {
@@ -33,7 +32,8 @@
     letter-spacing: 0em;
     color: #ffffffd5 !important;
 }
-.img_para{
+
+.img_para {
     font-size: 16px;
     font-weight: 500;
     color: white;

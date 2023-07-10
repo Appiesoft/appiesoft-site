@@ -1,0 +1,89 @@
+.contact_title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+select {
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.input_field_names {
+    flex: 1;
+    font-size: 15px;
+}
+
+.input_field_names input {
+    width: -webkit-fill-available;
+    background: transparent;
+}
+
+input::placeholder {
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.Talk_size {
+    font-size: 32px !important;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0px;
+}
+
+.card_title h5 {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contact_btn {
+    background-color: white;
+    color: #f47421 !important;
+    font-weight: 600;
+}
+
+.modify_content div {
+    border: 2px solid #f47421;
+    padding: 22px;
+    margin: 22px 0px;
+}
+
+.modify_content h1 {
+    color: black;
+    font-size: 37px;
+    font-weight: 600;
+}
+
+.modify_content h2 {
+    color: #f47421;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.modify_content P {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.modify_content i {
+    color: #f47421;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
