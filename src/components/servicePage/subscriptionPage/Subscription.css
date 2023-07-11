@@ -25,3 +25,16 @@
     font-size: 18px;
     font-weight: 700;
 }
+.card_bg:hover h1{
+    color: white;
+}
+.card_bg:hover .subscription_para{
+    color: white !important ;
+}
+.card_bg:hover i{
+    color: white !important ;
+}
+.card_bg:hover .sub_title span{
+    color: white !important ;
+}
+

@@ -4,13 +4,6 @@
     color: white;
 }
 
-select {
-    background-color: transparent;
-    color: white;
-    font-size: 15px;
-    font-weight: 700;
-}
-
 .input_field_names {
     flex: 1;
     font-size: 15px;
@@ -87,3 +80,51 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+  .form-select{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: white ;
+    padding: 10px 0px 6px 0px;
+  }
+
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 14px;
+    width: 200px;
+  }
+
+  select:hover {
+    border:none;
+  }
+
+  select:focus {
+
+    outline: none !important;
+    border:none !important;
+    box-shadow: none !important;
+
+  }
+  
+
+  select option {
+
+    background-color: #ffdebf65;
+    color:#f47421 ;
+    padding: 8px;
+  }
+
+  select option:hover {
+
+    background-color: #f70c0c;
+    color: #f47421 !important;
+    box-shadow: 33px 0px 73px 0px #eccc;
+  }
+
+
+

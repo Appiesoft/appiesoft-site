@@ -1,14 +1,14 @@
 import React from 'react'
-import Component1 from '../../../asset/Component 1.png'
-import Component2 from '../../../asset/Component 2.png'
-import Component3 from '../../../asset/Component 3.png'
-import Component4 from '../../../asset/Component 4.png'
-import Component5 from '../../../asset/Component 5.png'
-import Component7 from '../../../asset/Component 7.png'
-import Component8 from '../../../asset/Component 8.png'
-import Component9 from '../../../asset/Component 9.png'
-import Component10 from '../../../asset/Component 10.png'
-import Component6 from '../../../asset/Component 6.png'
+import client1 from '../../../asset/client/client1.png'
+import client2 from '../../../asset/client/client2.png'
+import client3 from '../../../asset/client/client3.png'
+import client4 from '../../../asset/client/client4.png'
+import client5 from '../../../asset/client/client5.png'
+import client6 from '../../../asset/client/client6.png'
+import client7 from '../../../asset/client/client7.png'
+
+import client8 from '../../../asset/client/client8.svg'
+import client11 from '../../../asset/client/client11.png'
 import { Col, Row } from 'react-bootstrap'
 import img1 from '../../../asset/img1.png'
 import img2 from '../../../asset/img2.png'
@@ -17,55 +17,56 @@ import './OurClient.css'
 const OurClient = () => {
     return (
         <div className='col-auto'>
-            <section className='bg-light py-5 my-5'>
-                <div className='text-center pt-5'>
-                    <h6 className='head_line'>
-                        Our clients
-                    </h6>
-                </div>
-                <div className='text-center py-4'>
-                    <h6 className='inner_head_line text-center'>
-                        We Have The Pleasure Of Working With
-                    </h6>
-                </div>
-                <div className='container pt-5' >
-                    <Row>
-                        <Col lg={12} className='flex-wrap d-flex justify-content-evenly '>
-                            <div className='col-auto'>
-                                <img src={Component1} className="img-fluid" alt="" />
-                            </div>
-                            <div className='col-auto'>
-                                <img src={Component2} className="img-fluid mt-5" alt="" />
-                            </div>
-                            <div className='col-auto'>
-                                <img src={Component3} className="img-fluid " alt="" />
-                            </div>
-                            <div className='col-auto'>
-                                <img src={Component4} className="img-fluid mt-5" alt="" />
-                            </div>
-                            <div className='col-auto'>
-                                <img src={Component5} className="img-fluid" alt="" />
-                            </div>
-                            <div className='col-auto'>
-                                <img src={Component10} className="img-fluid" alt="" />
-                            </div>
-                            <div className='col-auto'>
-                                <img src={Component9} className="img-fluid" alt="" />
-                            </div>
-                            <div className='col-auto'>
-                                <img src={Component8} className="img-fluid" alt="" />
-                            </div>
-                            <div className='col-auto'>
-                                <img src={Component7} className="img-fluid" alt="" />
-                            </div>
-                            <div className='col-auto'>
-                                <img src={Component6} className="img-fluid" alt="" />
-                            </div>
-                        </Col>
-                    </Row>
-                </div>
-            </section>
-            <section className='py-5 mb-5'>
+            <section class="section-five">
+	     <div class="container">
+	             <div class="Our-clients-box">
+	                    <div class="our-client-text">
+	                     <h5>Our clients</h5>
+	                     <h2>We Have The Pleasure Of Working With</h2> 
+	                    </div>
+	                <ul>
+	                    <li class="myBtn">
+                        <img src={client1} className="img-fluid" alt="" />
+	                      
+	                   </li>
+	                    <li class="myBtn">
+                        <img src={client2} className="img-fluid" alt="" />
+	                   </li>
+	                   <li class="myBtn">
+                       <img src={client3} className="img-fluid" alt="" />
+	                   </li>
+	                   <li class="myBtn">
+                       <img src={client2} className="img-fluid" alt="" />
+	                   </li>
+	                   <li class="myBtn btnffth">
+                       <img src={client4} className="img-fluid" alt="" />
+	                   </li>
+	               </ul>
+	               <ul class="mmk">
+	                   <li class="myBtn btnsxth">
+                       <img src={client11} className="img-fluid" alt="" />
+	                   </li>
+	                   <li class="myBtn btnsvnth">
+                       <img src={client7} className="img-fluid" alt="" />
+	                   </li>
+	                   <li class="myBtn btnegth">
+                       <img src={client6} className="img-fluid" alt="" />
+	                   </li>
+	                   <li class="myBtn btnninth">
+                       <img src={client5} className="img-fluid" alt="" />
+	                   </li>
+	                    <li class="myBtn btntenth">
+	                    <img src={client11} className="img-fluid" alt="" />
+	                   </li>
+	               </ul>
+	              
+	           </div>
+	       <div class="clr"></div> 
+	     </div>
+
+ </section>
+
+            <section className='py-5 '>
                 <div className="container mx-auto py-3">
                     <div className='head_line mb-3'>
                         <h6>News</h6>

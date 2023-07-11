@@ -23,7 +23,7 @@ const MainSection = () => {
                 will create, host, and update the site for you.
               </h2>
               <div className="d-flex">
-                <Button className="main_button rounded-2 py-3 px-3 border-0 mt-4">
+                <Button className="main_button mt-4">
                   Talk To An Expert Now
                 </Button>
               </div>
@@ -64,7 +64,7 @@ const MainSection = () => {
                   dedicated toward our work, looking for chances to make stylish
                   items over the advanced range.
                 </p>
-                <button className=" main_button rounded-2 border-0 text-white py-3 px-5 mt-5">
+                <button className=" main_button text-white mt-5">
                   Read More
                 </button>
               </Col>

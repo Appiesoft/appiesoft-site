@@ -8,6 +8,7 @@ import image8 from '../../../asset/image8.png'
 import image11 from '../../../asset/image11.png'
 import image12 from '../../../asset/image12.png'
 import image5 from '../../../asset/image5.png'
+import './OurPartners.css'
 const OurPartners = () => {
     return (
         <div>
@@ -17,7 +18,7 @@ const OurPartners = () => {
                         <h3>Our Trusted Partners</h3>
                     </header>
                     <div className="align-items-center flex-wrap">
-                        <div className=' col-8 p-4 mx-auto flex-wrap d-flex justify-content-evenly '>
+                        <div className=' col-8 p-4 mx-auto flex-wrap d-flex justify-content-evenly partner_img '>
                             <div className="col-auto">
                                 <img src={image2} class="img-fluid " alt="" />
                             </div>

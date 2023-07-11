@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <>
 
-      <nav className="upper_navbar pt-4 pb-5 navbar navbar-expand-lg navbar-expand-xxl">
+      <nav className="upper_navbar pt-3 pb-4 navbar navbar-expand-lg navbar-expand-xxl">
           <Col xxl={10} xl={11} lg={10} className="mx-auto pb-3 d-flex justify-content-between">
             <div className="row w-100 align-items-center d-flex justify-content-between ">
             <Col xxl={3} xl={3} lg={3} className=" text-start ps-md-4">
@@ -49,9 +49,9 @@ const Header = () => {
           xxl={10}
           xl={11}
           lg={10}
-          className="mx-auto pb-3 "
+          className="mx-auto "
         >
-          <nav class="navbar navbar-expand-lg navbar-expand-xl  navbar-expand-xxl  bg-white mx-auto rounded-1 py-3">
+          <nav class="navbar navbar-expand-lg navbar-expand-xl  navbar-expand-xxl  bg-white mx-auto rounded-2 py-2">
             <div class="container-fluid  d-md-flex  justify-content-md-evenly">
               <Row className=" w-100">
                 <Col
@@ -132,7 +132,7 @@ const Header = () => {
                     <div className="hover_box"></div>
                   </div>
                   <div className="col-auto">
-                    <button className="main_button text-white rounded-3 py-3 px-5 border-0">
+                    <button className="main_button text-white border-0">
                       Industrial Training
                     </button>
                   </div>

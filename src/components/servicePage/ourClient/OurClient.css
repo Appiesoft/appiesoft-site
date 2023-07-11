@@ -31,3 +31,75 @@
     border-radius: 15px;
     overflow: hidden;
 }
+.section-five {
+    text-align: center;
+    background-color: #f4f5f7;
+    padding: 70px 0px 70px 0px;
+}
+.our-client-text {
+    background: url(https://telcoictgroup.com/telcoict/wp-content/uploads/2023/01/iconbgnew.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.Our-clients-box img {
+    object-fit: contain;
+    margin: 0px 0px 0px 0px!important;
+    padding: 0px 0px 0px 0px!important;
+}
+.Our-clients-box li:nth-child(2n+2) {
+    width: 136px;
+    height: 136px;
+    margin: 40px auto 0 auto;
+}
+.Our-clients-box li {
+    background: #FFFFFF;
+    box-shadow: 0px 24px 34px rgba(0, 0, 0, 0.05);
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 160px;
+}
+.Our-clients-box ul {
+    column-gap: 60px;
+    row-gap: 35px;
+}
+.Our-clients-box ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    list-style: none;
+    justify-content: center;
+    padding: 30px 0px 0px 0px;
+}
+li.btnffth {
+    height: 180px;
+    width: 180px;
+}
+ul.mmk {
+    width: 60%;
+    margin: 0 auto;
+    column-gap: 30px;
+}
+.Our-clients-box h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61.25px;
+    color: #000000;
+    padding: 0px 0px 20px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.Our-clients-box h5 {
+    color: #f47421;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22.97px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+}
+.Our-clients-box li:hover {
+    outline: 15px solid rgba(255, 255, 255, 0.5);
+    filter: drop-shadow(0px 24px 34px rgba(0, 0, 0, 0.05));
+}
