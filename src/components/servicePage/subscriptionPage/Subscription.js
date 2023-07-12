@@ -5,7 +5,7 @@ const Subscription = () => {
     return (
         <div>
             <Row className="mx-auto py-5">
-                <Col xxl={11} xl={12} lg={11} md={12} className="d-flex justify-content-evenly mx-auto mt-5">
+                <Col xxl={11} xl={12} lg={8} md={12} className="d-flex justify-content-center mx-auto mt-5 bg_sub_gap">
                     <Col xxl={3} xl={3} lg={5} md={5} className="card_bg">
                         <Col className="text-center mx-auto py-3 bg_sub_banner">
                             <h1>$1400</h1>

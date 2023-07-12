@@ -6,32 +6,33 @@ const MainSection = () => {
   return (
     <>
       <section id="hero" class="d-flex align-items-center">
-        <Container className="container_width">
+        <Container >
           <Row className="mx-auto">
-            <Col md={12} lg={12} xl={12} xxl={12} className="px-0">
-
-              <h1 className="text-white">
-                Web & Graphic <br /> That<span className="ms-3">Design</span>
-              </h1>
-              <h2 className="text-white mt-3">
-                Our aim is to keep design professional, clear and
-                <br />
-                crisp, easy to navigate and quick to download.
-              </h2>
-              <h2 className="text-white mt-5">
-                From simple to complex, our website design team <br />
-                will create, host, and update the site for you.
-              </h2>
-              <div className="d-flex">
-                <Button className="main_button mt-4">
-                  Talk To An Expert Now
-                </Button>
-              </div>
-
+            <Col md={12} lg={12} xl={11} xxl={11} className="px-0 mx-auto">
+            {/* <Container> */}
+                <h1 className="text-white">
+                  Web & Graphic <br /> That<span className="ms-3">Design</span>
+                </h1>
+                <h2 className="text-white mt-3">
+                  Our aim is to keep design professional, clear and
+                  <br />
+                  crisp, easy to navigate and quick to download.
+                </h2>
+                <h2 className="text-white mt-5">
+                  From simple to complex, our website design team <br />
+                  will create, host, and update the site for you.
+                </h2>
+                <div className="d-flex">
+                  <Button className="main_button mt-4">
+                    Talk To An Expert Now
+                  </Button>
+                </div>
+              {/* </Container> */}
             </Col>
           </Row>
         </Container>
       </section>
+
       <div className="bg-ligt">
         <section class="d-flex align-items-center pt-5 bg-light">
           <div className="container mt-5 ">
@@ -41,7 +42,7 @@ const MainSection = () => {
               </Col>
               <Col lg={6} className=" py-3 my-5 px-0 main_content">
                 <h6 className="head_line">Welcome To</h6>
-                <h4 className="inner_head_line my-5">
+                <h4 className="inner_head_line my-xxl-5 my-xl-3 my-lg-3">
                   AppieSoft Web Solutions
                 </h4>
                 <p className="inner_paragraph_head mt-4">
@@ -51,10 +52,10 @@ const MainSection = () => {
                 <p className="inner_paragraph mt-4">
                   We at Appiesoft Web Solutions are answering real business
                   challenges for our clients through innovation and deep
-                  industry knowledge. <br /> Appiesoft Web Solutions is a team of
-                  Digital Marketing experts, Website Designers, and Developers
-                  that understand the value of your Brand or Product. As a
-                  Digital Marketing expert/Website Design and Development
+                  industry knowledge. <br /> Appiesoft Web Solutions is a team
+                  of Digital Marketing experts, Website Designers, and
+                  Developers that understand the value of your Brand or Product.
+                  As a Digital Marketing expert/Website Design and Development
                   organization, we have finished 500+ projects over the world.
                 </p>
 

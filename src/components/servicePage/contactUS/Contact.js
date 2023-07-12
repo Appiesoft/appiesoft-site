@@ -1,13 +1,46 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Card, Col, Form } from "react-bootstrap";
 import "./Contact.css";
+import { Link } from 'react-router-dom';
+
 const Contact = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isTwo, setisTwo] = useState(false);
+  const [isThree, setisThree] = useState(false);
+  const [isFour, setisFour] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+    setisTwo(false);
+    setisThree(false);
+    setisFour(false);
+  };
+  const toggletwo = () => {
+    setisTwo(!isTwo);
+    setIsOpen(false);
+    setisThree(false);
+    setisFour(false);
+  };
+
+  const togglethree = () => {
+    setisThree(!isThree);
+    setisFour(false);
+    setisTwo(false);
+    setIsOpen(false);
+  };
+  const togglefour = () => {
+    setisFour(!isFour);
+    setisTwo(false);
+    setIsOpen(false);
+    setisThree(false);
+  };
+  
   return (
-    <div className="container input_field my-5">
+    <div className="container input_field my-xl-5 mt-lg-0 mb-lg-4">
       <div className="row mx-auto">
-        <Col lg={12} className="d-flex justify-content-around">
-          <Col lg={5}>
-            <Card className="bg_sub_banner rounded-4 py-4  px-3">
+        <Col lg={12} className="d-flex justify-content-around flex-wrap">
+          <Col lg={11} xxl={5} xl={5} className='mx-auto'  >
+            <Card className="bg_contact_banner rounded-4 py-4  px-3">
               <div className="row mx-auto">
                 <div className="col-12 pb-3">
                   <p className="mb-3 contact_title">Contact Us</p>
@@ -72,39 +105,62 @@ const Contact = () => {
               </div>
             </Card>
           </Col>
-          <Col lg={5} className="modify_content align-self-center">
+          <Col lg={12} xxl={5} xl={5} className="modify_content align-self-center ms-xl-5 ms-xxl-0 mt-lg-5 mt-xl-0">
             <h1>Common Question</h1>
-            <div className="d-flex justify-content-between rounded-2">
+            <div className="d-flex justify-content-between rounded-2" onClick={toggleDropdown}>
               <h2>Do you outcome your work overseas?</h2>
               <h2>
-                <i class="fa-solid fa-plus"></i>
+              <i class={` ${!isOpen ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
               </h2>
             </div>
-            <div className="d-flex justify-content-between rounded-2">
+            {isOpen && (
+               <h3>
+                  No. We use local teams only. That way we can respond more quickly to any problems that may occur. We want your tech running smoothly so you can focus on what you do best.
+              </h3>
+              )}
+            <div className="d-flex justify-content-between rounded-2 "  onClick={toggletwo}>
               <h2>Is your support 24 hours?</h2>
               <h2>
-                <i class="fa-solid fa-plus"></i>
+              <i class={` ${!isTwo ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
               </h2>
             </div>
-            <div className="d-flex justify-content-between rounded-2">
+            {isTwo && (
+               <h3>
+               Yes. We have people available whenever you need us. We understand that your tech runs 24 hours, and you need it be working at all times.
+              </h3>
+              )}
+            <div className="d-flex justify-content-between rounded-2" onClick={togglethree}>
               <h2>Are your service customised for my bussiness?</h2>
               <h2>
-                <i class="fa-solid fa-plus"></i>
+              <i class={` ${!isThree ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
               </h2>
             </div>
-            <div className="d-flex justify-content-between rounded-2">
+            {isThree && (
+               <h3>
+              There is great off the shelf software. But we know one size never fits all. So anything we set up for you is designed to make your business run smoother and in the way you want it to.
+              </h3>
+              )}
+            <div className="d-flex justify-content-between rounded-2" onClick={togglefour}>
               <h2>Are your service expensive?</h2>
               <h2>
-                <i class="fa-solid fa-plus"></i>
+              <i class={` ${!isFour ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
               </h2>
             </div>
-            <p>
-              Follow Us:{" "}
+            {isFour && (
+               <h3>
+               Simply book a chat with one of our experts. We’ll have a chat about exactly what you need and how we can help. If you like our approach then we’ll give you a fixed price quote and get everything up and running for you, fast!
+              </h3>
+              )}
+            <p className='mt-3'>
+              Follow Us:
+              <span className='mx-3'>
+              <Link to='https://www.facebook.com/appiesoftwebsolutions/'>
+                <i class="fa fa-facebook " aria-hidden="true"></i></Link>
+              </span>
               <span>
-                <i class="fa fa-facebook mx-3" aria-hidden="true"></i>
-              </span>{" "}
-              <span>
-                <i class="fa-brands fa-instagram "></i>
+              <Link to='https://www.instagram.com/appiesoftweb/?hl=en'>
+              <i class="fa-brands fa-instagram "></i>
+              </Link>
               </span>
             </p>
           </Col>

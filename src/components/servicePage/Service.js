@@ -21,7 +21,7 @@ const Service = () => {
             </Col>
           </Row>
           <Row className="mx-auto pb-4">
-            <Col xxl={11} xl={12} lg={11} md={12} className="d-flex justify-content-evenly mx-auto mt-5">
+            <Col xxl={11} xl={12} lg={11} md={12} className="d-flex justify-content-center mx-auto mt-5 gap_card">
               <Col xxl={3} xl={3} lg={5} md={5} className="card_bg">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
@@ -29,9 +29,9 @@ const Service = () => {
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-4 service_text">Web & Graphic Design</h2>
+                  <h2 className="text-black my-xxl-4  my-xl-3 service_text">Web & Graphic Design</h2>
                 </Col>
-                <Col lg={11} xl={10} md={10} className="text-center mx-auto">
+                <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
                   <p className="service_para mb-4 text-black">
                     Every company is unique and therefore each design we create will reflect the client’s requirements
                     and characteristics.From simple to complex, our website design team will create, host, and update the site for you.
@@ -48,7 +48,7 @@ const Service = () => {
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-5 service_text">Web Development</h2>
+                  <h2 className="text-black my-xxl-4  my-xl-4 service_text">Web Development</h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
                   <p className="service_para mb-4 text-black">
@@ -62,18 +62,18 @@ const Service = () => {
                   </Button>
                 </Col>
               </Col>
-              <Col md={5} xxl={3} xl={3} lg={5} className="card_bg">
+              <Col md={5} xxl={3} xl={3} lg={5} className="card_bg  d-lg-none d-xl-block">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
         
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-5 service_text">
+                  <h2 className="text-black my-xxl-5 my-xl-4 service_text">
                     Industrial Training
                   </h2>
                 </Col>
-                <Col lg={11} xl={10} md={10} className="text-center mx-auto">
+                <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
                   <p className="service_para mb-4 text-black">
                     AppieSoft Web Solutions, Mohali (Chandigarh) offers 6 Months/3
                     Months/6 weeks Industrial training for B.Tech (All
@@ -86,7 +86,30 @@ const Service = () => {
                 </Col>
               </Col>
             </Col>
-            <Col xxl={11} xl={12} lg={11} md={12} className="d-flex justify-content-evenly mx-auto mt-5 pt-5">
+            <Col xxl={11} xl={12} lg={11} md={12} className="d-flex justify-content-center gap_card mx-auto mt-5 flex-wrap">
+            <Col  xxl={3} xl={3} lg={5} md={5}className="card_bg  d-lg-block d-xl-none">
+                <Col lg={12} className="text-center pt-2 mb-4 mt-4">
+                  <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
+        
+                  </div>
+                </Col>
+                <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
+                  <h2 className="text-black my-xxl-5 my-xl-4 service_text">
+                    Industrial Training
+                  </h2>
+                </Col>
+                <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
+                  <p className="service_para mb-4 text-black">
+                    AppieSoft Web Solutions, Mohali (Chandigarh) offers 6 Months/3
+                    Months/6 weeks Industrial training for B.Tech (All
+                    Branches)/MCA/M.Sc (IT)/ Polytechnic Diploma (All Branches),
+                    MBA, BBA, B.Voc and other
+                  </p>
+                  <Button className="main_button border-0 px-4 mt-3 mb-5">
+                    Read More
+                  </Button>
+                </Col>
+              </Col>
               <Col xxl={3} xl={3} lg={5} md={5} className="card_bg">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
@@ -94,7 +117,7 @@ const Service = () => {
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-4 service_text">Ecommerce Websites</h2>
+                  <h2 className="text-black my-xxl-4 my-xl-3 service_text">Ecommerce Websites</h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
                   <p className="service_para mb-4 text-black">
@@ -108,16 +131,16 @@ const Service = () => {
                   </Button>
                 </Col>
               </Col>
-              <Col md={5} xxl={3} xl={3} lg={5} className="card_bg">
+              <Col md={5} xxl={3} xl={3} lg={5} className="card_bg mt-lg-5 mt-xl-0">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
                 
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-5 service_text">Apps Development</h2>
+                  <h2 className="text-black my-xxl-4 my-xl-4 service_text">Apps Development</h2>
                 </Col>
-                <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
+                <Col lg={11} xl={10} xxl={11} md={10}className="text-center mx-auto">
                   <p className="service_para mb-4 text-black">
                     Mobile application is the latest to join the technology
                     revolution.We’ll take you through the basics of Android
@@ -129,14 +152,14 @@ const Service = () => {
                   </Button>
                 </Col>
               </Col>
-              <Col md={5} xxl={3} xl={3} lg={5} className="card_bg">
+              <Col md={5} xxl={3} xl={3} lg={5} className="card_bg mt-lg-5 mt-xl-0">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
 
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-4 service_text">
+                  <h2 className="text-black my-xxl-4 my-xl-3 service_text">
                     Search Engine Optimization
                   </h2>
                 </Col>

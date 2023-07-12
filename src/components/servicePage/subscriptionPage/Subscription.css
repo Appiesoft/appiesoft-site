@@ -1,3 +1,6 @@
+.bg_sub_gap{
+    column-gap: 27px;
+}
 .subscription_para {
     font-size: 18px;
     font-weight: 600;

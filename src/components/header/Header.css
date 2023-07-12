@@ -1,6 +1,7 @@
 *{
     /* border: 1px solid black; */
 }
+
 .upper_navbar {
     z-index: 999;
     background-color: #f47421;
@@ -36,12 +37,12 @@
 
 .parent_link {
     position: relative;
-    width: 7rem;
+    /* width: 133px; */
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 3rem;
 }
 
 .hover_box {
@@ -106,7 +107,16 @@
     display: block;
   }
 
-
-  @media only screen and (max-width: 1536px) and (min-width: 2374px)  {
-
+  @media only screen and (min-width: 992px) and (max-width:1200px)  {
+    .upper_navbar_text {
+        font-size: 18px;
+     
+    }
+    .main_button {
+        padding: 12px 19px 12px 19px;
+        font-size: 14px !important;
+    }
+    .navbar_linkFont {
+        font-size: 16px !important;
+    }
   }

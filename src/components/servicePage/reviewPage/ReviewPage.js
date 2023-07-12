@@ -10,16 +10,16 @@ const ReviewPage = () => {
  
     const responsive = {
         superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
+            breakpoint: { max: 4000, min: 1400 },
             items: 5
         },
         desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 5
+            breakpoint: { max: 1400, min: 1200 },
+            items: 4
         },
         tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 1
+            breakpoint: { max: 1200, min: 464 },
+            items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -62,7 +62,7 @@ const ReviewPage = () => {
                                             <Col lg={4}>
                                                 <img src={importImg.url} alt="" />
                                             </Col>
-                                            <Col lg={6} className='align-self-center'>
+                                            <Col lg={8} className='align-self-center'>
                                                 <h2 class="text-gray-900 text-lg title-font font-medium">{importImg.title}
                                                 </h2>
                                                 <span>

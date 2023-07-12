@@ -1,21 +1,28 @@
-import React from "react";
+import { useState } from 'react';
 import "./Header.css";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col,Offcanvas ,Button  } from "react-bootstrap";
 import mainlogo from "../../asset/mainlogoappie.png";
 import maillogo from "../../asset/maillogo.png";
 import phonelogo from "../../asset/phonelogo.png";
 import Dropdown from "react-bootstrap/Dropdown";
+import { Link } from "react-router-dom";
 const Header = () => {
-  const [selectedValue, setSelectedValue] = React.useState("Service");
+  const [selectedValue, setSelectedValue] = useState("Service");
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
   };
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
 
-      <nav className="upper_navbar pt-3 pb-4 navbar navbar-expand-lg navbar-expand-xxl">
-          <Col xxl={10} xl={11} lg={10} className="mx-auto pb-3 d-flex justify-content-between">
+      <nav className="upper_navbar pt-3 pb-4 navbar navbar-expand-lg navbar-expand-xxl d-md-none d-lg-block ">
+          <Col xxl={9} xl={11} lg={10} className="mx-auto pb-3 d-flex justify-content-between">
             <div className="row w-100 align-items-center d-flex justify-content-between ">
             <Col xxl={3} xl={3} lg={3} className=" text-start ps-md-4">
                 <img src={mainlogo} alt="" className="rounded-2" />
@@ -24,8 +31,10 @@ const Header = () => {
                 <ul className="navbar-nav  mb-2 mb-lg-0 d-flex justify-content-end">
                   <li className="d-flex">
                     <span className="mt-1">
-                      <img src={maillogo} alt="" />
-                    </span>{" "}
+                    <Link to='/'>
+                      <img src={maillogo} alt="" />  
+                      </Link>
+                    </span>
                     <h6 className="ms-2 text-white upper_navbar_text">
                       info@appiesoftwebsolutions.com
                     </h6>
@@ -44,9 +53,9 @@ const Header = () => {
           </Col>
       </nav>
 
-      <Row className="mx-auto position-absolute inner_navbar ">
+      <Row className="mx-auto position-absolute inner_navbar d-md-none  d-lg-block">
         <Col
-          xxl={10}
+          xxl={9}
           xl={11}
           lg={10}
           className="mx-auto "
@@ -142,6 +151,22 @@ const Header = () => {
           </nav>
         </Col>
       </Row>
+<div className='d-md-block  d-lg-none'>
+<Button className='bg-info' onClick={handleShow}>
+        Sidebar
+      </Button>
+
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
+</div>
+    
     </>
   );
 };
