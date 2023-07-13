@@ -14,22 +14,22 @@ const Service = () => {
   return (
     <>
       <div>
-        <section className="bg-light py-5">
+        <section className="bg-light py-md-5 pt-0">
           <Row className="mx-auto ">
             <Col xxl={10} xl={10} lg={10} className="text-center mx-auto text-black  pb-3">
               <h1 className="ourService">Our Services</h1>
             </Col>
           </Row>
           <Row className="mx-auto pb-4">
-            <Col xxl={11} xl={12} lg={11} md={12} className="d-flex justify-content-center mx-auto mt-5 gap_card">
-              <Col xxl={3} xl={3} lg={5} md={5} className="card_bg">
+            <Col xxl={11} xl={12} lg={11} md={12} className="d-flex justify-content-center mx-auto mt-md-5 mt-3 gap_card  flex-wrap">
+              <Col xxl={3} xl={3} lg={5} md={5} sm={9}  className="card_bg ">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
              
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-xxl-4  my-xl-3 service_text">Web & Graphic Design</h2>
+                  <h2 className="text-black my-xxl-4  my-xl-3 my-3 service_text">Web & Graphic Design</h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
                   <p className="service_para mb-4 text-black">
@@ -41,14 +41,14 @@ const Service = () => {
                   </Button>
                 </Col>
               </Col>
-              <Col md={5} xxl={3} xl={3} lg={5} className="card_bg">
+              <Col md={5} xxl={3} xl={3} lg={5} sm={9}  className="card_bg  mt-4 mt-md-0">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
              
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-xxl-4  my-xl-4 service_text">Web Development</h2>
+                  <h2 className="text-black my-xxl-4  my-xl-4  my-3 service_text">Web Development</h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
                   <p className="service_para mb-4 text-black">
@@ -62,14 +62,14 @@ const Service = () => {
                   </Button>
                 </Col>
               </Col>
-              <Col md={5} xxl={3} xl={3} lg={5} className="card_bg  d-lg-none d-xl-block">
+              <Col md={5} xxl={3} xl={3} lg={5} sm={9}  className="card_bg  d-none d-xl-block">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
         
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-xxl-5 my-xl-4 service_text">
+                  <h2 className="text-black my-xxl-5 my-xl-4 my-3 service_text">
                     Industrial Training
                   </h2>
                 </Col>
@@ -86,15 +86,15 @@ const Service = () => {
                 </Col>
               </Col>
             </Col>
-            <Col xxl={11} xl={12} lg={11} md={12} className="d-flex justify-content-center gap_card mx-auto mt-5 flex-wrap">
-            <Col  xxl={3} xl={3} lg={5} md={5}className="card_bg  d-lg-block d-xl-none">
+            <Col xxl={11} xl={12} lg={11} md={12} sm={12} className="d-flex justify-content-center gap_card mx-auto mt-md-5 mt-4 flex-wrap">
+            <Col  xxl={3} xl={3} lg={5} md={5} sm={9} className="card_bg  d-md-block d-xl-none">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
         
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-xxl-5 my-xl-4 service_text">
+                  <h2 className="text-black my-xxl-5 my-xl-4 my-3 service_text">
                     Industrial Training
                   </h2>
                 </Col>
@@ -110,14 +110,14 @@ const Service = () => {
                   </Button>
                 </Col>
               </Col>
-              <Col xxl={3} xl={3} lg={5} md={5} className="card_bg">
+              <Col xxl={3} xl={3} lg={5} md={5}  sm={9} className="card_bg mt-4 mt-md-0">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
 
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-xxl-4 my-xl-3 service_text">Ecommerce Websites</h2>
+                  <h2 className="text-black my-xxl-4 my-xl-3 my-3 service_text">Ecommerce Websites</h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
                   <p className="service_para mb-4 text-black">
@@ -131,14 +131,14 @@ const Service = () => {
                   </Button>
                 </Col>
               </Col>
-              <Col md={5} xxl={3} xl={3} lg={5} className="card_bg mt-lg-5 mt-xl-0">
+              <Col md={5} xxl={3} xl={3} lg={5}  sm={9} className="card_bg mt-md-5 mt-4 mt-xl-0">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
                 
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-xxl-4 my-xl-4 service_text">Apps Development</h2>
+                  <h2 className="text-black my-xxl-4 my-xl-4 my-3 service_text">Apps Development</h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10}className="text-center mx-auto">
                   <p className="service_para mb-4 text-black">
@@ -152,14 +152,14 @@ const Service = () => {
                   </Button>
                 </Col>
               </Col>
-              <Col md={5} xxl={3} xl={3} lg={5} className="card_bg mt-lg-5 mt-xl-0">
+              <Col md={5} xxl={3} xl={3} lg={5}  sm={9} className="card_bg mt-md-5 mt-4 mt-xl-0">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
 
                   </div>
                 </Col>
                 <Col md={9} xxl={9} xl={9} lg={9} className="text-center mx-auto">
-                  <h2 className="text-black my-xxl-4 my-xl-3 service_text">
+                  <h2 className="text-black my-xxl-4 my-xl-3 my-3 service_text">
                     Search Engine Optimization
                   </h2>
                 </Col>
@@ -179,7 +179,7 @@ const Service = () => {
           </Row>
         </section>
 
-        <section class="section-four my-5">
+        <section class="section-four my-xl-5 my-0">
 	     <div class="container">
 	            <div class="six-way-help-box">
 	                     <h5>Why choose us</h5>

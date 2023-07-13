@@ -127,3 +127,30 @@
         font-weight: 700;
     }
 }
+
+@media only screen and (min-width: 0px) and (max-width:992px)  {
+    .six-way-help-box p {
+        font-size: 15px !important;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width:768px)  {
+    .six-way-help-box ul {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0px;
+    }
+    .six-way-help-box p {
+        font-size: 22px !important;
+    }
+    .section-five {
+        text-align: center;
+        background-color: #f4f5f7;
+        padding: 17px 0px 70px 0px;
+    }
+    .Our-clients-box ul {
+        display: grid;
+          grid-template-columns: auto !important;
+        /* grid-template-columns: 148px  auto !important; */
+        /* grid-template-columns: 148px 121px 112px !important; */
+    }
+}

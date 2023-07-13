@@ -26,37 +26,37 @@ const OurClient = () => {
 	                    </div>
 	                <ul>
 	                    <li class="myBtn">
-                        <img src={client1} className="img-fluid" alt="" />
+                        <img src={client1} className="img-fluid img_circle_size" alt="" />
 	                      
 	                   </li>
 	                    <li class="myBtn">
-                        <img src={client2} className="img-fluid" alt="" />
+                        <img src={client2} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	                   <li class="myBtn">
-                       <img src={client3} className="img-fluid" alt="" />
+                       <img src={client3} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	                   <li class="myBtn">
-                       <img src={client2} className="img-fluid" alt="" />
+                       <img src={client2} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	                   <li class="myBtn btnffth">
-                       <img src={client4} className="img-fluid" alt="" />
+                       <img src={client4} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	               </ul>
 	               <ul class="mmk">
 	                   <li class="myBtn btnsxth">
-                       <img src={client11} className="img-fluid" alt="" />
+                       <img src={client2} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	                   <li class="myBtn btnsvnth">
-                       <img src={client7} className="img-fluid" alt="" />
+                       <img src={client7} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	                   <li class="myBtn btnegth">
-                       <img src={client6} className="img-fluid" alt="" />
+                       <img src={client6} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	                   <li class="myBtn btnninth">
-                       <img src={client5} className="img-fluid" alt="" />
+                       <img src={client5} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	                    <li class="myBtn btntenth">
-	                    <img src={client11} className="img-fluid" alt="" />
+	                    <img src={client2} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	               </ul>
 	              
@@ -68,10 +68,10 @@ const OurClient = () => {
 
             <section className='py-5 '>
                 <div className="container mx-auto py-3">
-                    <div className='head_line mb-3'>
+                    <div className='head_line mb-3 mx-md-3'>
                         <h6>News</h6>
                     </div>
-                    <div className='inner_head_line d-flex justify-between'>
+                    <div className='inner_head_line d-flex justify-between mx-md-3' >
                         <h2>Advice on how to <br />
                             make your content.
                         </h2>
@@ -81,8 +81,8 @@ const OurClient = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="row mt-5">
-                        <div class="col-6 portfolio-item filter-app">
+                    <Row className=" mt-5 mx-auto">
+                        <div class="col-md-6 col-sm-12 portfolio-item filter-app">
                             <div className='row mx-auto position-relative border_radius'>
                                 <div className='col-12 px-0'>
                                     <img src={img3} class="img-fluid img_work" alt="" />
@@ -95,7 +95,7 @@ const OurClient = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 portfolio-item filter-app">
+                        <div class="col-md-6 col-sm-12 portfolio-item filter-app mt-sm-4 mt-md-0">
                             <div className="row">
                                 <div className="col-12">
                                     <div className='row mx-auto position-relative border_radius'>
@@ -126,7 +126,7 @@ const OurClient = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Row>
                 </div>
 
             </section>

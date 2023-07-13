@@ -4,9 +4,9 @@ import './Subscription.css'
 const Subscription = () => {
     return (
         <div>
-            <Row className="mx-auto py-5">
-                <Col xxl={11} xl={12} lg={8} md={12} className="d-flex justify-content-center mx-auto mt-5 bg_sub_gap">
-                    <Col xxl={3} xl={3} lg={5} md={5} className="card_bg">
+            <Row className="mx-auto py-lg-5 py-md-3">
+                <Col xxl={11} xl={12} lg={8} md={12} className="d-flex justify-content-center mx-auto mt-5 bg_sub_gap flex-wrap">
+                    <Col xxl={3} xl={3} lg={5} md={7}  className="col-8 card_bg">
                         <Col className="text-center mx-auto py-3 bg_sub_banner">
                             <h1>$1400</h1>
                         </Col>
@@ -16,7 +16,7 @@ const Subscription = () => {
                             </h1>
                             <span>MONTHLY</span>
                         </Col>
-                        <Col lg={11} xl={10} md={10} className="text-start mx-auto">
+                        <Col lg={11} xl={10} md={10} className="col-11  text-start mx-auto">
 
                             <Col className='d-flex'>
                                 <span className='p-2 me-2'><i class="fa-solid fa-check"></i> </span><p class="subscription_para mb-4 text-black">
@@ -41,7 +41,7 @@ const Subscription = () => {
                         </Col>
 
                     </Col>
-                    <Col xxl={3} xl={3} lg={5} md={5} className="card_bg">
+                    <Col xxl={3} xl={3} lg={5} md={7} className="col-8 card_bg mt-md-5 mt-lg-0 mt-4">
                         <Col className="text-center mx-auto py-3 bg_sub_banner">
                             <h1>$800</h1>
                         </Col>
@@ -51,7 +51,7 @@ const Subscription = () => {
                             </h1>
                             <span>2 WEEKS</span>
                         </Col>
-                        <Col lg={11} xl={10} md={10} className="text-start mx-auto">
+                        <Col lg={11} xl={10} md={10} className="col-11  text-start mx-auto">
 
                             <Col className='d-flex'>
                                 <span className='p-2 me-2'><i class="fa-solid fa-check"></i> </span><p class="subscription_para mb-4 text-black">
@@ -76,7 +76,7 @@ const Subscription = () => {
                         </Col>
 
                     </Col>
-                    <Col xxl={3} xl={3} lg={5} md={5} className="card_bg">
+                    <Col xxl={3} xl={3} lg={5} md={7} className="col-8 card_bg mt-md-5 mt-lg-0 mt-4">
                         <Col className="text-center mx-auto py-3 bg_sub_banner">
                             <h1>$12/Hr</h1>
                         </Col>
@@ -86,7 +86,7 @@ const Subscription = () => {
                             </h1>
                             <span>(AS REQUIRED)</span>
                         </Col>
-                        <Col lg={11} xl={10} md={10} className="text-start mx-auto">
+                        <Col lg={11} xl={10} md={10}  className="col-11 text-start mx-auto">
 
                             <Col className='d-flex'>
                                 <span className='p-2 me-2'><i class="fa-solid fa-check"></i> </span><p class="subscription_para mb-4 text-black">

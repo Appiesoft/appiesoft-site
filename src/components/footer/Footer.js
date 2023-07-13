@@ -22,48 +22,48 @@ const Footer = () => {
       <footer class="bg_footer_color">
         <section>
           <Container>
-            <Row>
+            <Row className="mx-auto">
               <Col
                 lg={12}
-                className="d-flex justify-content-center bg_footer_gap border-bottom py-5 my-5"
+                className="d-flex justify-content-center bg_footer_gap border-bottom py-lg-5 my-lg-5 py-md-4 my-md-5 "
               >
                 <Col lg={4}>
-                  <div class="d-flex items-center  rounded-lg">
+                  <div class="d-lg-flex items-center  rounded-lg">
                     <img
                       alt="team"
                       class="w-20 h-20  object-cover object-center flex-shrink-0 rounded-full mr-4"
                       src={location}
                     />
-                    <div class="flex-grow">
-                      <h2 class=" footer_info">SEND YOUR MESSAGE</h2>
-                      <p class="text-white inner_footer_info">
+                    <div >  
+                      <h2 class=" footer_info text-md-center text-lg-start  mt-md-3 mt-lg-0">SEND YOUR MESSAGE</h2>
+                      <p class="text-white inner_footer_info text-md-center">
                         info@appiesoftwebsolutions.com
                       </p>
                     </div>
                   </div>
                 </Col>
-                <Col lg={3}>
-                  <div class="d-flex items-center rounded-lg">
+                <Col lg={3} md={4}>
+                  <div class="d-lg-flex items-center rounded-lg">
                     <img
                       alt="team"
                       class="w-20 h-20  object-cover object-center flex-shrink-0 rounded-full mr-4"
                       src={location}
                     />
-                    <div class="flex-grow">
-                      <h2 class=" footer_info">CALL US</h2>
-                      <p class="text-white inner_footer_info">+91-8847249971</p>
+                    <div>
+                      <h2 class=" footer_info text-md-center text-lg-start mt-md-3 mt-lg-0">CALL US</h2>
+                      <p class="text-white inner_footer_info text-md-center">+91-8847249971</p>
                     </div>
                   </div>
                 </Col>
                 <Col lg={4}>
-                  <div class="d-flex items-center  rounded-lg">
+                  <div class="d-lg-flex items-center  rounded-lg">
                     <img
                       alt="team"
                       class="w-20 h-20  object-cover object-center flex-shrink-0 rounded-full mr-4"
                       src={location}
                     />
                     <div class="flex-grow">
-                      <h2 class="inner_footer_info text-white">
+                      <h2 class="inner_footer_info text-white mt-md-3 mt-lg-0">
                         SCF 80 FF, Phase 11, Sector 65, Sahibzada Ajit Singh
                         Nagar, Punjab 160065
                       </h2>
@@ -74,21 +74,21 @@ const Footer = () => {
             </Row>
             <Row className="mx-auto">
               <Col
-                lg={12}
-                className="d-flex justify-content-center bg_content_footer_gap"
+                lg={12} md={12}
+                className="d-md-flex justify-content-md-center bg_content_footer_gap flex-wrap"
               >
-                <Col lg={4}>
+                <Col lg={4} md={12} className="mt-4 mt-md-0 mt-lg-0">
                   <Link to="/">
                     <img src={mainlogoappie} alt="" className="rounded-2" />{" "}
                   </Link>
-                  <p className="img_para  w-75 text-start mt-4">
+                  <p className="img_para  text-start mt-4 ">
                     We are energetic about creating Brand value and Development
                     and this nearly keep running into our veins. We are
                     altogether dedicated toward our work, looking for chances to
                     make stylish items over the advanced range
                   </p>
                 </Col>
-                <Col lg={2}>
+                <Col lg={2} md={3} className="mt-3 mt-md-4 mt-lg-0">
                   <h2 class="text-white text-start mb-3 head_links">
                     Quick Links
                   </h2>
@@ -113,7 +113,7 @@ const Footer = () => {
                     </li>
                   </nav>
                 </Col>
-                <Col lg={2}>
+                <Col lg={2} md={3} className="mt-md-4 mt-lg-0">
                   <h2 class=" text-white text-start head_links mb-3">
                     Services
                   </h2>
@@ -138,11 +138,11 @@ const Footer = () => {
                     </li>
                   </nav>
                 </Col>
-                <Col lg={3}>
+                <Col lg={3} md={4} className="col-12 mt-md-4 mt-lg-0">
                   <h2 class="text-white text-start head_links mb-3">
                     Our Location
                   </h2>
-                  <div style={{ height: "60%", width: "50%" }}>
+                  <div className="map_width">
                     <GoogleMapReact
                       bootstrapURLKeys={{ key: "" }}
                       defaultCenter={defaultProps.center}

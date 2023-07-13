@@ -105,7 +105,7 @@ const Contact = () => {
               </div>
             </Card>
           </Col>
-          <Col lg={12} xxl={5} xl={5} className="modify_content align-self-center ms-xl-5 ms-xxl-0 mt-lg-5 mt-xl-0">
+          <Col lg={12} md={12} xxl={5} xl={5} className="modify_content align-self-center ms-xl-5 ms-xxl-0 mt-lg-5 mt-xl-0 my-md-5 my-4">
             <h1>Common Question</h1>
             <div className="d-flex justify-content-between rounded-2" onClick={toggleDropdown}>
               <h2>Do you outcome your work overseas?</h2>

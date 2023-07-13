@@ -19,7 +19,7 @@ const ReviewPage = () => {
         },
         tablet: {
             breakpoint: { max: 1200, min: 464 },
-            items: 3
+            items: 2
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
