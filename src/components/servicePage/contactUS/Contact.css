@@ -142,5 +142,21 @@ select {
   @media only screen and (min-width: 0px) and (max-width:768px)  {
   .form-select {
     padding: 12px 0px 12px 0px;
+    
+}
+.modify_content h2 {
+    font-size: 12px;
+}
+.modify_content h1 {
+    font-size: 24px;
+}
+.contact_btn {
+font-size: 9px;
+}
+.Talk_size {
+    font-size: 25px !important;
+}
+.contact_title {
+    font-size: 13px;
 }
   }

@@ -21,7 +21,7 @@ const Service = () => {
             </Col>
           </Row>
           <Row className="mx-auto pb-4">
-            <Col xxl={11} xl={12} lg={11} md={12} xs={10} className="col-10 d-flex justify-content-center mx-auto mt-md-5 mt-3 gap_card  flex-wrap">
+            <Col xxl={11} xl={12} lg={11} md={12} xs={11} sm={12} className="col-10 d-flex justify-content-center mx-auto mt-md-5 mt-3 gap_card  flex-wrap">
               <Col xxl={3} xl={3} lg={5} md={5} sm={9}  className="card_bg ">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
@@ -32,7 +32,7 @@ const Service = () => {
                   <h2 className="text-black my-xxl-4  my-xl-3 my-3 service_text">Web & Graphic Design</h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
-                  <p className="service_para mb-4 text-black">
+                  <p className="service_para mb-4 text-black px-2">
                     Every company is unique and therefore each design we create will reflect the client’s requirements
                     and characteristics.From simple to complex, our website design team will create, host, and update the site for you.
                   </p>
@@ -51,7 +51,7 @@ const Service = () => {
                   <h2 className="text-black my-xxl-4  my-xl-4  my-3 service_text">Web Development</h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
-                  <p className="service_para mb-4 text-black">
+                  <p className="service_para mb-4 text-black px-2">
                     We have developed several website as per customer
                     requirements. We have an expert team of web developers, web
                     programmers which delivers pioneering website programming
@@ -74,7 +74,7 @@ const Service = () => {
                   </h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
-                  <p className="service_para mb-4 text-black">
+                  <p className="service_para mb-4 text-black px-2">
                     AppieSoft Web Solutions, Mohali (Chandigarh) offers 6 Months/3
                     Months/6 weeks Industrial training for B.Tech (All
                     Branches)/MCA/M.Sc (IT)/ Polytechnic Diploma (All Branches),
@@ -86,7 +86,7 @@ const Service = () => {
                 </Col>
               </Col>
             </Col>
-            <Col xxl={11} xl={12} lg={11} md={12} sm={12} className="d-flex justify-content-center gap_card mx-auto mt-md-5 mt-4 flex-wrap">
+            <Col xxl={11} xl={12} lg={11} md={12} sm={12}  xs={11} className="d-flex justify-content-center gap_card mx-auto mt-md-5 mt-4 flex-wrap">
             <Col  xxl={3} xl={3} lg={5} md={5} sm={9} className="card_bg  d-md-block d-xl-none">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">
@@ -99,7 +99,7 @@ const Service = () => {
                   </h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
-                  <p className="service_para mb-4 text-black">
+                  <p className="service_para mb-4 text-black px-2">
                     AppieSoft Web Solutions, Mohali (Chandigarh) offers 6 Months/3
                     Months/6 weeks Industrial training for B.Tech (All
                     Branches)/MCA/M.Sc (IT)/ Polytechnic Diploma (All Branches),
@@ -120,7 +120,7 @@ const Service = () => {
                   <h2 className="text-black my-xxl-4 my-xl-3 my-3 service_text">Ecommerce Websites</h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
-                  <p className="service_para mb-4 text-black">
+                  <p className="service_para mb-4 text-black px-2">
                     It is our experienced and skilled Ecommerce website
                     development team that will effectively evaluate your business
                     needs, offering perfectly tailored solutions for your design,
@@ -141,7 +141,7 @@ const Service = () => {
                   <h2 className="text-black my-xxl-4 my-xl-4 my-3 service_text">Apps Development</h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10}className="text-center mx-auto">
-                  <p className="service_para mb-4 text-black">
+                  <p className="service_para mb-4 text-black px-2">
                     Mobile application is the latest to join the technology
                     revolution.We’ll take you through the basics of Android
                     Studio, the default integrated development environment (IDE)
@@ -164,7 +164,7 @@ const Service = () => {
                   </h2>
                 </Col>
                 <Col lg={11} xl={10} xxl={11} md={10} className="text-center mx-auto">
-                  <p className="service_para mb-4 text-black">
+                  <p className="service_para mb-4 text-black px-2">
                     Our deep knowledge about keyword and market research, SEO PR,
                     link building, content marketing,social media promotion,
                     infographics, onpage and offpage SEO, makes us capable of

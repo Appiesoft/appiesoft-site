@@ -40,16 +40,16 @@ const MainSection = () => {
               <Col lg={6} >
                 <img src={fourimgg} className="image_position" alt="" />
               </Col>
-              <Col lg={6} className=" py-3 my-5 px-0 main_content px-md-4 px-lg-0">
-                <h6 className="head_line">Welcome To</h6>
-                <h4 className="inner_head_line my-xxl-5 my-xl-3 my-lg-3 mt-md-3 mt-3">
+              <Col lg={6} className=" py-3 my-5 px-0 main_content px-md-4 px-lg-0 text-center text-lg-start">
+                <h6 className="head_line text-center text-lg-start">Welcome To</h6>
+                <h4 className="inner_head_line my-xxl-5 my-xl-3 my-lg-3 mt-md-3 mt-3 text-center text-lg-start">
                   AppieSoft Web Solutions
                 </h4>
-                <p className="inner_paragraph_head mt-2 mt-lg-4">
+                <p className="inner_paragraph_head mt-2 mt-lg-4 text-center text-lg-start">
                   Passion, Dedication and A lot of Coffee.
                 </p>
 
-                <p className="inner_paragraph mt-lg-4 mt-md-3">
+                <p className="inner_paragraph mt-lg-4 mt-md-3 text-center text-lg-start">
                   We at Appiesoft Web Solutions are answering real business
                   challenges for our clients through innovation and deep
                   industry knowledge. <br /> Appiesoft Web Solutions is a team
@@ -59,12 +59,13 @@ const MainSection = () => {
                   organization, we have finished 500+ projects over the world.
                 </p>
 
-                <p className="inner_paragraph mt-3 pt-3">
+                <p className="inner_paragraph mt-3 pt-3 text-center text-lg-start">
                   We are energetic about creating Brand value and Development
                   and this nearly keep running into our veins. We are altogether
                   dedicated toward our work, looking for chances to make stylish
                   items over the advanced range.
                 </p>
+                
                 <button className=" main_button text-white mt-5">
                   Read More
                 </button>
