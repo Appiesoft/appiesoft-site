@@ -1,28 +1,33 @@
 import { useState } from "react";
 import "./Header.css";
-import { Row, Col, Offcanvas, Button, Container } from "react-bootstrap";
+import {
+  Row,
+  Col,
+  Offcanvas,
+  Button,
+  Container,
+  Card,
+  Accordion,
+  Form,
+  Navbar,
+  Nav,
+} from "react-bootstrap";
 import mainlogo from "../../asset/mainlogoappie.png";
 import maillogo from "../../asset/maillogo.png";
 import phonelogo from "../../asset/phonelogo.png";
-import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "react-router-dom";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedValue, setSelectedValue] = useState("Service");
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
-  };
-  const handleChange = (event) => {
-    setSelectedValue(event.target.value);
   };
 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
- 
 
   return (
     <>
@@ -39,7 +44,7 @@ const Header = () => {
               <img src={mainlogo} alt="" className="rounded-2" />
             </Col>
             <Col xxl={7} xl={8} lg={9} md={9} className="">
-              <ul className="navbar-nav  mb-2 mb-lg-0 d-flex justify-content-end">
+              <ul className="navbar-nav  mb-2 mb-lg-0 d-flex justify-content-end ">
                 <li className="d-flex">
                   <span className="mt-1">
                     <Link to="/">
@@ -159,17 +164,20 @@ const Header = () => {
       </Row>
 
       {/* mobile view */}
-{/* upper_navbar */}
+      {/* upper_navbar */}
       <header className="d-block d-lg-none upper_navbar py-4">
         <Container>
           <Row>
-            <Col md={12} className="d-flex justify-content-between">
-            <Col md={2} className=" text-start ps-md-4">
-              <img src={mainlogo} alt="" className="rounded-2" />
-            </Col>
-            <Col md={9} className=" d-flex justify-content-evenly align-self-center flex-wrap">
-                <div className="d-flex     align-self-center d-none d-md-block">
-                  <span >
+            <Col md={12} className="d-flex justify-content-between flex-wrap">
+              <Col md={2} className=" text-start ps-md-0">
+                <img src={mainlogo} alt="" className="rounded-2" />
+              </Col>
+              <Col
+                md={12}
+                className=" d-flex justify-content-between align-self-center  mt-md-3"
+              >
+                <div className="d-md-flex     align-self-center d-none d-md-block">
+                  <span className="align-self-end">
                     <Link to="/">
                       <img src={maillogo} alt="" />
                     </Link>
@@ -178,187 +186,95 @@ const Header = () => {
                     info@appiesoftwebsolutions.com
                   </h6>
                 </div>
-                <div className="d-flex ms-lg-5   align-self-center  d-none d-md-block">
-                  <span>
+                <div className="d-md-flex ms-lg-5   align-self-center  d-none d-md-block">
+                  <span  className="align-self-end">
                     <img src={phonelogo} alt="" />
                   </span>{" "}
                   <h6 className="ms-2 text-white upper_navbar_text">
                     +91-8847249971
                   </h6>
                 </div>
-                <div className="d-flex ms-lg-5 bar_img   align-self-center">
-                  <span onClick={handleShow} className="bg-white">
-                  <i class="fa-solid fa-bars "></i>
+                <div className="d-flex ms-lg-5 bar_img   align-self-center me-3 ">
+                  <span
+                    onClick={handleShow}
+                    className="bg-white px-2 rounded-1 py-1"
+                  >
+                    <i class="fa-solid fa-bars "></i>
                   </span>
                 </div>
-            </Col>
+              </Col>
             </Col>
           </Row>
         </Container>
       </header>
 
-{/* sideBar */}
+      {/* sideBar mobile view*/}
       <div className="d-block  d-lg-none">
-        <Offcanvas show={show}>
-          <Offcanvas.Header >
-          <Offcanvas.Title>
+        <Offcanvas
+          show={show}
+          onHide={handleClose}
+          className="d-block  d-lg-none d-xxl-none"
+        >
+          <Offcanvas.Header>
+            <Offcanvas.Title>
               <span className="mt-1">
                 <Link to="/">
                   <img src={mainlogo} alt="" className="rounded-2" />
                 </Link>
               </span>
             </Offcanvas.Title>
-            <span className="icon_close rounded-2"  onClick={handleClose}>
-            <i class="fa-solid fa-xmark px-2 "></i>
+            <span className="icon_close rounded-2" onClick={handleClose}>
+              <i class="fa-solid fa-xmark px-2 "></i>
             </span>
           </Offcanvas.Header>
-          <Offcanvas.Body>
-            <Row className="mx-auto position-absolute inner_navbar d-md-block  d-block d-lg-none">
-              <Col xxl={9} xl={11} lg={10} className="mx-auto ">
-                <nav class="navbar navbar-expand-lg navbar-expand-xl  navbar-expand-xxl  bg-white mx-auto rounded-2 py-2">
-                  <div class="container-fluid  d-md-flex  justify-content-md-evenly">
-                    <Row className=" w-100">
-                      <Col
-                        xxl={12}
-                        xl={10}
-                        lg={11}
-                        className="mx-auto d-lg-flex align-items-center justify-content-lg-evenly "
-                      >
-                        <div className="col-auto  parent_link  px-0 mb-md-3 mb-3 my-lg-0">
-                          <a className="text-decoration-none text-capitalize navbar_linkFont ">
-                            Home
-                          </a>
-                          <div className="hover_box"></div>
-                        </div>
-                        <div className="col-auto  parent_link  px-0 ">
-                          <a className="text-decoration-none text-capitalize navbar_linkFont ">
-                            About
-                          </a>
-                          <div className="hover_box"></div>
-                        </div>
-                        <div className="col-auto  px-0  d-none d-lg-block">
-                          <div class="dropdown">
-                            <span className="navbar_linkFont  navbar">
-                              Services
-                              <i
-                                class="fa fa-angle-down ms-2"
-                                aria-hidden="true"
-                              ></i>
-                            </span>
-                            <div className="hover_box"></div>
-                            <div class="dropdown-content">
-                              <p className="my-2">
-                                <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                                  Web & Graphic Design
-                                </a>
-                              </p>
-                              <p>
-                                <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                                  Web Development
-                                </a>
-                              </p>
-                              <p className="my-2">
-                                <a className="text-decoration-none text-capitalize  navbar_linkFont  inner_linkFont">
-                                  Industrial Training
-                                </a>
-                              </p>
-                              <p>
-                                <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                                  Ecommerce Websites
-                                </a>
-                              </p>
-                              <p className="my-2">
-                                <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                                  Apps Development
-                                </a>
-                              </p>
-                              <p>
-                                <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                                  Search Engine Optimization
-                                </a>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        {/* mobile view  */}
-                        <div className="d-block d-lg-none mt-2 mb-3 "
-                          onClick={toggleDropdown}
-                        >
-                          <h2 className=" navbar_linkFont inner_linkFont">
-                            Service <i
-                              class={` ${
-                                !isOpen
-                                  ? "fa fa-angle-down ms-2"
-                                  : "fa fa-angle-up ms-2"
-                              }`}
-                            ></i>
-                          </h2>
-                        </div>
-                        {isOpen && (
-                          <div className="widthlink" >
-                            <p className="my-3">
-                              <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                                Web & Graphic Design
-                              </a>
-                            </p>
-                            <p>
-                              <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                                Web Development
-                              </a>
-                            </p>
-                            <p className="my-3">
-                              <a className="text-decoration-none text-capitalize  navbar_linkFont  inner_linkFont">
-                                Industrial Training
-                              </a>
-                            </p>
-                            <p>
-                              <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                                Ecommerce Websites
-                              </a>
-                            </p>
-                            <p className="my-3">
-                              <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                                Apps Development
-                              </a>
-                            </p>
-                            <p>
-                              <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                                Search Engine Optimization
-                              </a>
-                            </p>
-                          </div>
-                        )}
-
-                        <div className="col-auto  parent_link mb-3  px-0 ">
-                          <a className="text-decoration-none text-capitalize navbar_linkFont ">
-                            Our Works
-                          </a>
-                          <div className="hover_box"></div>
-                        </div>
-                        <div className="col-auto  parent_link  px-0 my-md-3 mb-3 my-lg-0">
-                          <a className="text-decoration-none text-decoration-none text-capitalize navbar_linkFont">
-                            Testimonials
-                          </a>
-                          <div className="hover_box"></div>
-                        </div>
-                        <div className="col-auto  parent_link  px-0">
-                          <a className="text-decoration-none text-decoration-none text-capitalize navbar_linkFont">
-                            Contact
-                          </a>
-                          <div className="hover_box"></div>
-                        </div>
-                        <div className="col-auto my-md-2 my-lg-0">
-                          <button className="mobile_main_button text-white border-0">
-                            Industrial Training
-                          </button>
-                        </div>
-                      </Col>
-                    </Row>
+          <Container
+            fluid
+            className="d-block  d-lg-none d-xxl-none mobile_nav p-0"
+          >
+            <h6 className="justify-content-start p-3 " id="home_bg">
+              <Nav.Link href="#action1">Home</Nav.Link>
+            </h6>
+            <h6 className="justify-content-start p-3 ">
+              <Nav.Link href="#action1">About</Nav.Link>
+            </h6>
+            <h6
+              className="justify-content-between d-flex  p-3"
+              onClick={toggleDropdown}
+            >
+              <nav className="accordion arrows">
+                <input type="radio" name="accordion" id="cb1" />
+                <section className="box">
+                  <label className="box-title" for="cb1">
+                    Service
+                  </label>
+                  <label className="box-close" for="acc-close"></label>
+                  <div className="box-content border-top">
+                    Web & Graphic Design
                   </div>
-                </nav>
-              </Col>
-            </Row>
-          </Offcanvas.Body>
+                  <div className="box-content">Web Development</div>
+                  <div className="box-content">Industrial Training</div>
+                  <div className="box-content">Ecommerce Websites</div>
+                  <div className="box-content">Apps Development</div>
+                  <div className="box-content">Search Engine Optimization</div>
+                </section>
+                <input type="radio" name="accordion" id="cb2" />
+
+                <input type="radio" name="accordion" id="acc-close" />
+              </nav>
+            </h6>
+            <h6 className="justify-content-start p-3  ">
+              <Nav.Link href="#action1">Our Works</Nav.Link>
+            </h6>
+            <h6 className="justify-content-start p-3 ">
+              <Nav.Link href="#action1">Testimonials</Nav.Link>
+            </h6>
+            <h6 className="justify-content-start p-3 ">
+              <Nav.Link href="#action1">Contact</Nav.Link>
+            </h6>
+            <h6 className="justify-content-start p-3 ">
+              <Nav.Link href="#action1">Industrial Training</Nav.Link>
+            </h6>
+          </Container>
         </Offcanvas>
       </div>
     </>

@@ -42,7 +42,7 @@ const MainSection = () => {
               </Col>
               <Col lg={6} className=" py-3 my-5 px-0 main_content px-md-4 px-lg-0">
                 <h6 className="head_line">Welcome To</h6>
-                <h4 className="inner_head_line my-xxl-5 my-xl-3 my-lg-3 mt-md-3">
+                <h4 className="inner_head_line my-xxl-5 my-xl-3 my-lg-3 mt-md-3 mt-3">
                   AppieSoft Web Solutions
                 </h4>
                 <p className="inner_paragraph_head mt-2 mt-lg-4">

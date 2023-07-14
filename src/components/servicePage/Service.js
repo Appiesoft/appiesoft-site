@@ -21,7 +21,7 @@ const Service = () => {
             </Col>
           </Row>
           <Row className="mx-auto pb-4">
-            <Col xxl={11} xl={12} lg={11} md={12} className="d-flex justify-content-center mx-auto mt-md-5 mt-3 gap_card  flex-wrap">
+            <Col xxl={11} xl={12} lg={11} md={12} xs={10} className="col-10 d-flex justify-content-center mx-auto mt-md-5 mt-3 gap_card  flex-wrap">
               <Col xxl={3} xl={3} lg={5} md={5} sm={9}  className="card_bg ">
                 <Col lg={12} className="text-center pt-2 mb-4 mt-4">
                   <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img ">

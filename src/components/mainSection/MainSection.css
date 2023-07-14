@@ -28,7 +28,7 @@
 }
 
 .head_line {
-  color: #f47421;
+  color: #f47421 !important;
     font-size: 18px;
     font-weight: 700;
 
@@ -83,6 +83,7 @@
     font-size: 27px;
 }
 .head_line {
+  color: #f47421 !important;
   font-size: 22px;
 }
 }
@@ -91,5 +92,17 @@
 .main_content {
   width:auto;
   margin: 0px 0px 0px 0px;
+}
+}
+@media only screen and (min-width: 0px) and (max-width:576px)  {
+  #hero h1 {
+ 
+    font-size: 43px;
+  }
+  .main_button {
+    font-size: 18px;
+}
+.head_line {
+  color: #f47421 !important;
 }
 }

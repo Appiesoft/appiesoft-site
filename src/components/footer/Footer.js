@@ -18,24 +18,25 @@ const Footer = () => {
     zoom: 11,
   };
   return (
-    <div>
+ <>
+
       <footer class="bg_footer_color">
         <section>
           <Container>
             <Row className="mx-auto">
               <Col
                 lg={12}
-                className="d-flex justify-content-center bg_footer_gap border-bottom py-lg-5 my-lg-5 py-md-4 my-md-5 "
+                className="d-lg-flex justify-content-center bg_footer_gap border-bottom py-lg-5 my-lg-5 py-md-4 my-md-5 "
               >
-                <Col lg={4}>
-                  <div class="d-lg-flex items-center  rounded-lg">
+                <Col lg={4} className="my-3">
+                  <div class="d-flex items-center  rounded-lg">
                     <img
                       alt="team"
                       class="w-20 h-20  object-cover object-center flex-shrink-0 rounded-full mr-4"
                       src={location}
                     />
-                    <div >  
-                      <h2 class=" footer_info text-md-center text-lg-start  mt-md-3 mt-lg-0">SEND YOUR MESSAGE</h2>
+                    <div className=" ms-3 ms-lg-0">  
+                      <h2 class=" footer_info text-start text-lg-start  mt-md-3 mt-lg-0">SEND YOUR MESSAGE</h2>
                       <p class="text-white inner_footer_info text-md-center">
                         info@appiesoftwebsolutions.com
                       </p>
@@ -43,27 +44,27 @@ const Footer = () => {
                   </div>
                 </Col>
                 <Col lg={3} md={4}>
-                  <div class="d-lg-flex items-center rounded-lg">
+                  <div class="d-flex items-center rounded-lg">
                     <img
                       alt="team"
                       class="w-20 h-20  object-cover object-center flex-shrink-0 rounded-full mr-4"
                       src={location}
                     />
-                    <div>
+                    <div className=" ms-3 ms-lg-0">
                       <h2 class=" footer_info text-md-center text-lg-start mt-md-3 mt-lg-0">CALL US</h2>
                       <p class="text-white inner_footer_info text-md-center">+91-8847249971</p>
                     </div>
                   </div>
                 </Col>
-                <Col lg={4}>
-                  <div class="d-lg-flex items-center  rounded-lg">
+                <Col lg={4} className="my-3 my-lg-0">
+                  <div class="d-flex items-center  rounded-lg">
                     <img
                       alt="team"
                       class="w-20 h-20  object-cover object-center flex-shrink-0 rounded-full mr-4"
                       src={location}
                     />
-                    <div class="flex-grow">
-                      <h2 class="inner_footer_info text-white mt-md-3 mt-lg-0">
+                    <div class="flex-grow ms-3">
+                      <h2 class="inner_footer_info text-white  text-start mt-md-3 mt-lg-0">
                         SCF 80 FF, Phase 11, Sector 65, Sahibzada Ajit Singh
                         Nagar, Punjab 160065
                       </h2>
@@ -184,7 +185,7 @@ const Footer = () => {
           </Container>
         </section>
       </footer>
-    </div>
+      </>
   );
 };
 

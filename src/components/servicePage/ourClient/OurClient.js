@@ -82,7 +82,7 @@ const OurClient = () => {
                         </div>
                     </div>
                     <Row className=" mt-5 mx-auto">
-                        <div class="col-md-6 col-sm-12 portfolio-item filter-app">
+                        <div class="col-md-6 col-sm-12 portfolio-item filter-app mb-4 mb-sm-0">
                             <div className='row mx-auto position-relative border_radius'>
                                 <div className='col-12 px-0'>
                                     <img src={img3} class="img-fluid img_work" alt="" />
