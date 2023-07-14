@@ -79,7 +79,7 @@ height: 50%;
         font-size: 14px;
     } 
 .bg_footer_gap img{
-        margin: 0 auto;
+        margin: 0 0;
     }
     .map_width{
         width: 100%;
@@ -90,9 +90,17 @@ height: 50%;
         }
         
 }
+@media only screen and (min-width: 576px) and (max-width:768px)  {
+    .bg_footer_gap img {
+        margin: 0 0;
+    }
+}
 
 @media only screen and (min-width: 0px) and (max-width:576px)  {
     .map_width{
         width: 100% !;
+        }
+        .bg_footer_gap img {
+            margin: 0 0;
         }
 }

@@ -71,7 +71,7 @@ input::placeholder {
     font-weight: 600;
 padding: 12px;
 border-radius: 12px;
-background-image: linear-gradient(70deg, rgba(232,84,9,0.08727240896358546) 0%, rgba(255,255,255,0.7231267507002801) 100%);
+
 }
 
 .modify_content P {
@@ -128,18 +128,19 @@ select {
   
 
   select option {
-
-    background-color: #ffdebf65;
-    color:#f47421 ;
-    padding: 8px;
+    background-color: #e9ded365;
+    color:#0f0f0f ;
+    margin: 28px !important;
   }
 
   select option:hover {
-
-    background-color: #f70c0c;
     color: #f47421 !important;
     box-shadow: 33px 0px 73px 0px #eccc;
   }
 
 
-
+  @media only screen and (min-width: 0px) and (max-width:768px)  {
+  .form-select {
+    padding: 12px 0px 12px 0px;
+}
+  }

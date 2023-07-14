@@ -158,7 +158,7 @@ ul.mmk {
     font-size: 15px;
 }
 }
-@media only screen and (min-width: 0px) and (max-width:768px)  {
+@media only screen and (min-width: 0px) and (max-width:992px)  {
     .Our-clients-box li:nth-child(2n+2) {
         width: 136px;
         height: 136px;
@@ -173,11 +173,18 @@ ul.mmk {
         height: 136px;
         margin: 3px auto 0 auto;
     }
+    .para_text {
+        font-size: 24px;
+    }
+    .heading_text {
+        font-size: 22px;
+    
+    }
 }
 
 @media only screen and (min-width: 0px) and (max-width:576px)  {
     .para_text {
-        font-size: 24px;
+        font-size: 17px;
     }
     .heading_text {
         font-size: 22px;
@@ -197,4 +204,10 @@ ul.mmk {
         height: 136px;
         margin: 3px auto 0 auto;
     }
+}
+@media only screen and (max-width: 800px) and (min-width: 768px){
+.Our-clients-box ul {
+    grid-template-columns: auto auto auto auto;
+    column-gap: 30px;
+}
 }

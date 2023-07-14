@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <div className="container input_field my-xl-5 mt-lg-0 mb-lg-4">
       <div className="row mx-auto">
-        <Col lg={12} className="d-flex justify-content-around flex-wrap">
+        <Col lg={12} xs={10} className="d-flex justify-content-around flex-wrap mx-auto">
           <Col lg={11} xxl={5} xl={5} className='mx-auto'  >
             <Card className="bg_contact_banner rounded-4 py-4  px-3">
               <div className="row mx-auto">
@@ -46,15 +46,15 @@ const Contact = () => {
                   <p className="mb-3 contact_title">Contact Us</p>
                   <h1 className="m-0 text-white Talk_size">Let’s Talk</h1>
                 </div>
-                <div className="col-12 d-flex align-items-center justify-content-between">
-                  <div class="mb-3 me-3 input_field_names">
+                <div className="col-md-12 col-10 d-md-flex align-items-center justify-content-between flex-wrap">
+                  <div class="mb-md-3 me-md-3 input_field_names">
                     <input
                       type="text"
                       className=" bg-transparent border-bottom py-2"
                       placeholder="Your Name"
                     />
                   </div>
-                  <div class="mb-3 ms-3 input_field_names border-bottom">
+                  <div class="mb-md-3 ms-md-3 input_field_names border-bottom">
                     <Form.Select>
                       <option hidden>Select a Service</option>
                       <option value="1">Web & Graphic Design</option>
@@ -66,15 +66,15 @@ const Contact = () => {
                     </Form.Select>
                   </div>
                 </div>
-                <div className="col-12 d-flex align-items-center justify-content-between">
-                  <div class="mb-3 me-3 input_field_names">
+                <div className="col-md-12 col-10 d-flex align-items-center justify-content-between flex-wrap">
+                  <div class="mb-md-3 me-md-3 input_field_names">
                     <input
                       type="number"
                       class=" bg-transparent border-bottom py-2"
                       placeholder="Phone Number"
                     />
                   </div>
-                  <div class="mb-3 ms-3 input_field_names">
+                  <div class="mb-md-3 ms-md-3 input_field_names">
                     <input
                       type="email"
                       class="border-bottom  bg-transparent py-2"
