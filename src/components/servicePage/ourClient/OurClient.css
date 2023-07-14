@@ -210,4 +210,8 @@ ul.mmk {
     grid-template-columns: auto auto auto auto;
     column-gap: 30px;
 }
+.main_button {
+    line-height: 7px;
+
+}
 }

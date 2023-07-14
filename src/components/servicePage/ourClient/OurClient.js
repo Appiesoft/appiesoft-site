@@ -68,14 +68,14 @@ const OurClient = () => {
 
             <section className='py-5 '>
                 <div className="container mx-auto py-3">
-                    <div className='head_line mb-3 mx-md-3'>
+                    <div className='head_line mb-3 mx-3'>
                         <h6>News</h6>
                     </div>
-                    <div className='inner_head_line d-flex justify-between mx-md-3' >
+                    <div className='inner_head_line d-md-flex justify-between mx-3' >
                         <h2>Advice on how to <br />
                             make your content.
                         </h2>
-                        <div className='align-self-end'>
+                        <div className='align-self-end mt-3 mt-lg-0'>
                             <button className='main_button py-3 text-white px-4 rounded-2'>
                                 Explore All Resources
                             </button>
