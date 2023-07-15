@@ -1,4 +1,7 @@
 
+/* main css  */
+
+
 .service_text{
     font-size: 32px;
     font-weight: 700;
@@ -72,7 +75,6 @@
 .six-way-help-box p {
     font-weight: 700;
     font-size: 20px;
-    line-height: 25.52px;
     color: #18191F;
     padding: 24px 37px 0px 37px;
 }
@@ -112,13 +114,29 @@
 }
 
 .service-bg-Img{
+    margin-top: 16px;
     background-image: url('../../asset/header//img11.png');
 }
 .card_bg:hover .service-bg-Img{
     background-image: url('../../asset/header//img12.png');
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1280px)  {
+
+.six_images_grid{
+    column-gap: 38px;
+}
+.tile-boxes {
+    box-shadow: 0px 0px 18px 10px #bdbdbd57;
+    margin: 0 auto 38px auto;
+
+}
+.col-md {
+    flex-basis: 1;
+    flex-grow: 1;
+   width: fit-content;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px)  {
     .service_para {
         font-size: 14px;
     }
@@ -126,14 +144,64 @@
         font-size: 27px;
         font-weight: 700;
     }
+    .main_button {
+        font-size: 13px !important;
+    }
+    .tile-boxes {
+        box-shadow: 0px 0px 18px 10px #bdbdbd57;
+        margin: 0 auto 38px auto;
+    
+    }
+    .col-md {
+        flex-basis: 1;
+        flex-grow: 1;
+       width: fit-content;
+    }
+    
 }
 
-@media only screen and (min-width: 0px) and (max-width:992px)  {
+@media only screen and (min-width: 768px) and (max-width:992px)  {
     .six-way-help-box p {
         font-size: 15px !important;
     }
+    .ourService {
+        font-size: 35px !important;
+    
+    }
+    .six-way-help-box h2 {
+        font-size: 36px;
+    }
+    .tile-boxes {
+        box-shadow: 0px 0px 18px 10px #bdbdbd57;
+        margin: 0 0 50px 0;
+    }
+    .col-md {
+        flex-basis: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
 }
-@media only screen and (min-width: 0px) and (max-width:768px)  {
+
+@media only screen and (min-width: 576px) and (max-width:768px)  {
+    .tile-boxes {
+        box-shadow: 0px 0px 18px 10px #bdbdbd57;
+        margin: 0 0 50px 0;
+    }
+    .col-md {
+        flex-basis: 1;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    .service_text {
+        font-size: 28px;
+      }
+      .service_para {
+        font-size: 19px;
+    }
+    .ourService {
+        font-size: 36px;
+        font-weight: 700;
+    }
     .six-way-help-box ul {
         display: grid;
         grid-template-columns: auto;
@@ -147,6 +215,12 @@
         background-color: #f4f5f7;
         padding: 17px 0px 70px 0px;
     }
+
+.six-way-help-box h2 {
+
+    font-size: 38px;
+
+}
     .Our-clients-box ul {
         display: grid;
           grid-template-columns: auto !important;

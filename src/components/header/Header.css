@@ -1,6 +1,59 @@
 *{
     /* border: 1px solid black; */
 }
+
+/* new class */
+.site-header {
+background-color: #f47421;
+  padding: 10px 0px 20px 0px;
+  position: relative;
+  align-items: center;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.head-one {
+  width: 50%;
+}
+.head-two {
+  width: 100%;
+}
+.head-two ul {
+  display: flex!important;
+  list-style: none;
+  column-gap: 70px;
+  justify-content: right;
+}
+.head-three {
+  display: flex;
+  align-items: center;
+}
+.nav-bar-sec {
+  background: #FFFFFF;
+  box-shadow: 0px 14px 44px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 10px 0px 10px 0px;
+  margin: 13px 0px -55px 0px;
+}
+.nav-bar-sec ul {
+  display: flex;
+  column-gap: 35px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  list-style: none;
+}
+.nav-bar-sec li a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000!important;
+  text-decoration: none;
+}
+
 .offcanvas-backdrop.show {
     opacity: .5;
 }
@@ -109,8 +162,20 @@
     display: block;
   }
 
+  @media only screen and (min-width: 992px) and (max-width:1024px)  {
+    .nav-bar-sec li a {
+      font-size: 11px;
+  }
+  .navbar_linkFont {
+    font-size: 11px !important;
+}
+
+  }
   @media only screen and (min-width: 992px) and (max-width:1200px)  {
-   
+    .inner_navbar {
+      transform: translate(0px, 140px);
+  
+  }
     .upper_navbar_text {
         font-size: 18px;
      
@@ -120,10 +185,20 @@
         font-size: 14px !important;
     }
     .navbar_linkFont {
-        font-size: 16px !important;
+        font-size: 16px;
     }
+    .main_button {
+      padding: 5px 11px 5px 11px;
+      font-size: 10px !important;
+  }
+  .upper_navbar_text {
+    font-size: 14px;
+}
   }
   @media only screen and (min-width: 0px) and (max-width:576px)  {
+    #hero {
+      height: 484px;
+  }
     .icon_close{
         font-size: 22px;
     }
@@ -191,6 +266,12 @@
       }
   }
   @media only screen and (min-width: 0px) and (max-width:992px)  {
+    #hero h1 {
+      font-size: 45px !important;
+    }
+    #hero {
+      height: 484px !important;
+  }
     .bar_img{
         background-color: #fff;
         border-radius: 3px;

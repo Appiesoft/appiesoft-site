@@ -51,7 +51,6 @@ input::placeholder {
 .modify_content div {
     border: 2px solid #f47421;
     padding: 22px;
-    margin: 22px 0px;
 }
 
 .modify_content h1 {
@@ -69,7 +68,6 @@ input::placeholder {
     color: black;
     font-size: 17px;
     font-weight: 600;
-padding: 12px;
 border-radius: 12px;
 
 }

@@ -1,3 +1,9 @@
+.tile-boxes {
+    box-shadow: 0px 0px 18px 10px #bdbdbd57;
+}
+.rtx-h {
+    background-color: #f57e30;
+}
 .bg_sub_gap{
     column-gap: 27px;
 }
@@ -17,7 +23,7 @@
     font-weight: 700;
 }
 
-.sub_title h1 {
+.sub_title {
     color: black;
     font-size: 30px;
     font-weight: 700;
@@ -27,6 +33,9 @@
     color: #f47421;
     font-size: 18px;
     font-weight: 700;
+}
+.card_bg:hover{
+    background-color: #f47421;
 }
 .card_bg:hover h1{
     color: white;
@@ -40,4 +49,3 @@
 .card_bg:hover .sub_title span{
     color: white !important ;
 }
-

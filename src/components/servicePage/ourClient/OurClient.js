@@ -6,10 +6,7 @@ import client4 from '../../../asset/client/client4.png'
 import client5 from '../../../asset/client/client5.png'
 import client6 from '../../../asset/client/client6.png'
 import client7 from '../../../asset/client/client7.png'
-
-import client8 from '../../../asset/client/client8.svg'
-import client11 from '../../../asset/client/client11.png'
-import { Col, Row } from 'react-bootstrap'
+import {Row } from 'react-bootstrap'
 import img1 from '../../../asset/img1.png'
 import img2 from '../../../asset/img2.png'
 import img3 from '../../../asset/img3.png'
@@ -17,51 +14,51 @@ import './OurClient.css'
 const OurClient = () => {
     return (
         <div className='col-auto'>
-            <section class="section-five">
-	     <div class="container">
-	             <div class="Our-clients-box">
-	                    <div class="our-client-text">
+            <section className="section-five">
+	     <div className="container">
+	             <div className="Our-clients-box">
+	                    <div className="our-client-text">
 	                     <h5>Our clients</h5>
-	                     <h2>We Have The Pleasure Of Working With</h2> 
+	                     <h2 className='py-2'>We Have The Pleasure Of Working With</h2> 
 	                    </div>
 	                <ul>
-	                    <li class="myBtn">
+	                    <li className="myBtn">
                         <img src={client1} className="img-fluid img_circle_size" alt="" />
 	                      
 	                   </li>
-	                    <li class="myBtn">
+	                    <li className="myBtn">
                         <img src={client2} className="img-fluid img_circle_size" alt="" />
 	                   </li>
-	                   <li class="myBtn">
+	                   <li className="myBtn">
                        <img src={client3} className="img-fluid img_circle_size" alt="" />
 	                   </li>
-	                   <li class="myBtn">
+	                   <li className="myBtn">
                        <img src={client2} className="img-fluid img_circle_size" alt="" />
 	                   </li>
-	                   <li class="myBtn btnffth">
+	                   <li className="myBtn btnffth">
                        <img src={client4} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	               </ul>
-	               <ul class="mmk">
-	                   <li class="myBtn btnsxth">
+	               <ul className="mmk">
+	                   <li className="myBtn">
                        <img src={client2} className="img-fluid img_circle_size" alt="" />
 	                   </li>
-	                   <li class="myBtn btnsvnth">
+	                   <li className="myBtn">
                        <img src={client7} className="img-fluid img_circle_size" alt="" />
 	                   </li>
-	                   <li class="myBtn btnegth">
+	                   <li className="myBtn">
                        <img src={client6} className="img-fluid img_circle_size" alt="" />
 	                   </li>
-	                   <li class="myBtn btnninth">
+	                   <li className="myBtn">
                        <img src={client5} className="img-fluid img_circle_size" alt="" />
 	                   </li>
-	                    <li class="myBtn btntenth">
+	                    <li className="myBtn">
 	                    <img src={client2} className="img-fluid img_circle_size" alt="" />
 	                   </li>
 	               </ul>
 	              
 	           </div>
-	       <div class="clr"></div> 
+	       <div className="clr"></div> 
 	     </div>
 
  </section>
@@ -76,16 +73,16 @@ const OurClient = () => {
                             make your content.
                         </h2>
                         <div className='align-self-end mt-3 mt-lg-0'>
-                            <button className='main_button py-3 text-white px-4 rounded-2'>
+                            <button className='main_button  text-white rounded-2'>
                                 Explore All Resources
                             </button>
                         </div>
                     </div>
                     <Row className=" mt-5 mx-auto">
-                        <div class="col-md-6 col-sm-12 portfolio-item filter-app mb-4 mb-sm-0">
+                        <div className="col-md-6 col-sm-12 portfolio-item filter-app mb-4 mb-sm-0">
                             <div className='row mx-auto position-relative border_radius'>
                                 <div className='col-12 px-0'>
-                                    <img src={img3} class="img-fluid img_work" alt="" />
+                                    <img src={img3} className="img-fluid img_work" alt="" />
                                 </div>
                                 <div className='col-12 d-flex flex-column pb-5 position_textBox ps-4'>
                                     <p className='m-0 heading_text mt-auto'>Managed IT</p>
@@ -95,12 +92,12 @@ const OurClient = () => {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 portfolio-item filter-app mt-sm-4 mt-md-0">
+                        <div className="col-md-6 col-sm-12 portfolio-item filter-app mt-sm-4 mt-md-0">
                             <div className="row">
                                 <div className="col-12">
                                     <div className='row mx-auto position-relative border_radius'>
                                         <div className='col-12 px-0'>
-                                            <img src={img1} class="img-fluid img_work" alt="" />
+                                            <img src={img1} className="img-fluid img_work" alt="" />
                                         </div>
                                         <div className='col-12 d-flex flex-column pb-5 position_textBox ps-4'>
                                             <p className='m-0 heading_text mt-auto'>Managed IT</p>
@@ -113,7 +110,7 @@ const OurClient = () => {
                                 <div className="col-12 mt-4">
                                     <div className='row mx-auto position-relative border_radius'>
                                         <div className='col-12 px-0'>
-                                            <img src={img2} class="img-fluid img_work" alt="" />
+                                            <img src={img2} className="img-fluid img_work" alt="" />
                                         </div>
                                         <div className='col-12 d-flex flex-column pb-5 position_textBox ps-4'>
                                             <p className='m-0 heading_text mt-auto'>Managed IT</p>

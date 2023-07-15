@@ -1,17 +1,6 @@
 import { useState } from "react";
 import "./Header.css";
-import {
-  Row,
-  Col,
-  Offcanvas,
-  Button,
-  Container,
-  Card,
-  Accordion,
-  Form,
-  Navbar,
-  Nav,
-} from "react-bootstrap";
+import { Row, Col, Offcanvas, Container, Nav } from "react-bootstrap";
 import mainlogo from "../../asset/mainlogoappie.png";
 import maillogo from "../../asset/maillogo.png";
 import phonelogo from "../../asset/phonelogo.png";
@@ -31,20 +20,23 @@ const Header = () => {
 
   return (
     <>
+      {/* <header className="upper_navbar">
+      <Container>
       <nav className="upper_navbar pt-3 pb-4 navbar navbar-expand-lg navbar-expand-xxl d-none d-lg-block">
+      <Row className="mx-auto">
         <Col
-          xxl={9}
-          xl={11}
-          lg={10}
+          xxl={12}
+          xl={12}
+          lg={11}
           md={11}
-          className="mx-auto pb-3 d-flex justify-content-between"
+          className=" pb-3 pb-lg-0 d-flex justify-content-between"
         >
           <div className="row w-100 align-items-center d-flex justify-content-between ">
-            <Col xxl={3} xl={3} lg={3} md={2} className=" text-start ps-md-4">
+            <Col xxl={3} xl={3} lg={3} md={2} className=" text-start mb-lg-2  ">
               <img src={mainlogo} alt="" className="rounded-2" />
             </Col>
-            <Col xxl={7} xl={8} lg={9} md={9} className="">
-              <ul className="navbar-nav  mb-2 mb-lg-0 d-flex justify-content-end ">
+            <Col xxl={7} xl={8} lg={12} md={9} className="">
+              <ul className="navbar-nav  mb-2 d-xl-flex justify-content-end  my-xl-0 mb-lg-3">
                 <li className="d-flex">
                   <span className="mt-1">
                     <Link to="/">
@@ -67,10 +59,17 @@ const Header = () => {
             </Col>
           </div>
         </Col>
+        </Row>
       </nav>
+     </Container>
+    </header> */}
 
-      <Row className="mx-auto position-absolute inner_navbar d-none  d-lg-block">
-        <Col xxl={9} xl={11} lg={10} className="mx-auto ">
+      {/* <Row className="mx-auto position-absolute inner_navbar d-none  d-lg-block">
+        <Col  xxl={11}
+          xl={12}
+          lg={11}
+          md={11} className="mx-auto ">
+        <Container>
           <nav class="navbar navbar-expand-lg navbar-expand-xl  navbar-expand-xxl  bg-white mx-auto rounded-2 py-2">
             <div class="container-fluid  d-md-flex  justify-content-md-evenly">
               <Row className=" w-100">
@@ -160,15 +159,108 @@ const Header = () => {
               </Row>
             </div>
           </nav>
+          </Container>
         </Col>
-      </Row>
+      </Row> */}
+
+      <header id="masthead" class="site-header d-none d-lg-block d-xl-block">
+        <div class="container">
+          <div class="head-three">
+            <div class="head-one">
+              <img src={mainlogo} alt="" className="rounded-2" />
+            </div>
+            <div class="head-two">
+              <ul>
+                <li className="d-flex  justify-content-between align-items-center">
+                  <span className="mt-1">
+                    <Link to="/">
+                      <img src={maillogo} alt="" />
+                    </Link>
+                  </span>
+                  <h6 className=" text-white upper_navbar_text ms-3">
+                    info@appiesoftwebsolutions.com
+                  </h6>
+                </li>
+                <li className="d-flex justify-content-between align-items-center">
+                  <span>
+                    <img src={phonelogo} alt="" />
+                  </span>
+                  <h6 className=" text-white upper_navbar_text ms-3">
+                    +91-8847249971
+                  </h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-bar-sec">
+          <ul id="menu-main-menu" class="menu">
+          <li ><a href="#">Home</a></li>
+          <li ><a href="#">About Us</a></li>
+          <li > 
+          <div className="col-auto  px-0">
+                    <div class="dropdown">
+                      <span className="navbar_linkFont  navbar">
+                        Services
+                        <i class="fa fa-angle-down ms-2" aria-hidden="true"></i>
+                      </span>
+                      <div className="hover_box"></div>
+                      <div class="dropdown-content">
+                        <p className="my-2">
+                          <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                            Web & Graphic Design
+                          </a>
+                        </p>
+                        <p>
+                          <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                            Web Development
+                          </a>
+                        </p>
+                        <p className="my-2">
+                          <a className="text-decoration-none text-capitalize  navbar_linkFont  inner_linkFont">
+                            Industrial Training
+                          </a>
+                        </p>
+                        <p>
+                          <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                            Ecommerce Websites
+                          </a>
+                        </p>
+                        <p className="my-2">
+                          <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                            Apps Development
+                          </a>
+                        </p>
+                        <p>
+                          <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                            Search Engine Optimization
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+          </div>
+          </li>
+          <li ><a href="#">Our Works</a></li>
+          <li ><a href="#">Testimonials</a></li>
+          <li ><a href="#">Contact</a></li>
+         <li><a href="#"> 
+         <div className="col-auto">
+                    <button className="main_button text-white border-0">
+                      Industrial Training
+                    </button>
+                  </div></a>
+          </li>
+          </ul>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </header>
 
       {/* mobile view */}
       {/* upper_navbar */}
       <header className="d-block d-lg-none upper_navbar py-4">
         <Container>
-          <Row>
-            <Col md={12} className="d-flex justify-content-between flex-wrap">
+          <Row className="mx-auto">
+            <Col md={11} className="d-flex justify-content-between flex-wrap mx-auto">
               <Col md={2} className=" text-start ps-md-0">
                 <img src={mainlogo} alt="" className="rounded-2" />
               </Col>
@@ -187,7 +279,7 @@ const Header = () => {
                   </h6>
                 </div>
                 <div className="d-md-flex ms-lg-5   align-self-center  d-none d-md-block">
-                  <span  className="align-self-end">
+                  <span className="align-self-end">
                     <img src={phonelogo} alt="" />
                   </span>{" "}
                   <h6 className="ms-2 text-white upper_navbar_text">
@@ -218,9 +310,7 @@ const Header = () => {
           <Offcanvas.Header>
             <Offcanvas.Title>
               <span className="mt-1">
-                <Link to="/">
-                  <img src={mainlogo} alt="" className="rounded-2" />
-                </Link>
+              
               </span>
             </Offcanvas.Title>
             <span className="icon_close rounded-2" onClick={handleClose}>
