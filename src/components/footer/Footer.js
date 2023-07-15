@@ -1,9 +1,6 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
-// import roundmail from '../asset/roundmail.png'
-// import calllogo from '../asset/calllogo.png'
 import location from "../../asset/location.png";
-import mapp from "../../asset/header/map.png";
 import mainlogoappie from "../../asset/mainlogoappie.png";
 import "./Footer.css";
 import { Link } from "react-router-dom";
@@ -80,7 +77,7 @@ const Footer = () => {
               >
                 <Col lg={4} md={12} className="mt-4 mt-md-0 mt-lg-0">
                   <Link to="/">
-                    <img src={mainlogoappie} alt="" className="rounded-2" />{" "}
+                    <img src={mainlogoappie} alt="" className="rounded-2" />
                   </Link>
                   <p className="img_para  text-start mt-4 ">
                     We are energetic about creating Brand value and Development

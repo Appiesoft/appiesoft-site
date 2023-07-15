@@ -41,8 +41,8 @@
 .bg_footer_gap{
     column-gap: 73px;
 }
-.bg_content_footer_gap{
-    column-gap: 41px;
+.bg_content_footer_gap {
+    column-gap: 27px;
 }
 .map_width{
 width: 50%;
@@ -63,12 +63,17 @@ height: 50%;
 
 @media only screen and (min-width: 1280px) and (max-width: 1500px)  {
     .bg_content_footer_gap{
-        column-gap: 0px !important;
+        column-gap: 30px !important;
     }
     .bg_footer_gap{
         column-gap: 0px;
     }
     
+}
+@media only screen and (min-width: 992px) and (max-width:1024px)  {
+    .bg_content_footer_gap{
+        column-gap: 19px !important;
+    }
 }
 @media only screen and (min-width: 0px) and (max-width:992px)  {
     .bg_footer_gap {

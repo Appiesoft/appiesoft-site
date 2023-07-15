@@ -93,6 +93,32 @@
   width:auto;
   margin: 0px 0px 0px 0px;
 }
+.inner_paragraph_head {
+  font-size: 21px;
+}
+}
+@media only screen and (min-width: 576px) and (max-width:768px)  {
+  .inner_paragraph {
+    font-size: 15px;
+    font-weight: 600;
+}
+  .inner_paragraph_head {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+  #hero {
+    height: 500px !important;
+}
+#hero h2 {
+  font-size: 22px;
+}
+#hero h1 {
+  font-size: 38px !important;
+}
+.main_button {
+  padding: 12px 19px 12px 19px;
+}
 }
 @media only screen and (min-width: 0px) and (max-width:576px)  {
   #hero h1 {

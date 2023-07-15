@@ -13,7 +13,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 23px;
     text-transform: capitalize;
     color: #FFFFFF;
 }
@@ -22,7 +21,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 31px;
     text-transform: capitalize;
     color: #FFFFFF;
 }
@@ -86,7 +84,6 @@ ul.mmk {
 .Our-clients-box h2 {
     font-weight: 700;
     font-size: 48px;
-    line-height: 61.25px;
     color: #000000;
     padding: 0px 0px 20px 0px;
     margin: 0px 0px 0px 0px;
@@ -95,7 +92,6 @@ ul.mmk {
     color: #f47421;
     font-weight: 700;
     font-size: 18px;
-    line-height: 22.97px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 10px 0px;
 }
@@ -153,33 +149,32 @@ ul.mmk {
 }
 .main_button {
     font-size: 14px;
+    padding: 9px 14px 9px 14px;
 }
 .para_text {
     font-size: 15px;
 }
+.Our-clients-box li:nth-child(2n+2) {
+    width: 136px;
+    height: 136px;
+    margin: 40px auto 0 auto;
 }
-@media only screen and (min-width: 0px) and (max-width:992px)  {
-    .Our-clients-box li:nth-child(2n+2) {
-        width: 136px;
-        height: 136px;
-        margin: 40px auto 0 auto;
-    }
-    .Our-clients-box li {
-        height: 160px;
-        width: 160px;
-    }
-    .Our-clients-box li:nth-child(2n+2) {
-        width: 136px;
-        height: 136px;
-        margin: 3px auto 0 auto;
-    }
-    .para_text {
-        font-size: 24px;
-    }
-    .heading_text {
-        font-size: 22px;
-    
-    }
+.Our-clients-box li {
+    height: 160px;
+    width: 160px;
+}
+.Our-clients-box li:nth-child(2n+2) {
+    width: 136px;
+    height: 136px;
+    margin: 3px auto 0 auto;
+}
+.para_text {
+    font-size: 24px;
+}
+.heading_text {
+    font-size: 22px;
+
+}
 }
 
 @media only screen and (min-width: 0px) and (max-width:576px)  {
