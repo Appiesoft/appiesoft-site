@@ -17,59 +17,51 @@ const Footer = () => {
   return (
  <>
 
-      <footer class="bg_footer_color">
+      <footer className="bg_footer_color">
         <section>
           <Container>
-            <Row className="mx-auto">
-              <Col
-                lg={12}
-                className="d-lg-flex justify-content-center bg_footer_gap border-bottom py-lg-5 my-lg-5 py-md-4 my-md-5 "
-              >
-                <Col lg={4} className="my-3">
-                  <div class="d-flex items-center  rounded-lg">
-                    <img
+            <div className="footer_top">
+    		    <ul>
+    		        <li>
+                <img
                       alt="team"
-                      class="w-20 h-20  object-cover object-center flex-shrink-0 rounded-full mr-4"
+                      className=""
                       src={location}
                     />
-                    <div className=" ms-3 ms-lg-0">  
-                      <h2 class=" footer_info text-start text-lg-start  mt-md-3 mt-lg-0">SEND YOUR MESSAGE</h2>
-                      <p class="text-white inner_footer_info text-md-center">
+    		            <div className="sav_rgt">
+                    <h2 className=" footer_info ">SEND YOUR MESSAGE</h2>
+                      <p className="text-white inner_footer_info ">
                         info@appiesoftwebsolutions.com
                       </p>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={3} md={4}>
-                  <div class="d-flex items-center rounded-lg">
-                    <img
+    		            </div>
+    		        </li>
+    		        <li>
+                <img
                       alt="team"
-                      class="w-20 h-20  object-cover object-center flex-shrink-0 rounded-full mr-4"
+                      className=""
                       src={location}
                     />
-                    <div className=" ms-3 ms-lg-0">
-                      <h2 class=" footer_info text-md-center text-lg-start mt-md-3 mt-lg-0">CALL US</h2>
-                      <p class="text-white inner_footer_info text-md-center">+91-8847249971</p>
-                    </div>
-                  </div>
-                </Col>
-                <Col lg={4} className="my-3 my-lg-0">
-                  <div class="d-flex items-center  rounded-lg">
-                    <img
+    		            <div className="sav_rgt">
+                    <h2 className=" footer_info ">CALL US</h2>
+                      <p className="text-white inner_footer_info">+91-8847249971</p>
+                    
+    		            </div>
+    		        </li>
+    		        <li>
+                <img
                       alt="team"
-                      class="w-20 h-20  object-cover object-center flex-shrink-0 rounded-full mr-4"
+                      className=""
                       src={location}
                     />
-                    <div class="flex-grow ms-3">
-                      <h2 class="inner_footer_info text-white  text-start mt-md-3 mt-lg-0">
+    		            <div className="sav_rgt">
+                    <h2 className="inner_footer_info text-white">
                         SCF 80 FF, Phase 11, Sector 65, Sahibzada Ajit Singh
                         Nagar, Punjab 160065
                       </h2>
-                    </div>
-                  </div>
-                </Col>
-              </Col>
-            </Row>
+    		            </div>
+    		        </li>
+    		    </ul>
+    		</div>
             <Row className="mx-auto">
               <Col
                 lg={12} md={12}
@@ -87,10 +79,10 @@ const Footer = () => {
                   </p>
                 </Col>
                 <Col lg={2} md={3} className="mt-3 mt-md-4 mt-lg-0">
-                  <h2 class="text-white text-start mb-3 head_links">
+                  <h2 className="text-white text-start mb-3 head_links">
                     Quick Links
                   </h2>
-                  <nav class="list-none mb-10 text-start inner_links">
+                  <nav className="list-none mb-10 text-start inner_links">
                     <li className="my-2">
                       <a>Home </a>
                     </li>
@@ -112,10 +104,10 @@ const Footer = () => {
                   </nav>
                 </Col>
                 <Col lg={2} md={3} className="mt-md-4 mt-lg-0">
-                  <h2 class=" text-white text-start head_links mb-3">
+                  <h2 className=" text-white text-start head_links mb-3">
                     Services
                   </h2>
-                  <nav class="list-none mb-10 inner_links text-start">
+                  <nav className="list-none mb-10 inner_links text-start">
                     <li className="my-2">
                       <a>Web Development</a>
                     </li>
@@ -137,7 +129,7 @@ const Footer = () => {
                   </nav>
                 </Col>
                 <Col lg={3} md={4} className="col-12 mt-md-4 mt-lg-0">
-                  <h2 class="text-white text-start head_links mb-3">
+                  <h2 className="text-white text-start head_links mb-3">
                     Our Location
                   </h2>
                   <div className="map_width">
@@ -173,7 +165,7 @@ const Footer = () => {
                   </span>
                   <span>
                     <Link to="https://www.instagram.com/appiesoftweb/?hl=en">
-                      <i class="fa-brands fa-instagram text-white"></i>{" "}
+                      <i className="fa-brands fa-instagram text-white"></i>{" "}
                     </Link>
                   </span>
                 </p>

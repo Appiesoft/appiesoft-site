@@ -10,22 +10,22 @@ const ReviewPage = () => {
  
     const responsive = {
         superLargeDesktop: {
-            breakpoint: { max: 4000, min: 1400 },
+            breakpoint: { max: 4000, min: 3000 },
             items: 5
-        },
-        desktop: {
-            breakpoint: { max: 1400, min: 1200 },
-            items: 4
-        },
-        tablet: {
-            breakpoint: { max: 1200, min: 464 },
+          },
+          desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+          },
+          tablet: {
+            breakpoint: { max: 1024, min: 464 },
             items: 2
-        },
-        mobile: {
+          },
+          mobile: {
             breakpoint: { max: 464, min: 0 },
             items: 1
-        }
-    };
+          }
+        };
     const images = [
         { url: customer1, url2:star, title: 'Sophie Moore', para: "Vitae tempor tellus nunc volutpat amet eget ultricies nascetur ornare felis mattis sed pretium morbi est at congue parturient elit et phasellus." },
         { url: customer1, url2:star, title: 'Sophie Moore', para: "Vitae tempor tellus nunc volutpat amet eget ultricies nascetur ornare felis mattis sed pretium morbi est at congue parturient elit et phasellus." },
@@ -57,13 +57,13 @@ const ReviewPage = () => {
                         <Col lg={12} className='d-flex justify-content-evenly flex-wrap'>
                             <Col lg={12} >
                                 <Row class='mx-auto'>
-                                    <Col className='bg_white_card p-3 mx-3 my-1 rounded-4'>
+                                    <Col className='bg_white_card p-md-3 p-3 mx-3 my-1 rounded-4'>
                                         <Col lg={12} className='d-flex'>
                                             <Col lg={4}>
                                                 <img src={importImg.url} alt="" />
                                             </Col>
                                             <Col lg={8} className='align-self-center'>
-                                                <h2 class="text-gray-900 text-lg title-font font-medium">{importImg.title}
+                                                <h2 class="">{importImg.title}
                                                 </h2>
                                                 <span>
                                                     <img src={importImg.url2} alt="" />

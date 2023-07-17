@@ -1,6 +1,29 @@
 .tile-boxes {
     box-shadow: 0px 0px 18px 10px #bdbdbd57;
 }
+#titleboxx {
+    margin: 12px 18px;
+
+}
+#titleboxx:hover .bg_sub_banner{
+    background-color: white;
+    color: #f47421;
+    border: 1px solid  #f47421;
+}
+#titleboxx:hover .bg_sub_banner h1{
+
+    color: #f47421;
+}
+
+#titleboxx:hover .subs_btn{
+    background-color: white !important;
+    color:#f47421;
+}
+.subs_btn{
+    background-color: #f47421 !important;
+    font-weight: 700;
+}
+
 .rtx-h {
     background-color: #f57e30;
 }
@@ -48,4 +71,13 @@
 }
 .card_bg:hover .sub_title span{
     color: white !important ;
+}
+
+
+
+@media only screen and (min-width: 576px) and (max-width:768x)  {
+    #titleboxx {
+        margin: 12px 60px;
+    
+    }
 }

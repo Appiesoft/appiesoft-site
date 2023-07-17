@@ -1,0 +1,114 @@
+.inner-hdr {
+    background: #fff;
+    padding: 16px 0px;
+    position: unset !important;
+}
+.lft_logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-mnu {
+    display: inline-block;
+    vertical-align: middle;
+    width: 83%;
+}
+.main-mnu ul li a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #18191f;
+    text-decoration: none;
+}
+.main-mnu li:last-child a {
+    color: #f47421 !important;
+}
+.menu  {
+    list-style-type: circle;
+    padding: 0px 30px;
+  }
+  .hero-img {
+    position: relative;
+
+}
+.hero-img img{
+width: 100%;
+
+}
+.secnd-section-abt {
+    margin-bottom: 70px;
+}
+.two-sctn {
+    box-shadow: 0px 24px 94px 0px #0000001a;
+    display: flex;
+    padding: 60px;
+    position: relative;
+    background: #fff;
+    margin-top: -158px;
+    border-radius: 20px;
+}
+.two-sctn .appie-group-text-area.img-sctn {
+    position: sticky;
+    display: block;
+    top: 100px;
+    align-self: flex-start;
+}
+.img-sctn h5 {
+    padding: 0;
+}
+.appie-group-text-area h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #f47421;
+    margin: 0px 0px 8px 0px!important;
+    padding: 50px 0px 0px 0px;
+}
+.appie-group-text-area h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61.25px;
+    color: #000000;
+    margin: 0px 0px -242px 0px!important;
+}
+img.img-unlmtd {
+    margin-top: -213px;
+}
+.para-sctn {
+    width: 80%;
+}
+.para-sctn p {
+    font-size: 18px;
+    color: #0B0D17;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 40px;
+    margin: 0;
+}
+.para-sctn p a {
+    color: #f47421;
+}
+a {
+    color: #f47421;
+}
+.thrd-sctn-abt {
+    background: linear-gradient(70deg, rgba(255,86,0,0.9023984593837535) 40%, rgba(255,120,36,0.7231267507002801) 81%);
+    padding: 50px 0px 140px;
+    text-align: center;
+}
+.thrd-sctn-abt h2 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    color: #fff;
+    line-height: 61px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 48px;
+    text-transform: capitalize;
+}
+.thrd-sctn-abt p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+}
+

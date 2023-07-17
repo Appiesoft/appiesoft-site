@@ -1,4 +1,6 @@
-
+.main_content {
+  margin: -12px;
+}
 #hero {
   height: 800px;
   background-image: url("../../asset/herosection/bgImage.png");
@@ -52,21 +54,31 @@
  
 }
 
-.main_content {
-  width: 50%;
-  margin: 0px 0px 0px -20px;
-  z-index: 1;
-  display: inline-block;
-}
-.main_button{
+
+.graphic_button{
+  padding: 12px;
   font-size: 18px;
   font-weight: 700;
+  color: white;
+  background-color: #f47421;
+  border: 0;
+  border-radius: 5px;
 }
-.inner_check_Content {
-    font-size: 16px;
-    font-weight: 500;
-    color: black;
+.graphic_button:hover{
+  background-color: #f76300;
 }
+.appisoft_button{
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #f47421;
+  border: 0;
+  padding: 19px;
+  border-radius: 7px;
+}
+.appisoft_button:hover{
+  background-color: #f16100;
+}
+
 
 .image_position {
     display: inline-block;
@@ -96,8 +108,17 @@
 .inner_paragraph_head {
   font-size: 21px;
 }
+.graphic_button {
+  font-size: 15px;
+  padding: 5px 12px;
+}
 }
 @media only screen and (min-width: 576px) and (max-width:768px)  {
+  .graphic_button {
+    font-size: 15px;
+    padding: 8px 19px 8px 14px !important;
+}
+
   .inner_paragraph {
     font-size: 15px;
     font-weight: 600;
@@ -111,22 +132,27 @@
     height: 500px !important;
 }
 #hero h2 {
-  font-size: 22px;
+  font-size: 21px;
 }
 #hero h1 {
   font-size: 38px !important;
 }
-.main_button {
+.graphic_button {
   padding: 12px 19px 12px 19px;
 }
 }
 @media only screen and (min-width: 0px) and (max-width:576px)  {
+  #hero {
+    height: 600px !important;
+        padding: 17px;
+}
   #hero h1 {
  
     font-size: 43px;
   }
-  .main_button {
-    font-size: 18px;
+  .graphic_button {
+    font-size: 15px;
+    padding: 9px 12px;
 }
 .head_line {
   color: #f47421 !important;
