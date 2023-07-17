@@ -13,7 +13,7 @@ import { Col,Container,Row } from 'react-bootstrap'
 const OurPartners = () => {
     return (
         <div>
-            <section className='py-5'>
+            <section className='py-md-5 py-3'>
                 <div class="container" data-aos="zoom-in">
                     <header class="inner_head_line text-center">
                         <h3>Our Trusted Partners</h3>

@@ -196,6 +196,9 @@ background-color: #f47421;
 }
   }
   @media only screen and (min-width: 0px) and (max-width:576px)  {
+    .container{
+      width: -webkit-fill-available;
+    }
     #hero {
       height: 484px;
   }
@@ -264,8 +267,17 @@ background-color: #f47421;
       .arrow_size{
     font-size: 21px;
       }
+      .Our-clients-box ul {
+        padding: 22px 29px 6px 67px !important;
+        display: table-cell !important;
+
+    }
+    .Our-clients-box li{
+      margin-top: 14px !important;
+    }
   }
   @media only screen and (min-width: 0px) and (max-width:992px)  {
+  
     #hero h1 {
       font-size: 45px !important;
     }
@@ -384,10 +396,8 @@ background-color: #f47421;
       input:checked + .box {
         height: auto;
         margin: 0px 0;
-          /* box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32); */
       }
       input:checked + .box .box-title {
-        /* border-bottom: 1px solid rgba(0,0,0,.18); */
         margin-bottom: 15px !important;
       }
       input:checked + .box .box-content,

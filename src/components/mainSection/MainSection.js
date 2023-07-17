@@ -1,6 +1,6 @@
 import React from "react";
 import "./MainSection.css";
-import { Col, Row, Button, Container } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import fourimgg from "../../asset/herosection/fourimgg.png";
 const MainSection = () => {
   return (
@@ -22,9 +22,9 @@ const MainSection = () => {
                   will create, host, and update the site for you.
                 </h2>
                 <div className="d-flex justify-content-md-center justify-content-lg-start">
-                  <Button className="main_button mt-4">
+                  <button className="graphic_button mt-4">
                     Talk To An Expert Now
-                  </Button>
+                  </button>
                 </div>
             </Col>
           </Row>
@@ -64,7 +64,7 @@ const MainSection = () => {
                   items over the advanced range.
                 </p>
                 
-                <button className=" main_button text-white mt-4 py-2">
+                <button className=" appisoft_button text-white mt-4 py-2">
                   Read More
                 </button>
               </Col>

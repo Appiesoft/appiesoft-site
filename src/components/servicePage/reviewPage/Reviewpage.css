@@ -11,3 +11,33 @@
 .section_bg{
     background-color: #f4f5f7;
 }
+.bg_white_card h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.bg_white_card p{
+    font-size: 18px;
+font-weight: 500;
+}
+@media only screen and (min-width: 576px) and (max-width:768px)  {
+    .bg_white_card h2{
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .bg_white_card p{
+        font-size: 15px;
+    font-weight: 500;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width:576px)  {
+    .bg_white_card h2{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .bg_white_card p{
+        font-size: 13px;
+    font-weight: 500;
+    }
+     
+}

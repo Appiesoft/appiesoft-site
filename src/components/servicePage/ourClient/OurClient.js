@@ -73,7 +73,7 @@ const OurClient = () => {
                             make your content.
                         </h2>
                         <div className='align-self-end mt-3 mt-lg-0'>
-                            <button className='main_button  text-white rounded-2'>
+                            <button className='explore_button  text-white rounded-2'>
                                 Explore All Resources
                             </button>
                         </div>
@@ -83,8 +83,8 @@ const OurClient = () => {
                             <div className='row mx-auto position-relative border_radius'>
                                 <div className='col-12 px-0'>
                                     <img src={img3} className="img-fluid img_work" alt="" />
-                                </div>
-                                <div className='col-12 d-flex flex-column pb-5 position_textBox ps-4'>
+                                </div> 
+                                <div className='col-12 d-flex flex-column pb-sm-5 pb-2 position_textBox ps-4'>
                                     <p className='m-0 heading_text mt-auto'>Managed IT</p>
                                     <h4 className='m-0 para_text mt-3'>
                                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
@@ -99,7 +99,7 @@ const OurClient = () => {
                                         <div className='col-12 px-0'>
                                             <img src={img1} className="img-fluid img_work" alt="" />
                                         </div>
-                                        <div className='col-12 d-flex flex-column pb-5 position_textBox ps-4'>
+                                        <div className='col-12 d-flex flex-column pb-sm-5 pb-2 position_textBox ps-4'>
                                             <p className='m-0 heading_text mt-auto'>Managed IT</p>
                                             <h4 className='m-0 para_text mt-3'>
                                                 Amet minim mollit non deserunt.
@@ -112,7 +112,7 @@ const OurClient = () => {
                                         <div className='col-12 px-0'>
                                             <img src={img2} className="img-fluid img_work" alt="" />
                                         </div>
-                                        <div className='col-12 d-flex flex-column pb-5 position_textBox ps-4'>
+                                        <div className='col-12 d-flex flex-column pb-sm-5 pb-2 position_textBox ps-4'>
                                             <p className='m-0 heading_text mt-auto'>Managed IT</p>
                                             <h4 className='m-0 para_text mt-3'>
                                                 Amet minim mollit non deserunt.

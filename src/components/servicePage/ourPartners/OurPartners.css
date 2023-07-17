@@ -2,14 +2,23 @@
     column-gap: 60px
 }
 
-
 @media only screen and (min-width: 0px) and (max-width:992px)  {
 .partner_img {
     column-gap: 11px;
 }
 }
+
+@media only screen and (min-width: 992px) and (max-width:1024px)  {
+    .partner_img {
+        column-gap: 0px;
+    }
+    }
 @media only screen and (min-width: 0px) and (max-width:576px)  {
     .partner_img {
-        column-gap: 54px !important;
+        display: table-column;
+        flex-basis: min-content;
+        row-gap: 16px;
+        column-gap: 0px;
     }
+  
     }
