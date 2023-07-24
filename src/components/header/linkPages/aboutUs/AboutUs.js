@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
-import mainlogoappie from "../../../../asset/mainlogoappie.png";
+// import mainlogoappie from "../../../../asset/mainlogoappie.png";
 import aboutbanner from "../../../../asset/about/aboutbanner.svg";
 import aboutusinner from "../../../../asset/about/aboutusinner.svg";
 import Contact from "../../../servicePage/contactUS/Contact";
@@ -82,7 +82,7 @@ const AboutUs = () => {
         </Container>
         <div className="clr"></div>
       </header> */}
-      <InnerHeader/>
+      {/* <InnerHeader/> */}
 
       <div className="hero-img">
         <img src={aboutbanner} alt="" className="rounded-2" />

@@ -120,10 +120,14 @@ input[type=number] {
     font-size: 15px;
     font-weight: 600;
     color: white ;
-    padding: 10px 0px 6px 0px;
+    padding: 10px 0px 10px 0px;
   }
 
-
+  .form-select {
+    background-size:20px;
+    background-image: url("../../../asset/contactus/downarr.png");
+ 
+}
 select {
     padding: 10px;
     border: 1px solid #ccc;
