@@ -107,7 +107,7 @@ const Contact = () => {
           </Col>
           <Col lg={12} md={12} xxl={5} xl={5} className="modify_content align-self-center ms-xl-5 ms-xxl-0 mt-lg-5 mt-xl-0 my-md-5 my-4 width_box_content">
             <h1 className='mb-3'>Common Question</h1>
-            <div className="d-flex justify-content-between rounded-2" onClick={toggleDropdown}>
+            <div  onClick={toggleDropdown}  className={` ${!isOpen ? "boxinactive rounded-2" : "boxactive rounded-2"}`}>
               <h2>Do you outcome your work overseas?</h2>
               <h2>
               <i class={` ${!isOpen ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
@@ -118,7 +118,7 @@ const Contact = () => {
                   No. We use local teams only. That way we can respond more quickly to any problems that may occur. We want your tech running smoothly so you can focus on what you do best.
               </h3>
               )}
-            <div className="d-flex justify-content-between rounded-2  mt-md-4 mt-3"  onClick={toggletwo}>
+            <div   onClick={toggletwo}  className={` ${!isTwo ? "boxinactive rounded-2  mt-md-4 mt-3" : "boxactive rounded-2  mt-md-4 mt-3"}`}>
               <h2>Is your support 24 hours?</h2>
               <h2>
               <i class={` ${!isTwo ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
@@ -129,7 +129,7 @@ const Contact = () => {
                Yes. We have people available whenever you need us. We understand that your tech runs 24 hours, and you need it be working at all times.
               </h3>
               )}
-            <div className="d-flex justify-content-between rounded-2 mt-md-4 mt-3" onClick={togglethree}>
+            <div  onClick={togglethree}  className={` ${!isThree ? "boxinactive rounded-2 mt-md-4 mt-3" : "boxactive rounded-2 mt-md-4 mt-3"}`}>
               <h2>Are your service customised for my bussiness?</h2>
               <h2>
               <i class={` ${!isThree ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
@@ -140,7 +140,7 @@ const Contact = () => {
               There is great off the shelf software. But we know one size never fits all. So anything we set up for you is designed to make your business run smoother and in the way you want it to.
               </h3>
               )}
-            <div className="d-flex justify-content-between rounded-2 mt-md-4 mt-3" onClick={togglefour}>
+            <div  onClick={togglefour}  className={` ${!isFour ? "boxinactive rounded-2 mt-md-4 mt-3" : "boxactive rounded-2 mt-md-4 mt-3"}`} >
               <h2>Are your service expensive?</h2>
               <h2>
               <i class={` ${!isFour ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>

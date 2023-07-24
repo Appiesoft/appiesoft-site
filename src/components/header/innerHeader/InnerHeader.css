@@ -1,0 +1,27 @@
+.inner-hdr {
+    background: #fff3e9 !important;
+    padding: 16px 0px;
+    position: unset !important;
+}
+.lft_logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+.main-mnu {
+    display: inline-block;
+    vertical-align: middle;
+    width: 83%;
+}
+.main-mnu ul li a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #18191f;
+    text-decoration: none;
+}
+.main-mnu li:last-child a {
+    color: #f47421 !important;
+}
+.menu  {
+    list-style-type: circle;
+    padding: 0px 30px;
+  }
