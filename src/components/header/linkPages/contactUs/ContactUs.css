@@ -1,0 +1,178 @@
+.inner_banner {
+    background: linear-gradient(70deg, rgba(255,86,0,0.9023984593837535) 40%, rgba(255,120,36,0.7231267507002801) 81%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 112px 0px 70px 0;
+}
+.inner_banner h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 82px;
+    text-align: center;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0px 0 30px 0;
+}
+.cont_sec1 {
+    background: url('../../../../asset/about/contactbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0 0 0;
+}
+.cont_sec1 ul {
+    display: flex;
+    padding: 0px;
+    list-style: none;
+    justify-content: center;
+    margin: -200px auto 0 auto;
+    background: #fff;
+    box-shadow: 0px 44px 44px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px 40px;
+    width: 80%;
+}
+.cont_sec1 li:first-child {
+    border-right: 1px solid #ccc;
+    text-align: -webkit-center;
+}
+.cont_sec1 li {
+    text-align: center;
+    width: 30%;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    border-style: none;
+
+}
+.mailimg{
+    filter: hue-rotate(113deg);
+}
+.cont_sec1 li span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #18191F;
+    display: block;
+    opacity: 0.7;
+}
+.cont_sec1 li h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #18191F;
+    margin: 0px;
+}
+.cont_sec1 li {
+    text-align: center;
+    width: 30%;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+}
+.cntct h2 {
+    flex: 1 1 48%;
+    max-width: 48%;
+}
+.call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    box-sizing: border-box;
+    clear: both;
+    column-gap: 24px;
+    width: 84%;
+}
+.txt span {
+    text-align: left !important;
+    font-size: 12px !important;
+    line-height: 22px !important;
+}
+.cont_sec1 li span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #18191F;
+    display: block;
+    opacity: 0.7;
+}
+.cont_sec1 li h4 a {
+    color: #18191F;
+    text-decoration: none;
+}
+.txt h4 a {
+    font-size: 16px !important;
+    line-height: 26px;
+}
+a.talkk {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #fff;
+    text-decoration: none;
+    background: #f47421;
+    border-radius: 6px;
+    padding: 12px 32px;
+}
+.talk_sec {
+    padding: 60px 0 0px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.cntct {
+    display: flex;
+    align-items: center;
+}
+.talk_sec h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;
+}
+.cntct p {
+    flex: 1 1 48%;
+    width: 48%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.contactus_bg{
+    background-color: transparent !important;
+}
+*:focus {
+    outline: none;
+  }
+  .cont_seclast {
+    padding: 60px 0px;
+    background: url("../../../../asset/contactus/contbg2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clear: both;
+    background-position: left center;
+}
+h2.main_title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: center;
+    color: #000000;
+    margin: 0px;
+}
+.card_title h5 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+

@@ -19,6 +19,7 @@ background-color: #f47421;
 .head-two {
   width: 100%;
 }
+
 .head-two ul {
   display: flex!important;
   list-style: none;
@@ -53,6 +54,10 @@ background-color: #f47421;
   color: #000000!important;
   text-decoration: none;
 }
+.nav-bar-sec li a:hover {
+color: #ff6600 !important;
+}
+
 
 .offcanvas-backdrop.show {
     opacity: .5;
@@ -81,14 +86,13 @@ background-color: #f47421;
 
 .navbar_linkFont {
     font-family: "Space Grotesk", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 14px;
     letter-spacing: 0px;
     cursor: pointer;
     color: black;
 }
-
 
 .parent_link {
     position: relative;
@@ -118,10 +122,8 @@ background-color: #f47421;
     cursor: pointer;
 }
 
-.parent_link:hover .hover_box {
-    background: radial-gradient(50% 50% at 50% 50%,#f47421 0%, rgba(120, 13, 189, 0) 100%);
-    opacity: 0.2;
-    cursor: pointer;
+.active:visited{
+  color:#f47421 !important;
 }
 .main_button {
     font-weight: 700;
@@ -252,12 +254,8 @@ background-color: #f47421;
     .offcanvas{
         transition: 0.7s;
     }
-    #home_bg{
-        background-color: #f47421 !important;
-        color: #ffffff !important;
-        margin-top: 17px;
-        padding-left: 12px;
-      }
+ 
+
       h6 {
         font-size: 20px;
         font-weight: 700;
@@ -306,12 +304,6 @@ background-color: #f47421;
         font-size: 22px;
       }
       
-      #home_bg{
-        background-color: #f47421 !important;
-        color: #ffffff !important;
-        margin-top: 17px;
-        padding-left: 12px;
-      }
       h6 {
         font-size: 20px;
         font-weight: 700;
@@ -349,9 +341,7 @@ background-color: #f47421;
           right: 0;
           pointer-events: none;
       }
-      /* .box:hover {
-        box-shadow: 0 2px 0 #e5e5e5, 0 0 2px rgba(0,0,0,.12), 0 1px 0px rgba(0,0,0,.24);
-    } */
+     
       header.box {
         background: #00BCD4;
         z-index: 100;
@@ -367,9 +357,6 @@ background-color: #f47421;
       }
       .box-title {
         width: calc(100% - 40px);
-        /* height: 64px; */
-        /* line-height: 64px; */
-        /* padding: 0 20px; */
         display: inline-block;
         cursor: pointer;
         -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
@@ -427,7 +414,7 @@ background-color: #f47421;
         transition: 0.25s ease;
         transform: rotate(210deg);
       }
-
+     
 
   }
 

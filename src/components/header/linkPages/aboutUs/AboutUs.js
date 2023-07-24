@@ -3,14 +3,22 @@ import "./AboutUs.css";
 import mainlogoappie from "../../../../asset/mainlogoappie.png";
 import aboutbanner from "../../../../asset/about/aboutbanner.svg";
 import aboutusinner from "../../../../asset/about/aboutusinner.svg";
-import Contact from '../../../servicePage/contactUS/Contact';
-import Footer from '../../../footer/Footer';
-import { Link } from "react-router-dom";
+import Contact from "../../../servicePage/contactUS/Contact";
+import Footer from "../../../footer/Footer";
+import Header from "../../../header/Header";
+import teamone from "../../../../asset/about/teamone.jpg";
+import teamtwo from "../../../../asset/about/teamtwo.jpg";
+import teamthree from "../../../../asset/about/teamthree.jpg";
+import teamfour from "../../../../asset/about/teamfour.jpg";
+import fourimgg from "../../../../asset/herosection/fourimgg.png";
+
 import { Container } from "react-bootstrap";
+import InnerHeader from "../../innerHeader/InnerHeader";
 const AboutUs = () => {
   return (
     <div>
-      <header id="masthead" className="site-header inner-hdr">
+      <Header />
+      {/* <header id="masthead" className="site-header inner-hdr pt-lg-5">
         <Container>
           <div className="lft_logo">
             <Link>
@@ -73,23 +81,24 @@ const AboutUs = () => {
           </div>
         </Container>
         <div className="clr"></div>
-      </header>
-      
-      <div class="hero-img">
+      </header> */}
+      <InnerHeader/>
+
+      <div className="hero-img">
         <img src={aboutbanner} alt="" className="rounded-2" />
       </div>
       <div className="clr"></div>
 
-      <div class="secnd-section-abt">
+      <div className="secnd-section-abt">
         <Container>
-          <div class="two-sctn">
-            <div class="appie-group-text-area img-sctn">
+          <div className="two-sctn">
+            <div className="appie-group-text-area img-sctn">
               <h5>About Appiesoft Web Solution</h5>
               <h2>Exceptional service. Unlimited success.</h2>
 
               <img src={aboutusinner} />
             </div>
-            <div class="para-sctn">
+            <div className="para-sctn">
               <p>
                 For 25+ years, Telco ICT has been creating exceptional
                 <a href="#"> business telecommunications</a> solutions for
@@ -124,15 +133,104 @@ const AboutUs = () => {
         </Container>
       </div>
 
-      <div class="thrd-sctn-abt">
-       <Container>
-        <h2>Your Trusted Telstra Business Partner.</h2>
-        <p>We’ve built a strong partnership with Telstra over 25+ years working together. With<br/>
-        exceptional knowledge, streamlined services, and a commitment to customer service<br/>
-        excellence, you can rely on us to make tech matters easy.</p>
+      <div className="thrd-sctn-abt">
+        <Container>
+          <h2>Your Trusted Telstra Business Partner.</h2>
+          <p>
+            We’ve built a strong partnership with Telstra over 25+ years working
+            together. With
+            <br />
+            exceptional knowledge, streamlined services, and a commitment to
+            customer service
+            <br />
+            excellence, you can rely on us to make tech matters easy.
+          </p>
         </Container>
-     </div>
+      </div>
       <div className="clr"></div>
+
+      <div className="frth-sctn-abt">
+        <div className="container">
+          <ul className="dedcted">
+            <li className="hdd-li">
+              <h2>
+                Dedicated
+                <br /> project
+                <br /> manager
+                <br />
+                and team.
+              </h2>
+            </li>
+            <li className="img-li">
+              <img src={teamone} />
+            </li>
+            <li className="img-li">
+              <img src={teamtwo} />
+            </li>
+            <li className="img-li f-img">
+              <img src={teamthree} />
+            </li>
+            <li className="para-li">
+              <p>
+                We know relationships are key to success. With one point of
+                contact, you’ll always know who you can turn to when you have a
+                question or problem – in fact, we’ll be working 24/7 to make
+                sure your services run seamlessly. We care about you and your
+                business.
+              </p>
+            </li>
+            <li className="img-li  s-img">
+              <img src={teamfour} />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="clr"></div>
+
+      <div className="fifth-sctn-abt">
+        <div className="img-wide-sctn">
+          <img src={fourimgg} alt="" />
+        </div>
+        <div className="txt-wide-sctn">
+          <h2>
+            The Name Says It All -<br />
+            We Know Telco.
+          </h2>
+          <p>
+            We’ve specialised in the development of telecommunications <br />
+            solutions for 25+ years. Our team knows what works, and if you’re
+            <br /> unsure, we’ll help you decide on the best products and
+            services <br />
+            for you. We’ll work in partnership with you to get the best results.
+          </p>
+        </div>
+      </div>
+      <div className="clr"></div>
+      <div className="sxth-sctn-abt">
+        <div className="container">
+          <div className="digi-main">
+            <div className="digi-head">
+              <h2>
+                Digital Expertise
+                <br />
+                At Your Fingertips.
+              </h2>
+            </div>
+            <div className="digi-para">
+              <p>
+                Few decisions are made without digital research today and most
+                often, via mobile, on the go. Telco ICT will create a{" "}
+                <a href="#">digital marketing plan</a> and
+                <br />
+                <a href="#">E-commerce Services</a> that will reach your
+                customers and prospects and turn enquiries into sales and
+                meaningful connections.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Contact></Contact>
       <Footer></Footer>
     </div>

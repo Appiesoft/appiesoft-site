@@ -1,13 +1,14 @@
 import { useState } from "react";
 import "./Header.css";
-import { Row, Col, Offcanvas, Container, Nav } from "react-bootstrap";
+import { Row, Col, Offcanvas, Container } from "react-bootstrap";
 import mainlogo from "../../asset/mainlogoappie.png";
 import maillogo from "../../asset/maillogo.png";
 import phonelogo from "../../asset/phonelogo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+ 
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -18,6 +19,7 @@ const Header = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+ 
   return (
     <>
 
@@ -25,15 +27,16 @@ const Header = () => {
         <div class="container">
           <div class="head-three">
             <div class="head-one">
-              <img src={mainlogo} alt="" className="rounded-2" />
+            <NavLink to="/">
+              <img src={mainlogo} alt="" className="rounded-2" /> </NavLink>
             </div>
             <div class="head-two">
               <ul>
                 <li className="d-flex  justify-content-between align-items-center">
                   <span className="mt-1">
-                    <Link to="/">
+                    <NavLink to="/">
                       <img src={maillogo} alt="" />
-                    </Link>
+                    </NavLink>
                   </span>
                   <h6 className=" text-white upper_navbar_text ms-3">
                     info@appiesoftwebsolutions.com
@@ -52,8 +55,12 @@ const Header = () => {
           </div>
           <div class="nav-bar-sec">
           <ul id="menu-main-menu" class="menu">
-          <li ><a href="#">Home</a></li>
-          <li ><Link to='/about' >About Us</Link></li>
+          <li  >
+          <NavLink to='/' >Home</NavLink>
+          </li>
+          <div className="hover_box"></div>
+          <li   ><NavLink to='/about' >About Us</NavLink></li>
+          <div className="hover_box"></div>
           <li > 
           <div className="col-auto  px-0">
                     <div class="dropdown">
@@ -98,14 +105,16 @@ const Header = () => {
           </div>
           </li>
           <li ><a href="#">Our Works</a></li>
+          <div className="hover_box"></div>
           <li ><a href="#">Testimonials</a></li>
-          <li ><a href="#">Contact</a></li>
-         <li><a href="#"> 
+           <div className="hover_box"></div>
+          <li ><NavLink to='/contact' >
          <div className="col-auto">
                     <button className="main_button text-white border-0">
-                      Industrial Training
+                    Contact
                     </button>
-                  </div></a>
+                  </div>
+                  </NavLink>
           </li>
           </ul>
           </div>
@@ -128,9 +137,9 @@ const Header = () => {
               >
                 <div className="d-md-flex     align-self-center d-none d-md-block">
                   <span className="align-self-end">
-                    <Link to="/">
+                    <NavLink to="/">
                       <img src={maillogo} alt="" />
-                    </Link>
+                    </NavLink>
                   </span>
                   <h6 className="ms-2 text-white upper_navbar_text">
                     info@appiesoftwebsolutions.com
@@ -180,10 +189,10 @@ const Header = () => {
             className="d-block  d-lg-none d-xxl-none mobile_nav p-0"
           >
             <h6 className="justify-content-start p-3 " id="home_bg">
-              <Nav.Link href="#action1">Home</Nav.Link>
+            <NavLink to='/' >Home</NavLink>
             </h6>
             <h6 className="justify-content-start p-3 ">
-              <Link to='/about' >About</Link>
+              <NavLink to='/about' >About</NavLink>
             </h6>
             <h6
               className="justify-content-between d-flex  p-3"
@@ -210,17 +219,14 @@ const Header = () => {
                 <input type="radio" name="accordion" id="acc-close" />
               </nav>
             </h6>
-            <h6 className="justify-content-start p-3  ">
-              <Nav.Link href="#action1">Our Works</Nav.Link>
+            <h6 className="justify-content-start p-3 ">
+              <NavLink to='/our-work' >Our Works</NavLink>
             </h6>
             <h6 className="justify-content-start p-3 ">
-              <Nav.Link href="#action1">Testimonials</Nav.Link>
+              <NavLink to='/testimonials' >Testimonials</NavLink>
             </h6>
             <h6 className="justify-content-start p-3 ">
-              <Nav.Link href="#action1">Contact</Nav.Link>
-            </h6>
-            <h6 className="justify-content-start p-3 ">
-              <Nav.Link href="#action1">Industrial Training</Nav.Link>
+              <NavLink to='/contact' >Contact</NavLink>
             </h6>
           </Container>
         </Offcanvas>

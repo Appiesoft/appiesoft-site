@@ -51,6 +51,26 @@ input::placeholder {
 .modify_content div {
     border: 2px solid #f47421;
     padding: 22px;
+    cursor: pointer;
+}
+
+.boxactive{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f47421;
+    color: #fff;
+}
+.boxactive h2{
+    color: #fff !important;
+}
+.boxactive i{
+    color: #fff !important;
+}
+.boxinactive{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color:#f47421;
 }
 
 .modify_content h1 {
