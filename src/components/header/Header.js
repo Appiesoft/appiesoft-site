@@ -22,7 +22,7 @@ const Header = () => {
  
   return (
     <>
-
+ 
       <header id="masthead" class="site-header d-none d-lg-block d-xl-block">
         <div class="container">
           <div class="head-three">

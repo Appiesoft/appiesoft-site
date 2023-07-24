@@ -54,7 +54,7 @@ const Contact = () => {
                       placeholder="Your Name"
                     />
                   </div>
-                  <div class="mb-md-3 ms-md-3 input_field_names border-bottom">
+                  <div class="mb-md-3 ms-md-1 input_field_names border-bottom">
                     <Form.Select>
                       <option hidden>Select a Service</option>
                       <option value="1">Web & Graphic Design</option>
@@ -74,7 +74,7 @@ const Contact = () => {
                       placeholder="Phone Number"
                     />
                   </div>
-                  <div class="mb-md-3 ms-md-3 input_field_names">
+                  <div class="mb-md-3 ms-md-1 input_field_names">
                     <input
                       type="email"
                       class="border-bottom  bg-transparent py-2"

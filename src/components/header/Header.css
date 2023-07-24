@@ -1,7 +1,17 @@
 *{
     /* border: 1px solid black; */
 }
-
+/* .nav-bar-sec {
+  z-index: 9999;
+  position: relative;
+} */
+/* header #masthead {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+} */
 /* new class */
 .site-header {
 background-color: #f47421;

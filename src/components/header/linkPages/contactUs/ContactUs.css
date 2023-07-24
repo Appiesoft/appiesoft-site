@@ -150,6 +150,22 @@ a.talkk {
 }
 .contactus_bg{
     background-color: transparent !important;
+    border: none;
+}
+.contactus_btn{
+    background-color: white;
+    color: #f47421 !important;
+    font-weight: 600;
+}
+.contactus_btn:hover{
+    background-color: #f47421;
+    color: #ffffff !important;
+    font-weight: 600;
+}
+.input_field_names input {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
 }
 *:focus {
     outline: none;
