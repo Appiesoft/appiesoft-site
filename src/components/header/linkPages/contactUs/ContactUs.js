@@ -182,8 +182,8 @@ const ContactUs = () => {
               onClick={toggleDropdown}
               className={` ${
                 !isOpen
-                  ? "inactive d-flex justify-content-between rounded-2"
-                  : "active d-flex justify-content-between rounded-2"
+                  ? "boxinactive d-flex justify-content-between rounded-2"
+                  : "boxactive d-flex justify-content-between rounded-2"
               }`}
             >
               <h2>Do you outcome your work overseas?</h2>
@@ -206,8 +206,8 @@ const ContactUs = () => {
               onClick={toggletwo}
               className={` ${
                 !isTwo
-                  ? "inactive rounded-2  mt-md-3 mt-3 d-flex justify-content-between"
-                  : "active d-flex justify-content-between rounded-2  mt-md-3 mt-3"
+                  ? "boxinactive rounded-2  mt-md-3 mt-3 d-flex justify-content-between"
+                  : "boxactive d-flex justify-content-between rounded-2  mt-md-3 mt-3"
               }`}
             >
               <h2>Is your support 24 hours?</h2>
@@ -230,8 +230,8 @@ const ContactUs = () => {
               onClick={togglethree}
               className={` ${
                 !isThree
-                  ? "inactive rounded-2 mt-md-3 mt-3 d-flex justify-content-between"
-                  : "active d-flex justify-content-between rounded-2 mt-md-3 mt-3"
+                  ? "boxinactive rounded-2 mt-md-3 mt-3 d-flex justify-content-between"
+                  : "boxactive d-flex justify-content-between rounded-2 mt-md-3 mt-3"
               }`}
             >
               <h2>Are your service customised for my bussiness?</h2>
@@ -254,8 +254,8 @@ const ContactUs = () => {
               onClick={togglefour}
               className={` ${
                 !isFour
-                  ? "inactive rounded-2 mt-md-3 mt-3 d-flex justify-content-between"
-                  : "active d-flex justify-content-between rounded-2 mt-md-3 mt-3"
+                  ? "boxinactive rounded-2 mt-md-3 mt-3 d-flex justify-content-between"
+                  : "boxactive d-flex justify-content-between rounded-2 mt-md-3 mt-3"
               }`}
             >
               <h2>Are your service expensive?</h2>

@@ -1,12 +1,17 @@
-import React from "react";
-import { Col, Row, Container } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { Col, Row, Container,  } from "react-bootstrap";
 import location from "../../asset/location.png";
 import mainlogoappie from "../../asset/mainlogoappie.png";
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import GoogleMapReact from "google-map-react";
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const Footer = () => {
+
+  const [menuItems, setMenuItems] = useState([]);
+
+
   const defaultProps = {
     center: {
       lat: 10.99835602,
@@ -14,6 +19,21 @@ const Footer = () => {
     },
     zoom: 11,
   };
+
+useEffect(() => {
+      // Replace the API endpoint with your WordPress API URL
+      const apiUrl = 'https://xploreseo.com/react-wordpress-api/wp-json/custom/v1/menu/main-menu';
+  
+      const fetchMenuData = async () => {
+        try {
+          const response = await axios.get(apiUrl);
+          setMenuItems(response.data);
+        } catch (error) {
+          console.error('Error fetching menu data:', error);
+        }
+      };
+      fetchMenuData();
+    }, []); 
   return (
  <>
 
@@ -68,9 +88,9 @@ const Footer = () => {
                 className="d-md-flex justify-content-md-center bg_content_footer_gap flex-wrap"
               >
                 <Col lg={4} md={12} className="mt-4 mt-md-0 mt-lg-0">
-                  <Link to="/">
+                  <NavLink to="/">
                     <img src={mainlogoappie} alt="" className="rounded-2" />
-                  </Link>
+                  </NavLink>
                   <p className="img_para  text-start mt-4 ">
                     We are energetic about creating Brand value and Development
                     and this nearly keep running into our veins. We are
@@ -83,25 +103,36 @@ const Footer = () => {
                     Quick Links
                   </h2>
                   <nav className="list-none mb-10 text-start inner_links">
+              {menuItems.map((item) => {
+                return (
+                  <>
+                    <li key={item.ID} className="mt-2">
+                      <NavLink to={item.url}>{item.title}</NavLink>
+                    </li>
+                  </>
+                );
+              })}
+            </nav>
+                  {/* <nav className="list-none mb-10 text-start inner_links">
                     <li className="my-2">
-                      <a>Home </a>
+                      <NavLink>Home </NavLink>
                     </li>
                     <li>
-                      <a>About</a>
+                      <NavLink>About</NavLink>
                     </li>
                     <li className="my-2">
-                      <a>Services</a>
+                      <NavLink>Services</NavLink>
                     </li>
                     <li>
-                      <a>Our Works</a>
+                      <NavLink>Our Works</NavLink>
                     </li>
                     <li className="my-2">
-                      <a>Testimonials</a>
+                      <NavLink>Testimonials</NavLink>
                     </li>
                     <li>
-                      <a>Contact</a>
+                      <NavLink>Contact</NavLink>
                     </li>
-                  </nav>
+                  </nav> */}
                 </Col>
                 <Col lg={2} md={3} className="mt-md-4 mt-lg-0">
                   <h2 className=" text-white text-start head_links mb-3">
@@ -109,22 +140,22 @@ const Footer = () => {
                   </h2>
                   <nav className="list-none mb-10 inner_links text-start">
                     <li className="my-2">
-                      <a>Web Development</a>
+                      <NavLink>Web Development</NavLink>
                     </li>
                     <li>
-                      <a>Web & Graphics Design</a>
+                      <NavLink>Web & Graphics Design</NavLink>
                     </li>
                     <li className="my-2">
-                      <a>Ecommerce Websites</a>
+                      <NavLink>Ecommerce Websites</NavLink>
                     </li>
                     <li>
-                      <a>Apps Development</a>
+                      <NavLink>Apps Development</NavLink>
                     </li>
                     <li className="my-2">
-                      <a>Search Engine Optimization</a>
+                      <NavLink>Search Engine Optimization</NavLink>
                     </li>
                     <li>
-                      <a>Industrial Training</a>
+                      <NavLink>Industrial Training</NavLink>
                     </li>
                   </nav>
                 </Col>
@@ -156,17 +187,17 @@ const Footer = () => {
                 </div>
                 <p className="text-center mt-3">
                   <span className="mx-4">
-                    <Link to="https://www.facebook.com/appiesoftwebsolutions/">
+                    <NavLink to="https://www.facebook.com/appiesoftwebsolutions/">
                       <i
                         className="fa fa-facebook text-white"
                         aria-hidden="true"
                       ></i>
-                    </Link>
+                    </NavLink>
                   </span>
                   <span>
-                    <Link to="https://www.instagram.com/appiesoftweb/?hl=en">
+                    <NavLink to="https://www.instagram.com/appiesoftweb/?hl=en">
                       <i className="fa-brands fa-instagram text-white"></i>{" "}
-                    </Link>
+                    </NavLink>
                   </span>
                 </p>
               </div>
