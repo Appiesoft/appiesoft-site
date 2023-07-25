@@ -1,24 +1,28 @@
-import React from 'react'
-import { Route, Routes } from "react-router-dom"
-import './App.css'
-import Dashboard from './components/dashboard/Dashboard'
-import AboutUs from './components/header/linkPages/aboutUs/AboutUs'
-import ContactUs from './components/header/linkPages/contactUs/ContactUs'
-import OurWork from './components/header/linkPages/work/OurWork'
-import Testimonial from './components/header/linkPages/testimonial/Testimonial'
-const App = () => {
-    return (
-        <>
-            <Routes>
-      <Route path="/" element={<Dashboard/>} />
-      <Route path="/about" element={<AboutUs/>} />
-      <Route path="/contact" element={<ContactUs/>} />
-      <Route path="/our-work" element={<OurWork/>} />
-      <Route path="/testimonials" element={<Testimonial/>} />
-    </Routes>
-           
-        </>
-    )
-}
+import React, { Suspense, lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+const Dashboard = lazy(() => import('./components/dashboard/Dashboard'));
+const AboutUs = lazy(() => import('./components/header/linkPages/aboutUs/AboutUs'));
+const ContactUs = lazy(() => import('./components/header/linkPages/contactUs/ContactUs'));
+const OurWork = lazy(() => import('./components/header/linkPages/work/OurWork'));
+const Testimonial = lazy(() => import('./components/header/linkPages/testimonial/Testimonial'));
 
-export default App
+const App = () => {
+  return (
+    <>
+      <Suspense fallback={ <div className="spinner-overlay">
+      <div className="spinner" />
+    </div>}>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/our-work" element={<OurWork />} />
+          <Route path="/testimonials" element={<Testimonial />} />
+        </Routes>
+      </Suspense>
+    </>
+  );
+};
+
+export default App;

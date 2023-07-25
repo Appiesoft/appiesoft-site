@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./Header.css";
 import { Row, Col, Offcanvas, Container } from "react-bootstrap";
 import mainlogo from "../../asset/mainlogoappie.png";
@@ -6,10 +7,32 @@ import maillogo from "../../asset/maillogo.png";
 import phonelogo from "../../asset/phonelogo.png";
 import { NavLink } from "react-router-dom";
 
+const MenuItem = ({ item }) => {
+  if (item.sub_menu.length === 0) {
+    return (
+      <li key={item.ID}>
+                <a href={item.url}>{item.title}</a>     {" "}
+      </li>
+    );
+  } else {
+    return (
+      <li key={item.ID}>
+                <a href={item.url}>{item.title}</a>       {" "}
+        <ul>
+                   {" "}
+          {item.sub_menu.map((subItem) => (
+            <MenuItem key={subItem.ID} item={subItem} />
+          ))}
+                 {" "}
+        </ul>
+             {" "}
+      </li>
+    );
+  }
+};
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
- 
-
+  const [menuItems, setMenuItems] = useState([]);
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
@@ -19,16 +42,31 @@ const Header = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
- 
+  useEffect(() => {
+    // Replace the API endpoint with your WordPress API URL
+    const apiUrl =
+      "https://xploreseo.com/react-wordpress-api/wp-json/custom/v1/menu/main-menu";
+
+    const fetchMenuData = async () => {
+      try {
+        const response = await axios.get(apiUrl);
+        setMenuItems(response.data);
+      } catch (error) {
+        console.error("Error fetching menu data:", error);
+      }
+    };
+    fetchMenuData();
+  }, []);
+
   return (
     <>
- 
       <header id="masthead" class="site-header d-none d-lg-block d-xl-block">
         <div class="container">
           <div class="head-three">
             <div class="head-one">
-            <NavLink to="/">
-              <img src={mainlogo} alt="" className="rounded-2" /> </NavLink>
+              <NavLink to="/">
+                <img src={mainlogo} alt="" className="rounded-2" />{" "}
+              </NavLink>
             </div>
             <div class="head-two">
               <ul>
@@ -38,7 +76,7 @@ const Header = () => {
                       <img src={maillogo} alt="" />
                     </NavLink>
                   </span>
-                  <h6 className=" text-white upper_navbar_text ms-3">
+                  <h6 className=" text-white upper_navbar_text ms-3 mt-0">
                     info@appiesoftwebsolutions.com
                   </h6>
                 </li>
@@ -46,7 +84,7 @@ const Header = () => {
                   <span>
                     <img src={phonelogo} alt="" />
                   </span>
-                  <h6 className=" text-white upper_navbar_text ms-3">
+                  <h6 className=" text-white upper_navbar_text ms-3 mt-0">
                     +91-8847249971
                   </h6>
                 </li>
@@ -54,70 +92,90 @@ const Header = () => {
             </div>
           </div>
           <div class="nav-bar-sec">
-          <ul id="menu-main-menu" class="menu">
-          <li  >
-          <NavLink to='/' >Home</NavLink>
-          </li>
-          <div className="hover_box"></div>
-          <li   ><NavLink to='/about' >About Us</NavLink></li>
-          <div className="hover_box"></div>
-          <li > 
-          <div className="col-auto  px-0">
-                    <div class="dropdown">
-                      <span className="navbar_linkFont  navbar">
-                        Services
-                        <i class="fa fa-angle-down ms-2" aria-hidden="true"></i>
-                      </span>
-                      <div className="hover_box"></div>
-                      <div class="dropdown-content">
-                        <p className="my-2">
-                          <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                            Web & Graphic Design
-                          </a>
-                        </p>
-                        <p>
-                          <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                            Web Development
-                          </a>
-                        </p>
-                        <p className="my-2">
-                          <a className="text-decoration-none text-capitalize  navbar_linkFont  inner_linkFont">
-                            Industrial Training
-                          </a>
-                        </p>
-                        <p>
-                          <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                            Ecommerce Websites
-                          </a>
-                        </p>
-                        <p className="my-2">
-                          <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                            Apps Development
-                          </a>
-                        </p>
-                        <p>
-                          <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
-                            Search Engine Optimization
-                          </a>
-                        </p>
-                      </div>
-                    </div>
+            <ul id="menu-main-menu" class="menu">
+              {menuItems.map((item) => {
+                return (
+                  <>
+                    <li key={item.ID} className="py-3">
+                      <NavLink to={item.url}>{item.title}</NavLink>
+                    </li>
+                  </>
+                );
+              })}
+            </ul>
           </div>
-          </li>
-          <li ><a href="#">Our Works</a></li>
-          <div className="hover_box"></div>
-          <li ><a href="#">Testimonials</a></li>
-           <div className="hover_box"></div>
-          <li ><NavLink to='/contact' >
-         <div className="col-auto">
+          {/* <div class="nav-bar-sec">
+            <ul id="menu-main-menu" class="menu">
+              <li>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <div className="hover_box"></div>
+              <li>
+                <NavLink to="/about">About Us</NavLink>
+              </li>
+              <div className="hover_box"></div>
+              <li>
+                <div className="col-auto  px-0">
+                  <div class="dropdown">
+                    <span className="navbar_linkFont  navbar">
+                      Services
+                      <i class="fa fa-angle-down ms-2" aria-hidden="true"></i>
+                    </span>
+                    <div className="hover_box"></div>
+                    <div class="dropdown-content">
+                      <p className="my-2">
+                        <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                          Web & Graphic Design
+                        </a>
+                      </p>
+                      <p>
+                        <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                          Web Development
+                        </a>
+                      </p>
+                      <p className="my-2">
+                        <a className="text-decoration-none text-capitalize  navbar_linkFont  inner_linkFont">
+                          Industrial Training
+                        </a>
+                      </p>
+                      <p>
+                        <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                          Ecommerce Websites
+                        </a>
+                      </p>
+                      <p className="my-2">
+                        <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                          Apps Development
+                        </a>
+                      </p>
+                      <p>
+                        <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                          Search Engine Optimization
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Our Works</a>
+              </li>
+              <div className="hover_box"></div>
+              <li>
+                <a href="#">Testimonials</a>
+              </li>
+              <div className="hover_box"></div>
+              <li>
+                <NavLink to="/contact">
+                  <div className="col-auto">
                     <button className="main_button text-white border-0">
-                    Contact
+                      Contact Us
                     </button>
                   </div>
-                  </NavLink>
-          </li>
-          </ul>
-          </div>
+                </NavLink>
+              </li>
+            </ul>
+          </div> */}
         </div>
         <div class="clr"></div>
       </header>
@@ -127,7 +185,10 @@ const Header = () => {
       <header className="d-block d-lg-none upper_navbar py-4">
         <Container>
           <Row className="mx-auto">
-            <Col md={11} className="d-flex justify-content-between flex-wrap mx-auto">
+            <Col
+              md={11}
+              className="d-flex justify-content-between flex-wrap mx-auto"
+            >
               <Col md={2} className=" text-start ps-md-0">
                 <img src={mainlogo} alt="" className="rounded-2" />
               </Col>
@@ -141,7 +202,7 @@ const Header = () => {
                       <img src={maillogo} alt="" />
                     </NavLink>
                   </span>
-                  <h6 className="ms-2 text-white upper_navbar_text">
+                  <h6 className="ms-2 text-white upper_navbar_text ">
                     info@appiesoftwebsolutions.com
                   </h6>
                 </div>
@@ -149,7 +210,7 @@ const Header = () => {
                   <span className="align-self-end">
                     <img src={phonelogo} alt="" />
                   </span>{" "}
-                  <h6 className="ms-2 text-white upper_navbar_text">
+                  <h6 className="ms-2 text-white upper_navbar_text ">
                     +91-8847249971
                   </h6>
                 </div>
@@ -166,7 +227,6 @@ const Header = () => {
           </Row>
         </Container>
       </header>
-
       {/* sideBar mobile view*/}
       <div className="d-block  d-lg-none">
         <Offcanvas
@@ -176,23 +236,37 @@ const Header = () => {
         >
           <Offcanvas.Header>
             <Offcanvas.Title>
-              <span className="mt-1">
-              
-              </span>
+              <span className="mt-1"></span>
             </Offcanvas.Title>
             <span className="icon_close rounded-2" onClick={handleClose}>
               <i class="fa-solid fa-xmark px-2 "></i>
             </span>
           </Offcanvas.Header>
+          <Offcanvas.Body style={{ overflowY: "auto" }}>
           <Container
             fluid
             className="d-block  d-lg-none d-xxl-none mobile_nav p-0"
           >
+            {menuItems.map((item) => {
+              return (
+                <>
+                  <h6 key={item.ID} className="justify-content-start p-3 ">
+                    <NavLink to={item.url}>{item.title}</NavLink>
+                  </h6>
+                </>
+              );
+            })}
+          </Container>
+          </Offcanvas.Body>
+          {/* <Container
+            fluid
+            className="d-block  d-lg-none d-xxl-none mobile_nav p-0"
+          >
             <h6 className="justify-content-start p-3 " id="home_bg">
-            <NavLink to='/' >Home</NavLink>
+              <NavLink to="/">Home</NavLink>
             </h6>
             <h6 className="justify-content-start p-3 ">
-              <NavLink to='/about' >About</NavLink>
+              <NavLink to="/about">About</NavLink>
             </h6>
             <h6
               className="justify-content-between d-flex  p-3"
@@ -220,15 +294,15 @@ const Header = () => {
               </nav>
             </h6>
             <h6 className="justify-content-start p-3 ">
-              <NavLink to='/our-work' >Our Works</NavLink>
+              <NavLink to="/our-work">Our Works</NavLink>
             </h6>
             <h6 className="justify-content-start p-3 ">
-              <NavLink to='/testimonials' >Testimonials</NavLink>
+              <NavLink to="/testimonials">Testimonials</NavLink>
             </h6>
             <h6 className="justify-content-start p-3 ">
-              <NavLink to='/contact' >Contact</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </h6>
-          </Container>
+          </Container> */}
         </Offcanvas>
       </div>
     </>
