@@ -14,7 +14,7 @@
 } */
 /* new class */
 .site-header {
-background-color: #f47421;
+  background: linear-gradient(70deg, rgb(255 86 0 / 84%) 40%, rgb(255 120 36 / 79%) 81%);
   padding: 10px 0px 30px 0px;
   position: relative;
   align-items: center;

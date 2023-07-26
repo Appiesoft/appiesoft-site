@@ -6,6 +6,11 @@ const AboutUs = lazy(() => import('./components/header/linkPages/aboutUs/AboutUs
 const ContactUs = lazy(() => import('./components/header/linkPages/contactUs/ContactUs'));
 const OurWork = lazy(() => import('./components/header/linkPages/work/OurWork'));
 const Testimonial = lazy(() => import('./components/header/linkPages/testimonial/Testimonial'));
+const WebGhrapic = lazy(() => import('./components/header/linkPages/dropdownService/web&ghrapic/WebGhrapic'));
+const WebService = lazy(() => import('./components/header/linkPages/dropdownService/webdevelopment/WebService'));
+const SearchEngine = lazy(() => import('./components/header/linkPages/dropdownService/searchEngine/SearchEngine'));
+const Ecommerce = lazy(() => import('./components/header/linkPages/dropdownService/ecommerce/Ecommerce'));
+
 
 const App = () => {
   return (
@@ -19,6 +24,10 @@ const App = () => {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/our-work" element={<OurWork />} />
           <Route path="/testimonials" element={<Testimonial />} />
+          <Route path="web-and-graphic" element={<WebGhrapic />} />
+          <Route path="web-development" element={<WebService />} />
+          <Route path="search-engine-optimization" element={<SearchEngine  />} />
+          <Route path="ecommerce" element={<Ecommerce  />} />
         </Routes>
       </Suspense>
     </>

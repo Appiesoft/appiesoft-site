@@ -1,18 +1,18 @@
 import React from 'react';
-import "./OurWork.css";
-import Header from "../../Header";
-import Footer from "../../../footer/Footer";
-import groupImg from "../../../../asset/Groupimg.png";
-import OurPartners from "../../../servicePage/ourPartners/OurPartners";
-import Contact from "../../../servicePage/contactUS/Contact";
-const OurWork = () => {
+import "./WebService.css";
+import Header from "../../../Header";
+import Footer from "../../../../footer/Footer";
+import groupImg from "../../../../../asset/Groupimg.png";
+import OurPartners from "../../../../servicePage/ourPartners/OurPartners";
+import Contact from "../../../../servicePage/contactUS/Contact";
+const WebService = () => {
   
   return (
     <div>
       <Header />
       <div class="web_inner_banner">
         <div class="container">
-          <h1>Cloud Collabration Services</h1>
+          <h1>Web Development Services</h1>
         </div>
       </div>
       <section class="ict-sec-one">
@@ -147,4 +147,5 @@ const OurWork = () => {
   );
 };
 
-export default OurWork;
+export default WebService;
+

@@ -387,6 +387,7 @@ li.para-li {
 .appie-group-text-area h2 {
     font-size: 26px;
     line-height: 34px;
+    margin: 0px 0px -156px 0px!important;
 }
 .two-sctn .appie-group-text-area.img-sctn {
     position: unset !important;
@@ -433,21 +434,31 @@ li.img-li.s-img {
     margin: 0px;
 }
 .txt-wide-sctn p {
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 11px;
 }
-.txt-wide-sctn h2 {
+/* .txt-wide-sctn h2 {
     font-size: 27px;
+} */
+.txt-wide-sctn h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44.25px;
+    color: #ffffff;
+    margin: 0px 0px 0px 0px;
 }
 .txt-wide-sctn {
-
-    max-width: 55%;
+    max-width: 100% !important;
+    margin-left: 0;
+    padding: 40px 20px;
 }
 .img-wide-sctn {
-    margin: 0px;
+    max-width: 100%;
+    margin: 0;
 }
 .fifth-sctn-abt {
-    margin: 70px 0 0px 0;
+    flex-flow: column;
+    margin: 0;
 }
 .sxth-sctn-abt {
     margin: 39px 0;
@@ -457,13 +468,37 @@ li.img-li.s-img {
     align-items: unset;
 }
 .digi-head h2 {
-    font-size: 27px;
+    font-size: 20px;
 }
 .digi-para p{
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 12px;
 }
 .digi-para {
     max-width:100%;
 }
+}
+@media only screen and (min-width: 0px) and (max-width:640px) {
+    ul.dedcted {
+        display: inline-block;
+        padding: -120px 22px;
+    }
+    #img-one-li {
+        margin-top: 0px;
+        /* padding: 14px 0px; */
+    }
+    ul.dedcted li {
+        margin: 22px 0px;
+    }
+    .thrd-sctn-abt {
+        padding: 21px 0px 95px;
+    }
+    .fifth-sctn-abt {
+        flex-flow: column;
+        margin: 14px;
+        border-radius: 22px;
+    }
+    .img-wide-sctn {       
+         margin: 15px;
+    }
 }

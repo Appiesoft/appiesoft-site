@@ -18,12 +18,12 @@
   color: #f47421 !important;
 }
 .card-boxes:hover {
-  background-color: #f47421 !important;
+  background: linear-gradient(47deg, rgb(255 86 0 / 95%) 53%, rgb(255 120 36 / 84%) 88%) !important;
 }
 
 .card-boxes:hover .service-bg-Img {
   margin-top: 16px;
-  background-image: url("../../asset/header//img12.png");
+  background-image: url("../../asset/header/img12.png");
 }
 .card-boxes {
   box-shadow: 0px 0px 18px 10px #bdbdbd57;
@@ -36,7 +36,7 @@
 
 .service-bg-Img {
   margin-top: 16px;
-  background-image: url("../../asset/header//img11.png");
+  background-image: url("../../asset/header/img11.png");
 }
 .service_text {
   font-size: 32px;
@@ -52,9 +52,9 @@
   font-weight: 700;
 }
 
-.card-boxes :hover {
+/* .card-boxes :hover {
   background-color: #f47421;
-}
+} */
 
 .section-four {
   justify-content: center;

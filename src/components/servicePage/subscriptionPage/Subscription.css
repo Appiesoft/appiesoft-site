@@ -58,7 +58,7 @@
     font-weight: 700;
 }
 .card_bg:hover{
-    background-color: #f47421;
+    background: linear-gradient(47deg, rgb(255 86 0 / 95%) 53%, rgb(255 120 36 / 84%) 88%) !important;
 }
 .card_bg:hover h1{
     color: white;

@@ -91,7 +91,7 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div class="nav-bar-sec">
+          {/* <div class="nav-bar-sec">
             <ul id="menu-main-menu" class="menu">
               {menuItems.map((item) => {
                 return (
@@ -103,8 +103,8 @@ const Header = () => {
                 );
               })}
             </ul>
-          </div>
-          {/* <div class="nav-bar-sec">
+          </div> */}
+          <div class="nav-bar-sec">
             <ul id="menu-main-menu" class="menu">
               <li>
                 <NavLink to="/">Home</NavLink>
@@ -124,50 +124,50 @@ const Header = () => {
                     <div className="hover_box"></div>
                     <div class="dropdown-content">
                       <p className="my-2">
-                        <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                        <NavLink to='web-and-graphic'className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
                           Web & Graphic Design
-                        </a>
+                        </NavLink>
                       </p>
                       <p>
-                        <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                        <NavLink to='web-development' className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
                           Web Development
-                        </a>
+                        </NavLink>
                       </p>
-                      <p className="my-2">
-                        <a className="text-decoration-none text-capitalize  navbar_linkFont  inner_linkFont">
+                      {/* <p className="my-2">
+                        <NavLink className="text-decoration-none text-capitalize  navbar_linkFont  inner_linkFont">
                           Industrial Training
-                        </a>
-                      </p>
+                        </NavLink>
+                      </p> */}
                       <p>
-                        <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                        <NavLink className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
                           Ecommerce Websites
-                        </a>
+                        </NavLink>
                       </p>
                       <p className="my-2">
-                        <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                        <NavLink className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
                           Apps Development
-                        </a>
+                        </NavLink>
                       </p>
                       <p>
-                        <a className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                        <NavLink to='search-engine-optimization' className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
                           Search Engine Optimization
-                        </a>
+                        </NavLink>
                       </p>
                     </div>
                   </div>
                 </div>
               </li>
               <li>
-                <a href="#">Our Works</a>
+                <a href="/our-work">Our Works</a>
               </li>
               <div className="hover_box"></div>
               <li>
                 <a href="#">Testimonials</a>
               </li>
               <div className="hover_box"></div>
-              <li>
+              <li >
                 <NavLink to="/contact">
-                  <div className="col-auto">
+                  <div className="col-auto ">
                     <button className="main_button text-white border-0">
                       Contact Us
                     </button>
@@ -175,7 +175,7 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
-          </div> */}
+          </div>
         </div>
         <div class="clr"></div>
       </header>
