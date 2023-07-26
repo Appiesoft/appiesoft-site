@@ -206,8 +206,11 @@ ul.mmk {
     ul.mmk {
         width: -webkit-fill-available;
     }
-    .Our-clients-box ul {
+    /* .Our-clients-box ul {
         padding: 13px 20px 6px 58px !important;
+    } */
+    .Our-clients-box ul {
+        padding: 7px 18px 6px 47px !important;
     }
     .inner_footer_info {
 

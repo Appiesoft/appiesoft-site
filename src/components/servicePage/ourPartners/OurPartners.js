@@ -14,7 +14,7 @@ const OurPartners = () => {
     return (
         <div>
             <section className='py-md-5 py-3'>
-                <div class="container" data-aos="zoom-in">
+                <div class="container">
                     <header class="inner_head_line text-center">
                         <h3>Our Trusted Partners</h3>
                     </header>

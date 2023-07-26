@@ -1,0 +1,57 @@
+.inner_banner {
+    background: linear-gradient(104deg, rgb(236 99 13 / 61%) 0%, rgba(255,86,0,0.9023984593837535) 104%);
+    padding: 112px 0px 70px 0;
+}
+.inner_banner h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 82px;
+    text-align: center;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0px 0 30px 0;
+}
+section.ict-sec-one {
+    display: block !important;
+}
+.my_wrap {
+    display: flex !important;
+}
+.business-commun-text {
+    padding: 40px 0 0 302px;
+    width: 50%;
+}
+.business-commun-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61.25px;
+    color: #000000;
+    padding: 30px 100px 20px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.business-commun-text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #0B0D17;
+    padding: 0px 100px 30px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.business-commun-text button {
+    background-color: #f47421;
+    border-radius: 6px;
+    Padding: 12px 32px 12px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #ffffff;
+    border: none;
+}
+.commun-img-area {
+    width: 50%;
+}
+.commun-img-area img {
+    width: 100%;
+    margin-top: -60px;
+}
