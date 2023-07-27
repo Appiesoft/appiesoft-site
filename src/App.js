@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+
 const Dashboard = lazy(() => import('./components/dashboard/Dashboard'));
 const AboutUs = lazy(() => import('./components/header/linkPages/aboutUs/AboutUs'));
 const ContactUs = lazy(() => import('./components/header/linkPages/contactUs/ContactUs'));
@@ -10,7 +11,7 @@ const WebGhrapic = lazy(() => import('./components/header/linkPages/dropdownServ
 const WebService = lazy(() => import('./components/header/linkPages/dropdownService/webdevelopment/WebService'));
 const SearchEngine = lazy(() => import('./components/header/linkPages/dropdownService/searchEngine/SearchEngine'));
 const Ecommerce = lazy(() => import('./components/header/linkPages/dropdownService/ecommerce/Ecommerce'));
-
+const AppDevelopment = lazy(() => import('./components/header/linkPages/dropdownService/appDevelopment/AppDevelopment'));
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="web-development" element={<WebService />} />
           <Route path="search-engine-optimization" element={<SearchEngine  />} />
           <Route path="ecommerce" element={<Ecommerce  />} />
+          <Route path="app-development" element={<AppDevelopment />} />
         </Routes>
       </Suspense>
     </>

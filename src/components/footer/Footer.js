@@ -38,7 +38,7 @@ useEffect(() => {
  <>
 
       <footer className="bg_footer_color">
-        <section>
+        <section >
           <Container>
             <div className="footer_top">
     		    <ul>

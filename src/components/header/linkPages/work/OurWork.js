@@ -1,148 +1,115 @@
-import React from 'react';
+import React from "react";
+import Testimonial from "../testimonial/Testimonial";
 import "./OurWork.css";
+import heroman3 from "../../../../asset/service/heroman3.png";
+import team15 from "../../../../asset/service/team15.jpg";
+import team14 from "../../../../asset/service/team14.jpg";
+import team12 from "../../../../asset/service/team12.jpg";
+
+import { NavLink } from "react-bootstrap";
 import Header from "../../Header";
-import Footer from "../../../footer/Footer";
-import groupImg from "../../../../asset/Groupimg.png";
-import OurPartners from "../../../servicePage/ourPartners/OurPartners";
 import Contact from "../../../servicePage/contactUS/Contact";
+import OurPartners from "../../../servicePage/ourPartners/OurPartners";
+import Footer from "../../../footer/Footer";
 const OurWork = () => {
-  
+  const images = [
+    { url: team15, title: "Sophie Moore", occupt: "Founder" },
+    { url: team12, title: "Sophie Moore", occupt: "Reactjs" },
+    { url: team15, title: "Sophie Moore", occupt: "Wordpress" },
+    { url: team14, title: "Sophie Moore", occupt: "Php" },
+    { url: team15, title: "Sophie Moore", occupt: "Designer" },
+  ];
   return (
     <div>
       <Header />
       <div class="web_inner_banner">
         <div class="container">
-          <h1>Cloud Collabration Services</h1>
+          <h1>Our Work</h1>
         </div>
       </div>
-      <section class="ict-sec-one">
-        <div class="my_wrap">
-          <div class="business-commun-text">
-            <h2>Collaboration made easy</h2>
-            <p>
-              Are you collaborating in the cloud yet? Telco ICT
-              <br /> can assist your team to communicate effectively
-              <br /> and share effortlessly, providing services for
-              <br /> cloud computing.
-            </p>
-            <p>
-              Cloud collaboration services enable you to meet
-              <br /> and work on live documents together, enjoy 24/7
-              <br /> accessibility, and edit and make changes in real
-              <br /> time. Multiple people can work within the same
-              <br /> version of a file without duplication, and
-              <br /> meeting online to share information is so easy.
-            </p>
-            <button type="button">Talk To An Expert Now</button>
-          </div>
-          <div class="commun-img-area">
-            <img src={groupImg} alt="appiesoft Consulting" />
-          </div>
-          <div class="clr"></div>
-        </div>
-      </section>
-      <section class="ict-sec-six ">
-        <div class="container">
-          <div class="service_Australia aos-init aos-animate"  >
-            <div class="share_point" data-aos="fade-up" >
-              <h3>
-                Our team specialise in providing
-                <br /> advice and assistance on cloud
-                <br /> services Australia via OneDrive,
-                <br /> SharePoint or Microsoft Teams.
-              </h3>
-              <div class="image_part">
-                <div class="drive">
-                  <img
-                    src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/04/Group-512708-4.png"
-                    alt="Cloud Collabrations"
-                  />
-                  <p>OneDrive</p>
-                </div>
-                <div class="drive">
-                  <img
-                    src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/04/icon61.png"
-                    alt="Cloud Collabrations"
-                  />
-                  <p>SharePoint</p>
-                </div>
-                <div class="drive">
-                  <img
-                    src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/04/icon62.png"
-                    alt="Cloud Collabrations"
-                  />
-                  <p>Microsoft Teams</p>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="slider__content3">
+              <h5>WE ARE IT SERVICE AGENCY</h5>
+              <h1>
+                Big <span>Solutions</span>
+              </h1>
+              <p className="mb-5">
+                Mauris nulla mattis inceptos enim sodales suscipit suspendisse
+                varius nam fusce, pulvinar vel posuere augue feugiat aenean
+                faucibus cubilia. Varius arcu imperdiet dignissim pellentesque
+                est eleifend morbi.
+              </p>
+              <div class="btn-list d-sm-flex align-items-center">
+                <button>Meet With Us</button>
               </div>
-            <span>
-            <button type="button">Talk To An Expert Now</button>
-            </span>
             </div>
-            <div class="one_drive">
-              <div data-aos="fade-up">
-                <h2>SharePoint</h2>
-                <p>
-                  An online content management tool that enables users to store
-                  files in the cloud for sharing and collaboration. SharePoint
-                  saves time by eliminating the need for multiple tasks and
-                  project management platforms.
-                </p>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="hero-section">
+              <img src={heroman3} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="team-area  area-7">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-title text-center mb-5">
+                <h1 class="">OUR EXPERTS</h1>
+                <h2 class="sect-title text-heding3">
+                  Our Awesome Technology
+                  <br />
+                  <span>Team Member</span>
+                </h2>
               </div>
-              <div data-aos="fade-up">
-                <h2>Easy project management.</h2>
-                <p>
-                  File sharing with internal and external users and manage
-                  content such as images, articles, source codes and videos.
-                </p>
-              </div>
-              <div data-aos="fade-up">
-                <h2>Real-time collaboration.</h2>
-                <p>
-                  Create an intranet where all collaborators on a project,
-                  including external freelancers, can work securely on a file or
-                  document. Develop sites and subsites for decluttering teams
-                  and tasks and staying in touch with the collaborator through a
-                  communication site.
-                </p>
-              </div>
-              <div data-aos="fade-up">
-                <h2>One-point administration.</h2>
-                <p>
-                  A centralised administrator is able to control access so each
-                  user can seamlessly open, edit, and save files.
-                </p>
-              </div>
-              <div data-aos="fade-up">
-                <h2>Stay on top of workflow.</h2>
-                <p>
-                  Create workflows and reminders to automate projects and tasks
-                  and use the search function to look for resources, tasks or
-                  files.
-                </p>
-              </div>
-              <div data-aos="fade-up">
-                <h2>Manage on the go.</h2>
-                <p>
-                  The SharePoint mobile app allows users to access team or
-                  communication sites from smartphones.
-                </p>
+            </div>
+          </div>
+        </div>
+        <div class="custom-container">
+          <div class="team-slide owl-carousel owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div
+                  class="owl-item cloned d-flex "
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
+                  {images.map((Img, index) => {
+                    return (
+                      <div class="team-wrapper ">
+                        <span href="team-details.html" class="team-image">
+                          <img src={Img.url} alt="Image" />
+                        </span>
+                        <div class="team-thumb2">
+                          <div class="team-content text-center mt-3">
+                            <NavLink>{Img.title}</NavLink>
+                            <h6>{Img.occupt}</h6>
+                          </div>
+                          {/* <div class="team-icon-wrapper2">
+								<div class="inner-team-icon pos-rel">
+									<div class="team-icon text-center">
+										<i class="fab fa-facebook-f"></i>
+										<i class="fab fa-twitter mx-3"></i>
+										<i class="fab fa-linkedin-in"></i>									
+										</div>
+								</div>
+							</div> */}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="ict-last-section">
-        <div class="container">
-            <div class="prple-sctn-light">
-                <p>A trusted Australian cloud service provider, Telco ICT Group can help you choose the right way to connect and work together for better business results. Contact us to find out how to make a success of cloud collaboration services in your business.</p>
-               <span>Talk To An Expert Now</span>
-            </div>
-        </div>
-	
-</div>
-      <OurPartners />
-      <Contact />
-      <Footer />
+	  <OurPartners/>
+	  <Contact/>
+	  <Footer/>
     </div>
   );
 };

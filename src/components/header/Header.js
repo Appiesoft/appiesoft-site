@@ -11,13 +11,13 @@ const MenuItem = ({ item }) => {
   if (item.sub_menu.length === 0) {
     return (
       <li key={item.ID}>
-                <a href={item.url}>{item.title}</a>     {" "}
+                <NavLink href={item.url}>{item.title}</NavLink>     {" "}
       </li>
     );
   } else {
     return (
       <li key={item.ID}>
-                <a href={item.url}>{item.title}</a>       {" "}
+                <NavLink href={item.url}>{item.title}</NavLink>       {" "}
         <ul>
                    {" "}
           {item.sub_menu.map((subItem) => (
@@ -139,12 +139,12 @@ const Header = () => {
                         </NavLink>
                       </p> */}
                       <p>
-                        <NavLink className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                        <NavLink to='ecommerce' className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
                           Ecommerce Websites
                         </NavLink>
                       </p>
                       <p className="my-2">
-                        <NavLink className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
+                        <NavLink to='app-development' className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
                           Apps Development
                         </NavLink>
                       </p>
@@ -158,11 +158,11 @@ const Header = () => {
                 </div>
               </li>
               <li>
-                <a href="/our-work">Our Works</a>
+                <NavLink to="/our-work">Our Works</NavLink>
               </li>
               <div className="hover_box"></div>
               <li>
-                <a href="#">Testimonials</a>
+                <NavLink to="testimonials">Testimonials</NavLink>
               </li>
               <div className="hover_box"></div>
               <li >
