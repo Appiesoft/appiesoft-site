@@ -38,8 +38,8 @@ const Contact = () => {
   return (
     <div className="container input_field my-xl-5 mt-lg-0 mb-lg-4">
       <div className="row mx-auto">
-        <Col lg={12} xs={12} className="d-flex justify-content-around flex-wrap mx-auto">
-          <Col lg={11} xxl={5} xl={5} className='mx-auto'  >
+        <Col lg={12} xs={12} className="d-flex justify-content-between flex-wrap mx-auto">
+          <Col lg={11} xxl={6} xl={5} className='mx-auto'  >
             <Card className="bg_contact_banner rounded-4 py-4  px-2">
               <div className="row mx-auto">
                 <div className="col-12 pb-3">
