@@ -4,6 +4,7 @@ import Header from '../../../Header'
 import OurPartners from '../../../../servicePage/ourPartners/OurPartners'
 import Footer from '../../../../footer/Footer'
 import Contact from '../../../../servicePage/contactUS/Contact'
+import bulb from '../../../../../asset/service/bulb.png'
 const SearchEngine = () => {
   return (
 
@@ -34,7 +35,7 @@ affordable Search Engine Optimisation Package to fit your needs.</p>
     <div class="container">
              <div class="we-got-area Search-Engine we-got-new-seo">
                   <div class="we-got-image Search-Engine-img">
-                     <img src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/03/searchimage.png" alt="Search Engine Optimisation" />
+                     <img src={bulb} alt="Search Engine Optimisation" />
                   </div>
                    <div class="we-got-content Search-Engine-cont seo-new-cont">
                        <p class="seo-parag">Our experienced technicians will break down and explain all Search Engine Optimisation SCosts so you’ll understand all costs upfront.<br/><br/>

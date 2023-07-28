@@ -1,7 +1,7 @@
 import React from "react";
 import Testimonial from "../testimonial/Testimonial";
 import "./OurWork.css";
-import heroman3 from "../../../../asset/service/heroman3.png";
+import Maskgroup from "../../../../asset/Mask group.png";
 import team15 from "../../../../asset/service/team15.jpg";
 import team14 from "../../../../asset/service/team14.jpg";
 import team12 from "../../../../asset/service/team12.jpg";
@@ -48,7 +48,7 @@ const OurWork = () => {
           </div>
           <div class="col-lg-6 col-md-12">
             <div class="hero-section">
-              <img src={heroman3} alt="" />
+              <img src={Maskgroup} alt="" />
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ const OurWork = () => {
                 <div
                   class="owl-item cloned d-flex "
                   data-aos="fade-up"
-                  data-aos-delay="250"
+                  data-aos-delay="50"
                 >
                   {images.map((Img, index) => {
                     return (
