@@ -437,9 +437,7 @@ li.img-li.s-img {
     font-size: 18px;
     margin-top: 11px;
 }
-/* .txt-wide-sctn h2 {
-    font-size: 27px;
-} */
+
 .txt-wide-sctn h2 {
     font-weight: 700;
     font-size: 40px;
@@ -493,6 +491,14 @@ li.img-li.s-img {
     .thrd-sctn-abt {
         padding: 21px 0px 95px;
     }
+    .thrd-sctn-abt h2 {
+        font-size: 28px;
+    }
+    .thrd-sctn-abt p {
+        font-size: 19px;
+        line-height: 27px;
+        color: #fff;
+    }
     .fifth-sctn-abt {
         flex-flow: column;
         margin: 14px;
@@ -502,3 +508,112 @@ li.img-li.s-img {
          margin: 15px;
     }
 }
+@media only screen  and (min-width: 0px) and (max-width: 576px){
+.telco-group-text-area h5 {
+    padding: 30px 0px 0px 0px;
+}
+.two-sctn {
+    margin-top: 0;
+    padding: 30px 0;
+    flex-flow: column;
+}
+.appie-group-text-area h2 {
+    font-size: 20px;
+    line-height: 21px;
+    margin: 0px 0px -156px 0px!important;
+}
+.two-sctn .appie-group-text-area.img-sctn {
+    position: unset !important;
+    text-align: center;
+}
+.appie-group-text-area h5 {
+    font-size: 23px;
+    line-height: 31px;
+    padding: 0px 0px 0px 0px;
+}
+.para-sctn {
+    width: 100%;
+}
+.para-sctn p {
+    padding: 11px;
+}
+.thrd-sctn-abt h2 {
+    font-size: 26px;
+    line-height: 33px;
+}
+.thrd-sctn-abt p {
+    font-size: 14px;
+    line-height: 21px;
+}
+.thrd-sctn-abt {
+    padding: 27px 0px 92px;
+}
+ul.dedcted {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 22px;
+}
+.hdd-li h2 {
+    padding: 20px;
+    font-size: 33px;
+}
+li.para-li p {
+    padding: 27px 21px;
+    border-radius: 10px;
+}
+li.para-li {
+    margin-top: -36px;
+}
+#img-one-li {
+        margin-top: -6px;
+    }
+
+.f-img {
+    margin-top:0px;
+}
+li.img-li.s-img {   
+    margin-bottom: 21px;
+}
+.txt-wide-sctn p {
+    font-size: 18px;
+    margin-top: 11px;
+}
+
+.txt-wide-sctn h2 {
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 44.25px;
+    color: #ffffff;
+    margin: 0px 0px 0px 0px;
+}
+.txt-wide-sctn {
+    max-width: 100% !important;
+    margin-left: 0;
+    padding: 40px 20px;
+}
+.img-wide-sctn {
+    max-width: 100%;
+    margin: 0;
+}
+.fifth-sctn-abt {
+    flex-flow: column;
+    margin: 0;
+}
+.sxth-sctn-abt {
+    margin: 39px 0;
+}
+.digi-main {
+    flex-flow: column;
+    align-items: unset;
+}
+.digi-head h2 {
+    font-size: 17px;
+}
+.digi-para p{
+    font-size: 15px;
+    margin-top: 12px;
+}
+.digi-para {
+    max-width:100%;
+}
+}
+

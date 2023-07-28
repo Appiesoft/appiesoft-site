@@ -67,7 +67,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="col-md-12 col-12 d-flex align-items-center justify-content-between flex-wrap">
-                  <div class="mb-md-3 me-md-3 me-4 input_field_names">
+                  <div class="mb-md-3 me-md-3  input_field_names" id="phone">
                     <input
                       type="number"
                       class=" bg-transparent border-bottom py-2"

@@ -70,28 +70,34 @@ const Header = () => {
             </div>
             <div class="head-two">
               <ul>
+              <NavLink to="mailto:info@appiesoftwebsolutions.com">
                 <li className="d-flex  justify-content-between align-items-center">
+                
                   <span className="mt-1">
-                    <NavLink to="/">
                       <img src={maillogo} alt="" />
-                    </NavLink>
                   </span>
                   <h6 className=" text-white upper_navbar_text ms-3 mt-0">
                     info@appiesoftwebsolutions.com
                   </h6>
+                
                 </li>
+                </NavLink>
+                <NavLink to="tel:8847249971">
                 <li className="d-flex justify-content-between align-items-center">
+               
                   <span>
                     <img src={phonelogo} alt="" />
                   </span>
                   <h6 className=" text-white upper_navbar_text ms-3 mt-0">
                     +91-8847249971
                   </h6>
+                 
                 </li>
+                </NavLink>
               </ul>
             </div>
           </div>
-          {/* <div class="nav-bar-sec">
+          <div class="nav-bar-sec">
             <ul id="menu-main-menu" class="menu">
               {menuItems.map((item) => {
                 return (
@@ -103,8 +109,10 @@ const Header = () => {
                 );
               })}
             </ul>
-          </div> */}
-          <div class="nav-bar-sec">
+          </div>
+
+            {/* Custom */}
+          {/* <div class="nav-bar-sec">
             <ul id="menu-main-menu" class="menu">
               <li>
                 <NavLink to="/">Home</NavLink>
@@ -133,11 +141,6 @@ const Header = () => {
                           Web Development
                         </NavLink>
                       </p>
-                      {/* <p className="my-2">
-                        <NavLink className="text-decoration-none text-capitalize  navbar_linkFont  inner_linkFont">
-                          Industrial Training
-                        </NavLink>
-                      </p> */}
                       <p>
                         <NavLink to='ecommerce' className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
                           Ecommerce Websites
@@ -175,7 +178,8 @@ const Header = () => {
                 </NavLink>
               </li>
             </ul>
-          </div>
+          </div> */}
+  {/* Custom end*/}
         </div>
         <div class="clr"></div>
       </header>

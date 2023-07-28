@@ -20,23 +20,23 @@ section.ict-sec-one {
     display: flex !important;
 }
 .business-commun-text {
-    padding: 40px 0 0 302px;
+    padding: 40px 0 0 200px;
     width: 50%;
 }
 .business-commun-text h2 {
     font-size: 48px;
     font-weight: 700;
-    line-height: 61.25px;
+    line-height: 48px;
     color: #000000;
-    padding: 30px 100px 20px 0px;
+    padding: 30px 70px 30px  0px;
     margin: 0px 0px 0px 0px;
 }
 .business-commun-text p {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 32px;
     color: #0B0D17;
-    padding: 0px 100px 30px 0px;
+    padding: 0px 50px 30px 0px;
     margin: 0px 0px 0px 0px;
 }
 .commun-img-area {
@@ -71,7 +71,7 @@ section.Search-Engine-icon-sec {
 .we-got-area.Search-Engine.we-got-new-seo {
     margin: 0px !important;
     padding: 90px 0 !important;
-    column-gap: 0px !important;
+    column-gap: 21px !important;
 }
 .we-got-area.Search-Engine {
     background-color: #f7f7f700;
@@ -116,9 +116,6 @@ h2.SEO-Myths-head {
     justify-content: space-evenly;
     margin: 40px 0;
 }
-/* .SEO-Myths-out-img {
-    width: 23%;
-} */
 .SEO-Myths-out-img img {
     border-radius: 20px;
     width: 1;
@@ -161,4 +158,127 @@ font-weight: 500;
 header.inner_head_line.text-center {
     font-size: 45px;
     font-weight: 600;
+}
+@media only screen and (min-width: 1401px) and (max-width: 1500px){
+    .business-commun-text {
+        padding: 0 20px 0 96px;
+        width: 48%;
+    }
+    }
+    @media only screen and (max-width: 1400px) and (min-width: 1301px){
+    body .business-commun-text {
+        padding: 0 20px 30px 96px;
+    }
+    }
+    @media only screen and (min-width: 1501px) and (max-width: 1600px){
+    .business-commun-text {
+        padding: 40px 0 0 132px;
+    }
+    }
+    @media only screen and (max-width: 1200px) and (min-width: 1081px){
+.business-commun-text {
+    padding: 0 41px 0 44px !important;
+    }
+}
+    @media only screen and (max-width: 1300px) and (min-width: 981px){
+    .business-commun-text {
+        padding: 0 22px 30px 40px;
+    }
+    .business-commun-text p {
+        padding:22px 0px !important;
+        font-size: 23px;  
+    }
+    .commun-img-area img {
+        margin-top:0px;
+    }
+    .white-sctn2 p br{
+        display: none;
+    }
+    .prple-sctn-light p br{
+        display: none;
+    }
+    .search_inner_banner h1 {
+        font-size: 58px;
+    }
+}
+    @media only screen and (min-width: 0px) and (max-width: 992px){
+        .we-got-content p {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .search_inner_banner {
+        padding: 44px 0px 44px 0;
+    }
+    .ict-sec-one br {
+        display: none;
+    }
+    .search_inner_banner h1 {
+        font-size: 39px; 
+    line-height: 41px;
+    }
+    section.ict-sec-one {
+        display: block !important;
+        width: 93%;
+        margin: 0 auto;
+    }
+    .business-commun-text {
+        padding: 0;
+        width: 100%;
+    }
+    .business-commun-text h2 {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+    .business-commun-text p {
+        padding: 0 0 30px 0;
+        font-size: 23px;
+    }
+    .business-commun-text button {
+        Padding: 7px 18px 7px 18px;
+    }
+     .my_wrap {
+        display: block !important;
+    }
+    .commun-img-area {
+        width: 100%;
+    }
+    .commun-img-area img {
+        margin-top: 0px;
+    }
+    .we-got-area.Search-Engine.we-got-new-seo {
+        padding: 26px 0 !important;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 576px){
+    .we-got-area {
+      flex-direction: column;
+    }
+    .we-got-content p {
+        padding: 22px 0 ;
+    }
+    .we-got-area.Search-Engine.we-got-new-seo {
+        padding: 26px !important;
+    }
+    .SEO-Myths-out-watch h1 {
+        font-size: 25px;
+        margin: 22px 0px;
+    }
+    .SEO-Myths-out {
+        display: inline;
+    }
+    .SEO-Myths-out-img {
+        width: 100%;
+    }
+    .SEO-Myths-out-cont {
+        margin: 20px 0px;
+        width: 100%;
+        padding: 0px 19px;
+    }
+    .SEO-Myths-out-img img {
+        width: -webkit-fill-available;
+    }
+    header.inner_head_line.text-center {
+        font-size: 32px;
+        font-weight: 600;
+    }
 }

@@ -53,21 +53,22 @@
 }
 .section-title h1{
 	font-weight: 700;
-	font-size: 54px;
+	font-size: 48px;
 	line-height: 82px;
 	text-align: center;
 	letter-spacing: -2px;
 	text-transform: capitalize;
 	color:#f47421;
-	margin: 32px 0 30px 0;
+	margin:47px 0 0px 0;
 }
 .section-title h2{
 	font-weight: 700;
-	font-size: 58px;
+	font-size: 48px;
 	text-align: center;
 	letter-spacing: -2px;
 	text-transform: capitalize;
 	color:#31302f;
+	line-height: 46px;
 }
 .team-image img {
     margin: 0px auto;
@@ -80,4 +81,5 @@
 .team-wrapper {
 background: linear-gradient(70deg, rgba(246, 244, 243, 0.84) 40%, rgb(255 120 36 / 0%) 81%);
 box-shadow: 0 0 5px rgba(0,0,0,.5);
+padding: 26px 0px;
 }
