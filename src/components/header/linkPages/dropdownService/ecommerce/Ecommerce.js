@@ -93,7 +93,7 @@ const Ecommerce = () => {
                 >
                       {images.map((Img, index) => {
                         return (
-                            <Row>
+                            <Row className="mx-auto">
                         <Col lg={12} className='d-flex  flex-wrap'>
                             <Col lg={12} >
                                 <Row class='mx-auto'>
