@@ -69,7 +69,7 @@ const Footer = () => {
                   <div className="sav_rgt">
                     <h2 className=" footer_info ">SEND YOUR MESSAGE</h2>
                     <p className="text-white inner_footer_info ">
-                      info@appiesoftwebsolutions.com
+                      info@appiesoftweb<br/>solutions.com
                     </p>
                   </div>
                 </li>
@@ -85,6 +85,7 @@ const Footer = () => {
                 <li>
                   <img alt="team" className="" src={location} />
                   <div className="sav_rgt">
+                  <h2 className=" footer_info ">ADDRESS</h2>
                     <h2 className="inner_footer_info text-white">
                       SCF 80 FF, Phase 11, Sector 65, Sahibzada Ajit Singh
                       Nagar, Punjab 160065

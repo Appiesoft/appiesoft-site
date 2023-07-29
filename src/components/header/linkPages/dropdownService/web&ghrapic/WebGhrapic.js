@@ -66,7 +66,6 @@ const WebGhrapic = () => {
           </div>
         </div>
       </section>
-
       <div class="ict-last-section">
         <div class="container">
           <div class="prple-sctn-light">
