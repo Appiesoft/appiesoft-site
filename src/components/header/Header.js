@@ -6,30 +6,51 @@ import mainlogo from "../../asset/mainlogoappie.png";
 import maillogo from "../../asset/maillogo.png";
 import phonelogo from "../../asset/phonelogo.png";
 import { NavLink } from "react-router-dom";
+import MenuComponent from "./menu/MenuItems";
 
+// const MenuItem = ({ item }) => {
+//   if (item.sub_menu.length === 0) {
+//     return (
+//       <li key={item.ID}>
+//                 <NavLink href={item.url}>{item.title}</NavLink>     {" "}
+//       </li>
+//     );
+//   } else {
+//     return (
+//       <li key={item.ID}>
+//                 <NavLink href={item.url}>{item.title}</NavLink>       {" "}
+//         <ul>
+//                    {" "}
+//           {item.sub_menu.map((subItem) => (
+//             <MenuItem key={subItem.ID} item={subItem} />
+//           ))}
+//                  {" "}
+//         </ul>
+//              {" "}
+//       </li>
+//     );
+//   }
+// };
 const MenuItem = ({ item }) => {
-  if (item.sub_menu.length === 0) {
-    return (
-      <li key={item.ID}>
-                <NavLink href={item.url}>{item.title}</NavLink>     {" "}
-      </li>
-    );
-  } else {
-    return (
-      <li key={item.ID}>
-                <NavLink href={item.url}>{item.title}</NavLink>       {" "}
-        <ul>
-                   {" "}
-          {item.sub_menu.map((subItem) => (
-            <MenuItem key={subItem.ID} item={subItem} />
-          ))}
-                 {" "}
-        </ul>
-             {" "}
-      </li>
-    );
-  }
-};
+    if (item.sub_menu.length === 0) {
+      return (
+        <li key={item.ID}>
+          <a href={item.url}>{item.title}</a>
+        </li>
+      );
+    } else {
+      return (
+        <li key={item.ID}>
+          <a href={item.url}>{item.title}</a>
+          <ul>
+            {item.sub_menu.map(subItem => (
+              <MenuItem key={subItem.ID} item={subItem} />
+            ))}
+          </ul>
+        </li>
+      );
+    }
+  };
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [menuItems, setMenuItems] = useState([]);
@@ -44,8 +65,7 @@ const Header = () => {
 
   useEffect(() => {
     // Replace the API endpoint with your WordPress API URL
-    const apiUrl =
-      "https://xploreseo.com/react-wordpress-api/wp-json/custom/v1/menu/main-menu";
+        const apiUrl = 'https://xploreseo.com/react-wordpress-api/wp-json/custom/v1/menu/main-menu';
 
     const fetchMenuData = async () => {
       try {
@@ -98,6 +118,7 @@ const Header = () => {
             </div>
           </div>
           <div class="nav-bar-sec">
+          {/* <MenuComponent/> */}
             <ul id="menu-main-menu" class="menu">
               {menuItems.map((item) => {
                 return (

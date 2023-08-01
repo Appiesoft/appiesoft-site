@@ -24,7 +24,7 @@ const AboutUs = () => {
       <div className="clr"></div>
 
       <div className="secnd-section-abt">
-        <Container className="px-md-5 px-0">
+        <Container className="px-md-5 px-3">
           <div className="two-sctn">
             <div className="appie-group-text-area img-sctn">
               <h5>About Appiesoft Web Solution</h5>
