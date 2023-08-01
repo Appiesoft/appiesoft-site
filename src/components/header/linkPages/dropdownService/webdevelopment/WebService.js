@@ -81,7 +81,7 @@ const WebService = () => {
             <div class="one_drive">
               <div data-aos="fade-up">
                 <h2>SharePoint</h2>
-                <p>
+                <p >
                   An online content management tool that enables users to store
                   files in the cloud for sharing and collaboration. SharePoint
                   saves time by eliminating the need for multiple tasks and

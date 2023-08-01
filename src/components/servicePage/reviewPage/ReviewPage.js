@@ -45,13 +45,12 @@ const ReviewPage = () => {
                     <div className='googleImg mt-4 mb-5 text-center  d-flex justify-content-center'>
                         <img src={googlereview} alt="" />
                     </div>
-    
                 <Carousel
                     className='pt-3 pt-md-0'
                     infinite={true}
                     responsive={responsive}
                 >
-                      {images.map((importImg, index) => {
+                      {images.map((importImg, index) => {                                               
                         return (
                             <Row>
                         <Col lg={12} className='d-flex justify-content-evenly flex-wrap'>
