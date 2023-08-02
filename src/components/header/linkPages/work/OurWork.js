@@ -11,8 +11,27 @@ import Header from "../../Header";
 import Contact from "../../../servicePage/contactUS/Contact";
 import OurPartners from "../../../servicePage/ourPartners/OurPartners";
 import Footer from "../../../footer/Footer";
-
+import Carousel from "react-multi-carousel";
+import 'react-multi-carousel/lib/styles.css';
 const OurWork = () => {
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+    };
   const images = [
     { url: team15, title: "Sophie Moore", occupt: "Founder" },
     { url: team12, title: "Sophie Moore", occupt: "Reactjs" },
@@ -39,13 +58,11 @@ const OurWork = () => {
                 Big <span>Solutions</span>
               </h1>
               <p className="mb-lg-3 mb-xl-5 mb-xxl-5  mb-3 ">
-                Mauris nulla mattis inceptos enim sodales suscipit suspendisse
-                varius nam fusce, pulvinar vel posuere augue feugiat aenean
-                faucibus cubilia. Varius arcu imperdiet dignissim pellentesque
-                est eleifend morbi.
+              Appiesoft Web Solutions is a team of Digital Marketing experts, Website Designers, and Developers that understand the value of your Brand or Product. As a Digital Marketing expert/Website Design and Development organization, we have finished 500+ projects over the world.
               </p>
               <div class="btn-list d-sm-flex align-items-center">
-                <button>Meet With Us</button>
+              <NavLink to='/contact'>
+                <button>Meet With Us</button></NavLink>
               </div>
             </div>
           </div>
@@ -57,6 +74,7 @@ const OurWork = () => {
         </div>
       </div>
       <section class="team-area  area-7">
+      <div className="parent-container mt-4 mt-lg-5"> 
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -71,13 +89,17 @@ const OurWork = () => {
             </div>
           </div>
         </div>
-        <div className="parent-container"> 
           <div className="owl-stage">
             <div
-              className="owl-item"
-              data-aos="fade-left"
+             data-aos="fade-left"
               data-aos-delay="10"
-            >
+              className="owl-item"
+            > 
+                 <Carousel
+                    className='pt-3 pt-md-0'
+                    infinite={true}
+                    responsive={responsive}
+                >
         
               {images.map((Img, index) => {
                 return (
@@ -94,7 +116,7 @@ const OurWork = () => {
                   </div>
                 );
               })}
-              
+              </Carousel>
             </div>
           </div>
           </div>

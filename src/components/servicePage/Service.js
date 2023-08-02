@@ -7,6 +7,7 @@ import ReviewPage from "./reviewPage/ReviewPage";
 import Subscription from "./subscriptionPage/Subscription";
 import OurPartners from "./ourPartners/OurPartners";
 import Contact from "./contactUS/Contact";
+import { NavLink } from "react-router-dom";
 const Service = () => {
   return (
     <>
@@ -35,9 +36,10 @@ const Service = () => {
                       Studio, the default integrated development environment
                       (IDE) supported by Google to develop Android apps.
                 </p>
+                <NavLink to='app-development'>
                 <Button className="service_button border-0 px-4 mt-3 mb-5 py-sm-2">
                   Read More
-                </Button>
+                </Button> </NavLink>
               </div>
               <div className="col-md  bg-white card-boxes">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
@@ -50,9 +52,11 @@ const Service = () => {
                   Branches)/MCA/M.Sc (IT)/ Polytechnic Diploma (All Branches),
                   MBA, BBA, B.Voc and other
                 </p>
+                <NavLink to='subscription'>
                 <Button className="service_button border-0 px-4 mt-3 mb-5 py-sm-2">
                   Read More
                 </Button>
+                </NavLink>
               </div>
               <div className="col-md  bg-white card-boxes d-lg-block d-md-none">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
@@ -65,9 +69,11 @@ const Service = () => {
                       business needs, offering perfectly tailored solutions for
                       your design, development, Ecommerce and data needs.
                 </p>
+                <NavLink to='/ecommerce'>
                 <Button className="service_button border-0 px-4 mt-3 mb-5 py-sm-2">
                   Read More
                 </Button>
+                </NavLink>
               </div>
             </Row>
               <Row className="mx-auto six_images_grid flex-wrap">
@@ -82,9 +88,11 @@ const Service = () => {
                       business needs, offering perfectly tailored solutions for
                       your design, development, Ecommerce and data needs.
                 </p>
+                <NavLink to='/ecommerce'>
                 <Button className="service_button border-0 px-4 mt-3 mb-5 py-sm-2">
                   Read More
                 </Button>
+                </NavLink>
               </div>
               <div className="col-md  bg-white card-boxes midbox-comp  d-lg-none d-md-block">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
@@ -97,9 +105,11 @@ const Service = () => {
                   programmers which delivers pioneering website programming
                   services at a variety of web programming platform.
                 </p>
+                <NavLink to='/web-development'>
                 <Button className="service_button border-0 px-4 mt-3 py-sm-2 mb-5">
                   Read More
                 </Button>
+                </NavLink>
               </div>
               </Row>
               <Row className="mx-auto six_images_grid flex-wrap">
@@ -114,9 +124,11 @@ const Service = () => {
                   programmers which delivers pioneering website programming
                   services at a variety of web programming platform.
                 </p>
+                <NavLink to='/web-development'>
                 <Button className="service_button border-0 px-4 mt-3 py-sm-2 mb-5">
                   Read More
                 </Button>
+                </NavLink>
               </div>
               <div className="col-md bg-white card-boxes">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
@@ -130,9 +142,11 @@ const Service = () => {
                   team will create, host, and update the site for you.
                 </p>
                 <h5 className="mid-head-sscn6 d-inline-flex mb-0 py-3 bttn-windows">
+                <NavLink to='/web-and-graphic'>
                   <Button className="service_button border-0 px-4 mt-3 mb-5 py-sm-2">
                     Read More
                   </Button>
+                  </NavLink>
                 </h5>
               </div>
               <div className="col-md  bg-white card-boxes">
@@ -148,9 +162,11 @@ const Service = () => {
                       optimization results.
                 </p>
                 <h5 className="mid-head-sscn6 d-inline-flex mb-0 py-3 bttn-windows">
+                <NavLink to='search-engine-optimization'>
                   <Button className="service_button border-0 px-4 mt-3 mb-5 py-sm-2">
                     Read More
                   </Button>
+                  </NavLink>
                 </h5>
               </div>
               </Row>

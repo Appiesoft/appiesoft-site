@@ -54,12 +54,7 @@ const Ecommerce = () => {
               made easy
             </h2>
             <p>
-              Have you held back on adding e-commerce business facilities to
-              your website because it was just too hard and too costly?
-              <br />
-              <br />
-              Do you need to upgrade your e-commerce services to meet the needs
-              of customers and suppliers, but not sure where to start?
+            Ecommerce is considered to be the most effective web solution for online business expansion, which demands a little investment on the owner’s side. AppieSoft Web Solutions is a leading Ecommerce web development company of London, which is a popular name amongst the startups, wholesalers, retailers and brand agents. Since online customers continue to expect more functionality, convenience and security so our robust Ecommerce web development services will ensure them an easy and seamless online shopping experience.
             </p>
             <button type="button">Talk To An Expert Now</button>
           </div>
@@ -76,13 +71,13 @@ const Ecommerce = () => {
         <div class="container">
           <div class="box_sec_enterprice">
             <h2 class="box_sec_enterprice-heading-2">
-              Telco ICT Group specialises in developing individualised Ecommerce
+            AppieSoft Web Solutions specialises in developing individualised Ecommerce
               website design
             </h2>
             <p class="box_sec_enterprice-paragraph tmm">
               Our team is renowned for providing some of the best ecommerce
               <br />
-              websites in Australia, including 25+ years.
+              websites in London, including 5+ years.
             </p>
             <div class="teams">
 
@@ -126,9 +121,7 @@ const Ecommerce = () => {
             </div>
             <div class="we-got-content">
               <p>
-                We also provide tailored advice on Ecommerce marketing and
-                Ecommerce management to help you manage product sales, increase
-                market share and build lasting relationships and and loyalty.
+              Appiesoft Web Solutions is a team of Digital Marketing experts, Website Designers and Developers that understand the value of your Brand or Product. As an Digital Marketing expert/Website Design and Development organization we have finished 500+ projects over the world.
                 <br />
                 <br />
                 Talk to us about how we can help you master Ecommerce for your

@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Button, Container } from "react-bootstrap";
 import "./Subscription.css";
+import { NavLink } from "react-router-dom";
 const Subscription = () => {
   return (
     <div>
@@ -21,7 +22,7 @@ const Subscription = () => {
                     <i class="fa-solid fa-check"></i>{" "}
                   </span>
                   <p class="subscription_para mb-4 text-black">
-                    8 Hours day & 24 working Days in a Month.
+                  8 hours a day & 24 working Days in a Month.
                   </p>
                 </Col>
                 <Col className="d-flex">
@@ -29,7 +30,7 @@ const Subscription = () => {
                     <i class="fa-solid fa-check"></i>{" "}
                   </span>
                   <p class="subscription_para mb-4 text-black">
-                    Total :192 hours, period of Hiring : 1 Month with Billing
+                  Total : 192 hours, period of Hiring : 1 Month with Billing
                   </p>
                 </Col>
                 <Col className="d-flex">
@@ -37,14 +38,15 @@ const Subscription = () => {
                     <i class="fa-solid fa-check"></i>{" "}
                   </span>
                   <p class="subscription_para mb-4 text-black">
-                    40% advance,60% at the mid of month.
+                  40% advance, 60% at the mid of month.
                   </p>
                 </Col>
               </Col>
               <Col className="text-center mx-auto">
+              <NavLink to='/contact'>
                 <Button className="subs_btn border-0 px-4 mt-3 mb-5">
                   Contact Us
-                </Button>
+                </Button></NavLink>
               </Col>
             </div>
             <div className="col-md   tile-boxes midbox-comp   px-0 card_bg"  id="titleboxx">
@@ -61,7 +63,7 @@ const Subscription = () => {
                     <i class="fa-solid fa-check"></i>{" "}
                   </span>
                   <p class="subscription_para mb-4 text-black">
-                    8 Hours day & 24 working Days in a Month.
+                  80 hours of work in total, 40 hours each week and 8 hours daily, total : 80 hours.
                   </p>
                 </Col>
                 <Col className="d-flex">
@@ -69,7 +71,7 @@ const Subscription = () => {
                     <i class="fa-solid fa-check"></i>{" "}
                   </span>
                   <p class="subscription_para mb-4 text-black">
-                    Total :192 hours, period of Hiring : 1 Month with Billing
+                  Minimum Period of Hiring : 2 Weeks.
                   </p>
                 </Col>
                 <Col className="d-flex">
@@ -77,14 +79,15 @@ const Subscription = () => {
                     <i class="fa-solid fa-check"></i>{" "}
                   </span>
                   <p class="subscription_para mb-4 text-black">
-                    40% advance,60% at the mid of month.
+                  Billing : Full payment in advance or Hourly basis.
                   </p>
                 </Col>
               </Col>
-              <Col className="text-center mx-auto">
+              <Col className="text-center mx-auto">  <NavLink to='/contact'>
                 <Button className="subs_btn border-0 px-4 mt-3 mb-5">
                   Contact Us
-                </Button>
+                </Button> 
+              </NavLink>
               </Col>
             </div>
 
@@ -102,7 +105,7 @@ const Subscription = () => {
                     <i class="fa-solid fa-check"></i>{" "}
                   </span>
                   <p class="subscription_para mb-4 text-black">
-                    8 Hours day & 24 working Days in a Month.
+                  No hiring commitment. Hire us when you require.
                   </p>
                 </Col>
                 <Col className="d-flex">
@@ -110,7 +113,7 @@ const Subscription = () => {
                     <i class="fa-solid fa-check"></i>{" "}
                   </span>
                   <p class="subscription_para mb-4 text-black">
-                    Total :192 hours, period of Hiring : 1 Month with Billing
+                  Period of Hiring : Minimum 1 week i.e. 40 hours.
                   </p>
                 </Col>
                 <Col className="d-flex">
@@ -118,14 +121,14 @@ const Subscription = () => {
                     <i class="fa-solid fa-check"></i>{" "}
                   </span>
                   <p class="subscription_para mb-4 text-black">
-                    40% advance,60% at the mid of month.
+                  Billing : Full payment in advance or Hourly basis.
                   </p>
                 </Col>
               </Col>
-              <Col className="text-center mx-auto">
+              <Col className="text-center mx-auto">  <NavLink to='/contact'>
                 <Button className="subs_btn border-0 px-4 mt-3 mb-5">
                   Contact Us
-                </Button>
+                </Button> </NavLink>
               </Col>
             </div>
           </Row>

@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 import GoogleMapReact from "google-map-react";
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const Footer = () => {
+  
   const [menuItems, setMenuItems] = useState([]);
 
   const defaultProps = {
@@ -19,39 +20,35 @@ const Footer = () => {
   };
   const [showButton, setShowButton] = useState(false);
   const handleScroll = () => {
-    // Show/hide the scroll-up button based on the scroll position
     const scrollY = window.scrollY;
-    const showThreshold = 300; // Adjust this value to control when the button appears
+    const showThreshold = 300; 
     setShowButton(scrollY > showThreshold);
   };
   const handleScrollUp = () => {
-    // Smoothly scroll to the top of the page
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  // Add event listener on mount
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    // Clean up event listener on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+    useEffect(() => {
+        // Replace the API endpoint with your WordPress API URL
+        const apiUrl = 'https://xploreseo.com/react-wordpress-api/wp-json/custom/v1/menu/main-menu';
+    
+        // Fetch the menu data using axios
+        axios
+          .get(apiUrl)
+          .then(response => {
+            setMenuItems(response.data);
+          })
+          .catch(error => {
+            console.error('Error fetching menu data:', error);
+          });
+      }, []);
 
-  useEffect(() => {
-    // Replace the API endpoint with your WordPress API URL
-    const apiUrl =
-      "https://xploreseo.com/react-wordpress-api/wp-json/custom/v1/menu/main-menu";
-
-    const fetchMenuData = async () => {
-      try {
-        const response = await axios.get(apiUrl);
-        setMenuItems(response.data);
-      } catch (error) {
-        console.error("Error fetching menu data:", error);
-      }
-    };
-    fetchMenuData();
-  }, []);
+    const currentYear = new Date().getFullYear();
   return (
     <>
       {showButton && (
@@ -68,18 +65,21 @@ const Footer = () => {
                   <img alt="team" className="" src={location} />
                   <div className="sav_rgt">
                     <h2 className=" footer_info ">SEND YOUR MESSAGE</h2>
+                    <NavLink to="mailto:info@appiesoftwebsolutions.com" target="_blank">
                     <p className="text-white inner_footer_info ">
                       info@appiesoftweb<br/>solutions.com
                     </p>
+                    </NavLink>
                   </div>
                 </li>
                 <li>
                   <img alt="team" className="" src={location} />
                   <div className="sav_rgt">
                     <h2 className=" footer_info ">CALL US</h2>
+                    <NavLink to="tel:8847249971" target="_blank"  >
                     <p className="text-white inner_footer_info">
                       +91-8847249971
-                    </p>
+                    </p></NavLink>
                   </div>
                 </li>
                 <li>
@@ -153,19 +153,19 @@ const Footer = () => {
                   </h2>
                   <nav className="list-none mb-10 inner_links text-start">
                     <li className="my-2">
-                      <NavLink>Web Development</NavLink>
+                      <NavLink to='web-development'>Web Development</NavLink>
                     </li>
                     <li>
-                      <NavLink>Web & Graphics Design</NavLink>
+                      <NavLink to='web-and-graphic'>Web & Graphics Design</NavLink>
                     </li>
                     <li className="my-2">
-                      <NavLink>Ecommerce Websites</NavLink>
+                      <NavLink to='ecommerce'>Ecommerce Websites</NavLink>
                     </li>
                     <li>
-                      <NavLink>Apps Development</NavLink>
+                      <NavLink to='app-development'>Apps Development</NavLink>
                     </li>
                     <li className="my-2">
-                      <NavLink>Search Engine Optimization</NavLink>
+                      <NavLink to='search-engine-optimization'>Search Engine Optimization</NavLink>
                     </li>
                     {/* <li>
                       <NavLink>Industrial Training</NavLink>
@@ -193,12 +193,12 @@ const Footer = () => {
               </Col>
               <div className="text-white text-center border-top my-5">
                 <div className="mt-5">
-                  Copyright © 2023 Appiesoft Web Solutions Pvt Ltd. All rights
+                  Copyright © {currentYear} Appiesoft Web Solutions Pvt Ltd. All rights
                   reserved.
                 </div>
                 <p className="text-center mt-3">
                   <span className="mx-4">
-                    <NavLink to="https://www.facebook.com/appiesoftwebsolutions/">
+                    <NavLink to="https://www.facebook.com/appiesoftwebsolutions/" target="_blank">
                       <i
                         className="fa fa-facebook text-white"
                         aria-hidden="true"
@@ -206,7 +206,7 @@ const Footer = () => {
                     </NavLink>
                   </span>
                   <span>
-                    <NavLink to="https://www.instagram.com/appiesoftweb/?hl=en">
+                    <NavLink to="https://www.instagram.com/appiesoftweb/?hl=en" target="_blank">
                       <i className="fa-brands fa-instagram text-white"></i>{" "}
                     </NavLink>
                   </span>

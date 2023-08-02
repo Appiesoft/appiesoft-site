@@ -18,20 +18,12 @@ const WebService = () => {
       <section class="ict-sec-one">
         <div class="my_wrap">
           <div class="business-commun-text">
-            <h2>Collaboration made easy</h2>
+            <h2>Web Development</h2>
             <p>
-              Are you collaborating in the cloud yet? Telco ICT
-              <br /> can assist your team to communicate effectively
-              <br /> and share effortlessly, providing services for
-              <br /> cloud computing.
+            We at AppieSoft web solutions are establishing service providers of custom web development ,web programming services in London. We had made a lively website as per customer precondition,counting the programming platform which they put forward. We have an expert team of web developers,web programmers which deliver pioneering website programming services at a variety of web programming platforms.
             </p>
             <p>
-              Cloud collaboration services enable you to meet
-              <br /> and work on live documents together, enjoy 24/7
-              <br /> accessibility, and edit and make changes in real
-              <br /> time. Multiple people can work within the same
-              <br /> version of a file without duplication, and
-              <br /> meeting online to share information is so easy.
+            AppieSoft Web Solutions is a web development company having 5 years of experience in building web applications. Our dedicated web app developers have successfully completed over 300 projects for a variety of industries and business domains, including e-Commerce, e-Learning, Analytics, Finance, Magento. Web development services will come into portrait
             </p>
             <button type="button">Talk To An Expert Now</button>
           </div>
@@ -134,7 +126,7 @@ const WebService = () => {
       <div class="ict-last-section">
         <div class="container">
             <div class="prple-sctn-light">
-                <p>A trusted Australian cloud service provider, Telco ICT Group can help you choose the right way to connect and work together for better business results. Contact us to find out how to make a success of cloud collaboration services in your business.</p>
+                <p>Appiesoft Web Solutions is a team of Digital Marketing experts, Website Designers, and Developers that understand the value of your Brand or Product. As a Digital Marketing expert/Website Design and Development organization, we have finished 500+ projects over the world.</p>
                <span>Talk To An Expert Now</span>
             </div>
         </div>

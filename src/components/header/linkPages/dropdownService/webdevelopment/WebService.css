@@ -178,7 +178,7 @@ header.inner_head_line.text-center {
         width: 50%;
     }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1350px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .business-commun-text {
         padding: 40px 0 0 102px;
         width: 50%;
@@ -227,7 +227,6 @@ header.inner_head_line.text-center {
     padding: 30px 100px 20px 0px;
 }
 }
-
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .business-commun-text {
