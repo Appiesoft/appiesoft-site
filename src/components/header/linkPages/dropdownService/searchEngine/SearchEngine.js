@@ -18,11 +18,8 @@ const SearchEngine = () => {
 <section class="ict-sec-one">
     <div class="my_wrap">
            <div class="business-commun-text"> 
-                <h2>Helping customers find your business online</h2>
-                <p>Not sure where to start with Search Engine Optimisation? Relax and leave the hard work to us.<br/><br/>
-
-					SEO can seem complicated, confusing and costly. <a href="https://telcoict.com.au/">Telco ICT Group</a> is a Search Engine Optimisation Specialist – we will work with you to demystify the SEO process and set you up with an
-affordable Search Engine Optimisation Package to fit your needs.</p>
+                <h2>SEO and Internet Marketing</h2>
+                <p>Strengthen up your online presence with our advanced seo services in London,Edinburgh, UK. Being one of the best ways of business promotions, Search Engine Optimization (SEO) helps in generating significant leads. AppieSoft Web Solutions is considered to be the best seo company in the United Kingdom, which is known for its bespoke SEO strategies. We have the pool of best seo experts, who have the potential to improve your online visibility effectively and can deliver high quality targeted traffic towards your website.</p>
                  <a href="https://telcoict.com.au/contact-us/"><button type="button">Talk To An Expert Now</button></a>
            </div>
              <div class="commun-img-area cmn-img-area-new-img"> 
@@ -38,7 +35,7 @@ affordable Search Engine Optimisation Package to fit your needs.</p>
                      <img src={bulb} alt="Search Engine Optimisation" />
                   </div>
                    <div class="we-got-content Search-Engine-cont seo-new-cont">
-                       <p class="seo-parag">Our experienced technicians will break down and explain all Search Engine Optimisation SCosts so you’ll understand all costs upfront.<br/><br/>
+                       <p class="seo-parag">Our deep knowledge about keyword and market research, SEO PR, link building, content marketing,social media promotion, infographics, onpage and offpage SEO, makes us capable of delivering you the best search engine optimization results. <br/><br/>
 
 Our Search Engine Optimizer Services will help customers and prospects find you and stay with you.</p>
                    </div>

@@ -1,6 +1,6 @@
-.img_work {
+/* .img_work {
     width: -webkit-fill-available;
-}
+} */
 .explore_button {
     background-color: #f47421;
     font-size: 14px;
@@ -9,33 +9,33 @@
 .explore_button:hover {
     background-color: #ff6600;
 }
-.position_textBox {
+/* .position_textBox {
     position: absolute;
     bottom: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
     top: 0;
-}
+} */
 
-.heading_text {
+/* .heading_text {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     text-transform: capitalize;
     color: #FFFFFF;
-}
+} */
 
-.para_text {
+/* .para_text {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     text-transform: capitalize;
     color: #FFFFFF;
-}
+} */
 
-.border_radius {
+/* .border_radius {
     border-radius: 15px;
     overflow: hidden;
-}
+} */
 .section-five {
     text-align: center;
     background-color: #f4f5f7;
@@ -105,7 +105,10 @@ ul.mmk {
     outline: 15px solid rgba(255, 255, 255, 0.5);
     filter: drop-shadow(0px 24px 34px rgba(0, 0, 0, 0.05));
 }
-
+.head_line {
+    color: #f47421 !important;
+    font-size: 18px;
+}
 
 @media only screen and (min-width: 992px) and (max-width:1200px)  {
     .Our-clients-box h2 {
@@ -114,9 +117,9 @@ ul.mmk {
     .inner_head_line {
         font-size: 35px;
     }
-    .para_text {
+    /* .para_text {
         font-size: 18px;
-    }
+    } */
   .Our-clients-box ul {
     column-gap: 21px;
     row-gap: 17px;
@@ -155,9 +158,9 @@ ul.mmk {
     font-size: 14px;
     padding: 9px 12px !important;
 }
-.para_text {
+/* .para_text {
     font-size: 15px !important;
-}
+} */
 
 
 .Our-clients-box li:nth-child(2n+2) {
@@ -166,22 +169,22 @@ ul.mmk {
     margin: 3px auto 0 auto;
 }
 
-.heading_text {
+/* .heading_text {
     font-size: 22px;
 
-}
+} */
 }
 
 @media only screen and (min-width: 576px) and (max-width:768px)  {
     .Our-clients-box li {
      margin: 12px;
     }
-    .para_text {
+    /* .para_text {
         font-size: 28px !important;
-    }
-    .heading_text {
+    } */
+    /* .heading_text {
         font-size: 28px;
-    }   
+    }    */
     .Our-clients-box ul {
         display: inline-table;
     }
@@ -191,18 +194,21 @@ ul.mmk {
         column-gap: 30px;
     }
     .explore_button {
-        line-height: 7px;
-    
+        line-height:17px;
     }
 }
 @media only screen and (min-width: 0px) and (max-width:576px)  {
-    .para_text {
-        font-size: 17px;
+    .head_line {
+        color: #f47421 !important;
+        font-size: 18px;
     }
-    .heading_text {
+    /* .para_text {
+        font-size: 17px;
+    } */
+    /* .heading_text {
         font-size: 22px;
     
-    }
+    } */
     ul.mmk {
         width: -webkit-fill-available;
     }

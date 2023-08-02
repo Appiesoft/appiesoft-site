@@ -7,10 +7,12 @@ import client5 from '../../../asset/client/client5.png'
 import client6 from '../../../asset/client/client6.png'
 import client7 from '../../../asset/client/client7.png'
 import {Row } from 'react-bootstrap'
-import img1 from '../../../asset/img1.png'
-import img2 from '../../../asset/img2.png'
-import img3 from '../../../asset/img3.png'
+
+import darwin from '../../../asset/service/darwin.jpg';
+import lankan from '../../../asset/service/lankan.jpg';
+import recruitment from '../../../asset/service/recruitment.jpg';
 import './OurClient.css'
+import { NavLink } from 'react-router-dom'
 const OurClient = () => {
     return (
         <div className='col-auto'>
@@ -62,64 +64,51 @@ const OurClient = () => {
 	     </div>
 
  </section>
-
             <section className='py-5 '>
                 <div className="container mx-auto py-3">
                     <div className='head_line mb-3 mx-3'>
-                        <h6>News</h6>
+                        <h5>Latest Work</h5>
                     </div>
                     <div className='inner_head_line d-md-flex justify-between mx-3' >
                         <h2>Advice on how to <br />
                             make your content.
                         </h2>
                         <div className='align-self-end mt-3 mt-lg-0'>
+                        <NavLink to='/about'>
                             <button className='explore_button  text-white rounded-2'>
                                 Explore All Resources
-                            </button>
+                            </button></NavLink>
                         </div>
                     </div>
                     <Row className=" mt-5 mx-auto">
-                        <div className="col-md-6 col-sm-12 portfolio-item filter-app mb-4 mb-sm-0">
-                            <div className='row mx-auto position-relative border_radius'>
+                        <div className="col-md-6 col-sm-12 mb-4 mb-sm-0">
+                            <div className='row mx-auto '>
                                 <div className='col-12 px-0'>
-                                    <img src={img3} className="img-fluid img_work" alt="" />
+                                    <img src={lankan} className="img-fluid img_work" alt="" />
                                 </div> 
-                                <div className='col-12 d-flex flex-column pb-sm-5 pb-2 position_textBox ps-4'>
-                                    <p className='m-0 heading_text mt-auto'>Managed IT</p>
-                                    <h4 className='m-0 para_text mt-3'>
-                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                    </h4>
-                                </div>
+                                
+                            </div>
+                            <div className='row mx-auto  mt-4 '>
+                                <div className='col-12 px-0'>
+                                    <img src={recruitment} className="img-fluid img_work" alt="" />
+                                </div> 
                             </div>
                         </div>
-                        <div className="col-md-6 col-sm-12 portfolio-item filter-app mt-sm-4 mt-md-0">
+                        <div className="col-md-6 col-sm-12  mt-sm-4 mt-md-0">
                             <div className="row">
                                 <div className="col-12">
-                                    <div className='row mx-auto position-relative border_radius'>
+                                    <div className='row mx-auto '>
                                         <div className='col-12 px-0'>
-                                            <img src={img1} className="img-fluid img_work" alt="" />
-                                        </div>
-                                        <div className='col-12 d-flex flex-column pb-sm-5 pb-2 position_textBox ps-4'>
-                                            <p className='m-0 heading_text mt-auto'>Managed IT</p>
-                                            <h4 className='m-0 para_text mt-3'>
-                                                Amet minim mollit non deserunt.
-                                            </h4>
+                                            <img src={recruitment} className="img-fluid img_work" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-12 mt-4">
-                                    <div className='row mx-auto position-relative border_radius'>
+                                    <div className='row mx-auto'>
                                         <div className='col-12 px-0'>
-                                            <img src={img2} className="img-fluid img_work" alt="" />
-                                        </div>
-                                        <div className='col-12 d-flex flex-column pb-sm-5 pb-2 position_textBox ps-4'>
-                                            <p className='m-0 heading_text mt-auto'>Managed IT</p>
-                                            <h4 className='m-0 para_text mt-3'>
-                                                Amet minim mollit non deserunt.
-                                            </h4>
+                                            <img src={darwin} className="img-fluid img_work" alt="" />
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -127,6 +116,7 @@ const OurClient = () => {
                 </div>
 
             </section>
+           
         </div>
     )
 }

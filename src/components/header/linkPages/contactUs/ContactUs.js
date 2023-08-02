@@ -83,9 +83,8 @@ const ContactUs = () => {
                 <br /> Meet You.
               </h2>
               <p>
-                We’re ready and waiting to design an individual
-                telecommunications solution for your business and help you
-                achieve your goals.
+              You can explore our web development services and feel
+free to comment and make indications.
                 <br />
                 <br />
                 Complete the form below and one of our team will be in contact
@@ -179,6 +178,7 @@ const ContactUs = () => {
             className="modify_content align-self-center width_box_content mx-auto pt-lg-5 pt-3"
           >
             <div
+            
               onClick={toggleDropdown}
               className={` ${
                 !isOpen

@@ -2,6 +2,7 @@ import React from "react";
 import "./MainSection.css";
 import { Col, Row, Container } from "react-bootstrap";
 import fourimgg from "../../asset/herosection/fourimgg.png";
+import { NavLink } from "react-router-dom";
 const MainSection = () => {
   return (
     <>
@@ -22,9 +23,10 @@ const MainSection = () => {
                   will create, host, and update the site for you.
                 </h2>
                 <div className="d-flex justify-content-md-center justify-content-lg-start">
+                <NavLink to='/contact' >
                   <button className="graphic_button mt-4">
                     Talk To An Expert Now
-                  </button>
+                  </button></NavLink>
                 </div>
             </Col>
           </Row>
@@ -63,10 +65,10 @@ const MainSection = () => {
                   dedicated toward our work, looking for chances to make stylish
                   items over the advanced range.
                 </p>
-                
+                <NavLink to='/about' >
                 <button className=" appisoft_button text-white mt-4 py-2">
                   Read More
-                </button>
+                </button></NavLink>
               </Col>
             </Row>
           </div>

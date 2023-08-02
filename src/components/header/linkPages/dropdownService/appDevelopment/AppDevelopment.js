@@ -21,15 +21,7 @@ const AppDevelopment = () => {
               customers are – 24/7
             </h2>
             <p>
-              If you want to create a tailored mobile app to improve
-              communication, increase customer engagement and drive your digital
-              marketing dollar further, talk to us.
-              <br />
-              <br />
-              Since expanding our services to mobile app development. The{" "}
-              <a href="https://telcoict.com.au/">Telco ICT Group</a> team has
-              assisted hundreds of clients to take advantage of the power of
-              mobile apps.
+            Mobile application is the latest to join the technology revolution.We’ll take you through the basics of Android Studio, the default integrated development environment (IDE) supported by Google to develop Android apps, including user interfaces, activities, controls, layouts, services, content providers, location, multimedia APIs.
             </p>
             <button type="button">Talk To An Expert Now</button>
           </div>

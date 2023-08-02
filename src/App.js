@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Error from './components/dashboard/ErrorPage/Error';
 
 const Dashboard = lazy(() => import('./components/dashboard/Dashboard'));
 const AboutUs = lazy(() => import('./components/header/linkPages/aboutUs/AboutUs'));
@@ -21,15 +22,16 @@ const App = () => {
     </div>}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="*" element={<Error />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/our-work" element={<OurWork />} />
           <Route path="/testimonials" element={<Testimonial />} />
-          <Route path="web-and-graphic" element={<WebGhrapic />} />
-          <Route path="web-development" element={<WebService />} />
-          <Route path="search-engine-optimization" element={<SearchEngine  />} />
-          <Route path="ecommerce" element={<Ecommerce  />} />
-          <Route path="app-development" element={<AppDevelopment />} />
+          <Route path="/web-and-graphic" element={<WebGhrapic />} />
+          <Route path="/web-development" element={<WebService />} />
+          <Route path="/search-engine-optimization" element={<SearchEngine/>} />
+          <Route path="/ecommerce" element={<Ecommerce/>} />
+          <Route path="/app-development" element={<AppDevelopment />} />
         </Routes>
       </Suspense>
     </>

@@ -84,10 +84,7 @@ const Testimonial = () => {
         <div class="container px-lg-5 px-3 mx-auto mt-4">
           <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">
             <p class="leading-relaxed mb-6 testimonialPara">
-              Synth chartreuse iPhone lomo cray raw denim brunch everyday carry
-              neutra before they sold out fixie 90's microdosing. Tacos
-              pinterest fanny pack venmo, post-ironic heirloom try-hard pabst
-              authentic iceland.
+            They are very easy to communicate with and he starts working on tasks you give him right away. I will look to Mandeep in the future for help when it comes to WordPress development and any CSS needs.
             </p>
           </h1>
 
