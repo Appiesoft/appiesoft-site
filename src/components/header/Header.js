@@ -45,13 +45,13 @@ const Header = () => {
                 
                 </li>
                 </NavLink>
-                <NavLink to="tel:8847249971" target="_blank">
+                <NavLink to="tel:9878688681" target="_blank">
                 <li className="d-flex justify-content-between align-items-center calls">
                   <span>
                     <img src={phonelogo} alt="" />
                   </span>
                   <h6 className=" text-white upper_navbar_text ms-3 mt-0">
-                    +91-8847249971
+                  +91-9878688681
                   </h6>
                 </li>
                 </NavLink>

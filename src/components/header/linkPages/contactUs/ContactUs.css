@@ -51,9 +51,7 @@ img {
   max-width: 100%;
   border-style: none;
 }
-.mailimg {
-  filter: hue-rotate(113deg);
-}
+
 .cont_sec1 li span {
   font-weight: 700;
   font-size: 14px;
@@ -82,17 +80,8 @@ img {
   flex: 1 1 48%;
   max-width: 48%;
 }
-.call {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0px;
-  box-sizing: border-box;
-  clear: both;
-  column-gap: 24px;
-  width: 84%;
-}
-.call .txt:hover{
+
+.call :hover{
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }

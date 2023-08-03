@@ -7,7 +7,7 @@ import client5 from '../../../asset/client/client5.png'
 import client6 from '../../../asset/client/client6.png'
 import client7 from '../../../asset/client/client7.png'
 import {Row } from 'react-bootstrap'
-
+import unnamed from '../../../asset/service/unnamed.png';
 import darwin from '../../../asset/service/darwin.jpg';
 import lankan from '../../../asset/service/lankan.jpg';
 import recruitment from '../../../asset/service/recruitment.jpg';
@@ -99,7 +99,7 @@ const OurClient = () => {
                                 <div className="col-12">
                                     <div className='row mx-auto '>
                                         <div className='col-12 px-0'>
-                                            <img src={recruitment} className="img-fluid img_work" alt="" />
+                                            <img src={unnamed} className="img-fluid img_work" alt="" />
                                         </div>
                                     </div>
                                 </div>

@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Header from "../../../header/Header";
 import Footer from "../../../footer/Footer";
 // import InnnerHeader from "../../../header/innerHeader/InnerHeader";
-import contactmail from "../../../../asset/contactmail.png";
-import contactphone from "../../../../asset/contactphone.png";
+
+import envelope from "../../../../asset/service/envelope.png";
+import contactphone from "../../../../asset/service/call_icon.png";
 import { Link, NavLink } from "react-router-dom";
 import "./ContactUs.css";
 import { Card, Col, Container, Form } from "react-bootstrap";
@@ -52,7 +53,7 @@ const ContactUs = () => {
         <div className="container">
           <ul>
             <li>
-              <img src={contactmail} alt="" className="mailimg" />
+              <img src={envelope} alt="" className="mailimg" />
               <span className="mt-3">SEND YOUR MESSAGE</span>
               <h4>
                 <NavLink to="mailto:info@appiesoftwebsolutions.com">
@@ -60,7 +61,15 @@ const ContactUs = () => {
                 </NavLink>
               </h4>
             </li>
-            <li>
+            <li className="mt-5 mt-md-0 call">
+            <NavLink to="tel:9878688681">
+              <img src={contactphone} alt="" className="mailimg mx-auto" />
+              <span className="mt-3">CALL US</span>
+              <h4 className="">
+          +91-9878688681
+              </h4></NavLink>
+            </li>
+            {/* <li>
               <div className="call">
                 <img src={contactphone} className="mailimg" />
                 <div className="txt">
@@ -73,7 +82,7 @@ const ContactUs = () => {
               <NavLink to="tel:1300 414 214">
                 <button  className="talkk">Talk To An Expert Now</button>
               </NavLink>
-            </li>
+            </li> */}
           </ul>
           <div className="talk_sec">
             <div className="cntct">

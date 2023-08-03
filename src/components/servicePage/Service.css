@@ -3,6 +3,12 @@
   flex-grow: 1;
   width: fit-content;
 }
+.service_para {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  text-align: -webkit-center;
+}
 .service_button {
   background-color: #f47421;
   font-weight: 700;
@@ -42,11 +48,7 @@
   font-size: 32px;
   font-weight: 700;
 }
-.service_para {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: -webkit-center;
-}
+
 .ourService {
   font-size: 48px;
   font-weight: 700;
