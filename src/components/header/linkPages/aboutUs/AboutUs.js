@@ -35,19 +35,32 @@ const AboutUs = () => {
             </div>
             <div className="para-sctn">
               <p>
-              Appiesoft Web Solutions is a team of Digital Marketing experts, Website Designers and Developers that understand the value of your Brand or Product. As an Digital Marketing expert/Website Design and Development organization we have finished 500+ projects over the world.
+                Appiesoft Web Solutions is a team of Digital Marketing experts,
+                Website Designers and Developers that understand the value of
+                your Brand or Product. As an Digital Marketing expert/Website
+                Design and Development organization we have finished 500+
+                projects over the world.
               </p>
               <p>
-              We at Appiesoft Web Solutions are answering real business challenges for our clients through innovation and deep industry knowledge.
+                We at Appiesoft Web Solutions are answering real business
+                challenges for our clients through innovation and deep industry
+                knowledge.
                 <NavLink to="#"> e-commerce services</NavLink>, branding
-                <NavLink to="#"> digital strategy</NavLink>, data storage and security and
+                <NavLink to="#"> digital strategy</NavLink>, data storage and
+                security and
                 <NavLink to="#"> firewall security.</NavLink>
               </p>
               <p>
-              AppieSoft Web Solutions, Mohali (Phase11) offers 6 Months/ 3 Months/6 weeks Job Based Industrial training for B.Tech (All Branches)/MCA/M.Sc (IT)/Polytechnic Diploma (All Branches), MBA, BBA, B.Voc and other graduate students.
+                AppieSoft Web Solutions, Mohali (Phase11) offers 6 Months/ 3
+                Months/6 weeks Job Based Industrial training for B.Tech (All
+                Branches)/MCA/M.Sc (IT)/Polytechnic Diploma (All Branches), MBA,
+                BBA, B.Voc and other graduate students.
               </p>
               <p>
-              Students who are interested to get training with Spoken English, Personality Development and Interview Preparation (HR+ Technical Round) classes and 100% placement assistance are required to register and enroll for Aptitude-cum-Technical Test.
+                Students who are interested to get training with Spoken English,
+                Personality Development and Interview Preparation (HR+ Technical
+                Round) classes and 100% placement assistance are required to
+                register and enroll for Aptitude-cum-Technical Test.
               </p>
             </div>
           </div>
@@ -93,7 +106,10 @@ const AboutUs = () => {
             </li>
             <li className="para-li">
               <p>
-              Every company is unique and therefore each design we create will reflect the client’s requirements and characteristics. From simple to complex, our website design team will create, host, and update the site for you.
+                Every company is unique and therefore each design we create will
+                reflect the client’s requirements and characteristics. From
+                simple to complex, our website design team will create, host,
+                and update the site for you.
               </p>
             </li>
             <li className="img-li  s-img">
@@ -104,7 +120,7 @@ const AboutUs = () => {
       </div>
       <div className="clr"></div>
 
-      <div className="fifth-sctn-abt">
+      {/* <div className="fifth-sctn-abt">
         <div className="img-wide-sctn">
           <img src={fourimgg} alt="" />
         </div>
@@ -121,7 +137,129 @@ const AboutUs = () => {
             for you. We’ll work in partnership with you to get the best results.
           </p>
         </div>
-      </div>
+      </div> */}
+      <section class="text-gray-600 body-font">
+        <div class="container  mx-auto flex flex-col">
+          <div class="lg:w-4/3 mx-auto">
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div class="w-36 h-36 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-10 h-10"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
+                    Mandeep Singh
+                  </h2>
+                  <div class="w-12 h-1 bgborder rounded mt-2 mb-2"></div>
+                  <p class="text-base">DIRECTOR SALES</p>
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p class="leading-relaxed text-lg mb-4">
+                  “Serial entrepreneur and Founder of AppieSoft and analytics
+                  services company. At RTL, we go beyond helping businesses
+                  transform through technology. We help them make a meaningful
+                  difference. Translating their aspiration into reality. I
+                  believe every business is born out of belief, the belief that
+                  you can make an impact, and that you have an Idea that
+                  matters. Drop us a line to talk more about the next big
+                  revolution.”
+                </p>
+
+                <span className="mx-4">
+                  <NavLink
+                    to="https://www.facebook.com/appiesoftwebsolutions/"
+                    target="_blank"
+                  >
+                    <i
+                      className="fa fa-facebook text-dark"
+                      aria-hidden="true"
+                    ></i>
+                  </NavLink>
+                </span>
+                <span>
+                  <NavLink
+                    to="https://www.instagram.com/appiesoftweb/?hl=en"
+                    target="_blank"
+                  >
+                    <i className="fa-brands fa-instagram text-dark"></i>{" "}
+                  </NavLink>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-4/3 mx-auto mt-4">
+            <div class="flex flex-col sm:flex-row">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div class="w-36 h-36 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-10 h-10"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
+                    Sharad Sharma
+                  </h2>
+                  <div class="w-12 h-1 bgborder rounded mt-2 mb-2"></div>
+                  <p class="text-base">DIRECTOR SALES</p>
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p class="leading-relaxed text-lg mb-4">
+                  “Serial entrepreneur and Founder of AppieSoft and analytics
+                  services company. At RTL, we go beyond helping businesses
+                  transform through technology. We help them make a meaningful
+                  difference. Translating their aspiration into reality. I
+                  believe every business is born out of belief, the belief that
+                  you can make an impact, and that you have an Idea that
+                  matters. Drop us a line to talk more about the next big
+                  revolution”.
+                </p>
+
+                <span className="mx-4">
+                  <NavLink
+                    to="https://www.facebook.com/appiesoftwebsolutions/"
+                    target="_blank"
+                  >
+                    <i
+                      className="fa fa-facebook text-dark"
+                      aria-hidden="true"
+                    ></i>
+                  </NavLink>
+                </span>
+                <span>
+                  <NavLink
+                    to="https://www.instagram.com/appiesoftweb/?hl=en"
+                    target="_blank"
+                  >
+                    <i className="fa-brands fa-instagram text-dark"></i>{" "}
+                  </NavLink>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div className="clr"></div>
       <div className="sxth-sctn-abt">
         <div className="container">
@@ -135,7 +273,9 @@ const AboutUs = () => {
             </div>
             <div className="digi-para">
               <p>
-              Our company is composed of highly enthusiastic and experienced engineers and is fully equipped with the latest technology ready to satisfy your needs.
+                Our company is composed of highly enthusiastic and experienced
+                engineers and is fully equipped with the latest technology ready
+                to satisfy your needs.
               </p>
             </div>
           </div>

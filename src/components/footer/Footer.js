@@ -5,19 +5,10 @@ import location from "../../asset/location.png";
 import mainlogoappie from "../../asset/mainlogoappie.png";
 import "./Footer.css";
 import { NavLink } from "react-router-dom";
-import GoogleMapReact from "google-map-react";
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import Iframe from "react-iframe";
 const Footer = () => {
   
   const [menuItems, setMenuItems] = useState([]);
-
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627,
-    },
-    zoom: 11,
-  };
   const [showButton, setShowButton] = useState(false);
   const handleScroll = () => {
     const scrollY = window.scrollY;
@@ -86,10 +77,11 @@ const Footer = () => {
                   <img alt="team" className="" src={location} />
                   <div className="sav_rgt">
                   <h2 className=" footer_info ">ADDRESS</h2>
+                  <NavLink to='https://goo.gl/maps/VPcbY3Z4u4uw49687' target="_blank">
                     <h2 className="inner_footer_info text-white">
                       SCF 80 FF, Phase 11, Sector 65, Sahibzada Ajit Singh
                       Nagar, Punjab 160065
-                    </h2>
+                    </h2> </NavLink>
                   </div>
                 </li>
               </ul>
@@ -152,8 +144,8 @@ const Footer = () => {
                     Services
                   </h2>
                   <nav className="list-none mb-10 inner_links text-start">
-                    <li className="my-2">
-                      <NavLink to='web-development'>Web Development</NavLink>
+                  <li className="my-2">
+                      <NavLink to='web-development'>React Development</NavLink>
                     </li>
                     <li>
                       <NavLink to='web-and-graphic'>Web & Graphics Design</NavLink>
@@ -165,29 +157,19 @@ const Footer = () => {
                       <NavLink to='app-development'>Apps Development</NavLink>
                     </li>
                     <li className="my-2">
+                      <NavLink to='web-development'>Web Development</NavLink>
+                    </li>
+                    <li className="my-2">
                       <NavLink to='search-engine-optimization'>Search Engine Optimization</NavLink>
                     </li>
-                    {/* <li>
-                      <NavLink>Industrial Training</NavLink>
-                    </li> */}
                   </nav>
                 </Col>
                 <Col lg={3} md={4} className="col-12 mt-md-4 mt-lg-0">
-                  <h2 className="text-white text-start head_links mb-3">
+                <h2 className="text-white text-start head_links mb-3">
                     Our Location
                   </h2>
                   <div className="map_width">
-                    <GoogleMapReact
-                      bootstrapURLKeys={{ key: "" }}
-                      defaultCenter={defaultProps.center}
-                      defaultZoom={defaultProps.zoom}
-                    >
-                      <AnyReactComponent
-                        lat={59.955413}
-                        lng={30.337844}
-                        text="My Marker"
-                      />
-                    </GoogleMapReact>
+                    <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d219564.90228666205!2d76.67961046689979!3d30.698670868389545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed842c2eef47%3A0xa42b34ac79161bd3!2sAppiesoft%20Web%20Solutions%20Pvt%20ltd!5e0!3m2!1sen!2sin!4v1691063065285!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></Iframe>
                   </div>
                 </Col>
               </Col>

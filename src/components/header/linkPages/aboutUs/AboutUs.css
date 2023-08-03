@@ -6,6 +6,9 @@
 width: 100%;
 
 }
+.bgborder{
+	border-bottom: 3px solid #f47421;
+}
 .secnd-section-abt {
     margin-bottom: 70px;
 }

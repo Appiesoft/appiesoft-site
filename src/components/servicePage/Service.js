@@ -19,7 +19,7 @@ const Service = () => {
                 xxl={10}
                 xl={10}
                 lg={10}
-                className="text-center mx-auto text-black  pb-3"
+                className="text-center mx-auto   pb-3"
               >
                 <h1 className="ourService">Our Services</h1>
               </Col>
@@ -27,10 +27,10 @@ const Service = () => {
             <Row className="mx-auto six_images_grid">
               <div className="col-md  bg-white card-boxes">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
-                <h2 className="text-black my-xxl-4 my-xl-4 my-3 service_text">
+                <h2 className=" my-xxl-4 my-xl-4 my-3 service_text">
                 Apps Development
                 </h2>
-                <p className="service_para mb-4 text-black  mb-sm-2">
+                <p className="service_para mb-4   mb-sm-2">
                 Mobile application is the latest to join the technology
                       revolution.We’ll take you through the basics of Android
                       Studio, the default integrated development environment
@@ -43,16 +43,14 @@ const Service = () => {
               </div>
               <div className="col-md  bg-white card-boxes">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
-                <h2 className="text-black my-xxl-4 my-xl-4 my-3 service_text">
-                  Industrial Training
+                <h2 className=" my-xxl-4 my-xl-4 my-3 service_text">
+                  React Developer
                 </h2>
-                <p className="service_para mb-4 text-black  mb-sm-2">
-                  AppieSoft Web Solutions, Mohali (Chandigarh) offers 6 Months/3
-                  Months/6 weeks Industrial training for B.Tech (All
-                  Branches)/MCA/M.Sc (IT)/ Polytechnic Diploma (All Branches),
-                  MBA, BBA, B.Voc and other
+                <p className="service_para mb-4   mb-sm-2">
+                React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created by Facebook.
+React is a tool for building UI components.React only changes what needs to be changed!.
                 </p>
-                <NavLink to='subscription'>
+                <NavLink to='react-development'>
                 <Button className="service_button border-0 px-4 mt-3 mb-5 py-sm-2">
                   Read More
                 </Button>
@@ -60,10 +58,10 @@ const Service = () => {
               </div>
               <div className="col-md  bg-white card-boxes d-lg-block d-md-none">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
-                <h2 className="text-black my-xxl-4 my-xl-4 my-3 service_text">
+                <h2 className=" my-xxl-4 my-xl-4 my-3 service_text">
                 Ecommerce Websites
                 </h2>
-                <p className="service_para mb-4 text-black  mb-sm-2">
+                <p className="service_para mb-4   mb-sm-2">
                 It is our experienced and skilled Ecommerce website
                       development team that will effectively evaluate your
                       business needs, offering perfectly tailored solutions for
@@ -79,10 +77,10 @@ const Service = () => {
               <Row className="mx-auto six_images_grid flex-wrap">
               <div className="col-md  bg-white card-boxes d-lg-none d-md-block">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
-                <h2 className="text-black my-xxl-4 my-xl-4 my-3 service_text">
+                <h2 className=" my-xxl-4 my-xl-4 my-3 service_text">
                 Ecommerce Websites
                 </h2>
-                <p className="service_para mb-4 text-black  mb-sm-2">
+                <p className="service_para mb-4   mb-sm-2">
                 It is our experienced and skilled Ecommerce website
                       development team that will effectively evaluate your
                       business needs, offering perfectly tailored solutions for
@@ -96,10 +94,10 @@ const Service = () => {
               </div>
               <div className="col-md  bg-white card-boxes midbox-comp  d-lg-none d-md-block">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
-                <h2 className="text-black my-xxl-4  my-xl-4  my-3 service_text">
+                <h2 className=" my-xxl-4  my-xl-4  my-3 service_text">
                   Web Development
                 </h2>
-                <p className="service_para mb-4 text-black mb-sm-2">
+                <p className="service_para mb-4  mb-sm-2">
                   We have developed several website as per customer
                   requirements. We have an expert team of web developers, web
                   programmers which delivers pioneering website programming
@@ -115,10 +113,10 @@ const Service = () => {
               <Row className="mx-auto six_images_grid flex-wrap">
               <div className="col-md  bg-white card-boxes midbox-comp d-lg-block d-md-none">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
-                <h2 className="text-black my-xxl-4  my-xl-4  my-3 service_text">
+                <h2 className=" my-xxl-4  my-xl-4  my-3 service_text">
                   Web Development
                 </h2>
-                <p className="service_para mb-4 text-black mb-sm-2">
+                <p className="service_para mb-4  mb-sm-2">
                   We have developed several website as per customer
                   requirements. We have an expert team of web developers, web
                   programmers which delivers pioneering website programming
@@ -132,10 +130,10 @@ const Service = () => {
               </div>
               <div className="col-md bg-white card-boxes">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
-                <h2 className="text-black my-xxl-4  my-xl-3 my-3 service_text">
+                <h2 className=" my-xxl-4  my-xl-3 my-3 service_text">
                   Web & Graphic Design
                 </h2>
-                <p className="service_para mb-4 mb-sm-2 text-black">
+                <p className="service_para mb-4 mb-sm-2 ">
                   Every company is unique and therefore each design we create
                   will reflect the client’s requirements and
                   characteristics.From simple to complex, our website design
@@ -151,10 +149,10 @@ const Service = () => {
               </div>
               <div className="col-md  bg-white card-boxes">
                 <div className="w-28 h-28 inline-flex items-center justify-center rounded-circle service-bg-Img "></div>
-                <h2 className="text-black my-xxl-4 my-xl-4 my-3 service_text">
+                <h2 className=" my-xxl-4 my-xl-4 my-3 service_text">
                 Search Engine Optimization
                 </h2>
-                <p className="service_para mb-4 text-black  mb-sm-2">
+                <p className="service_para mb-4   mb-sm-2">
                 Our deep knowledge about keyword and market research, SEO
                       PR, link building, content marketing,social media
                       promotion, infographics, onpage and offpage SEO, makes us
