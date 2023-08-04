@@ -11,14 +11,14 @@ const WebGhrapic = () => {
   return (
     <div>
    <Header/>
-   <div class="inner_banner">
-        <div class="container">
+   <div className="inner_banner">
+        <div className="container">
           <h1>Web & Graphic Services</h1>
         </div>
       </div>
-      <section class="ict-sec-one">
-        <div class="my_wrap">
-          <div class="business-commun-text">
+      <section className="ict-sec-one">
+        <div className="my_wrap">
+          <div className="business-commun-text">
             <h2>
               Your system,
               <br />
@@ -37,21 +37,21 @@ const WebGhrapic = () => {
             </p>
             <button type="button">Talk To An Expert Now</button>
           </div>
-          <div class="commun-img-area">
+          <div className="commun-img-area">
             <img src={groupImg} alt="appiesoft Consulting" />
           </div>
-          <div class="clr"></div>
+          <div className="clr"></div>
         </div>
       </section>
-      <section class="ict-sec-two">
-        <div class="container">
+      <section className="ict-sec-two">
+        <div className="container">
           <h2>
             But with the number of systems and software on the
             <br />
             market growing every day, where do you start?
           </h2>
-          <div class="white-sctn2">
-            <div class="prple-imgg lgg">
+          <div className="white-sctn2">
+            <div className="prple-imgg lgg">
               <img src={user} alt="user Consulting" />
             </div>
             <p>
@@ -66,9 +66,9 @@ const WebGhrapic = () => {
           </div>
         </div>
       </section>
-      <div class="ict-last-section">
-        <div class="container">
-          <div class="prple-sctn-light">
+      <div className="ict-last-section">
+        <div className="container">
+          <div className="prple-sctn-light">
             <p>
               If you’re looking for experienced and skillful professionals in
               ICT consulting services, to design your unique solution, reach out

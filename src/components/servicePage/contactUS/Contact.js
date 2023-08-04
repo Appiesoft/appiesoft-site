@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Col, Form } from "react-bootstrap";
 import "./Contact.css";
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,14 +47,14 @@ const Contact = () => {
                   <h1 className="m-0 text-white Talk_size">Let’s Talk</h1>
                 </div>
                 <div className="col-md-12 col-12 d-md-flex align-items-center justify-content-between flex-wrap">
-                  <div class="mb-md-3 me-md-3 input_field_names">
+                  <div className="mb-md-3 me-md-3 input_field_names">
                     <input
                       type="text"
                       className=" bg-transparent border-bottom py-2"
                       placeholder="Your Name"
                     />
                   </div>
-                  <div class="mb-md-3 ms-md-1 input_field_names border-bottom">
+                  <div className="mb-md-3 ms-md-1 input_field_names border-bottom">
                     <Form.Select>
                       <option hidden>Select a Service</option>
                       <option value="1">Web & Graphic Design</option>
@@ -67,17 +67,17 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="col-md-12 col-12 d-flex align-items-center justify-content-between flex-wrap">
-                  <div class="mb-md-3 me-md-3  input_field_names" id="phone">
+                  <div className="mb-md-3 me-md-3  input_field_names" id="phone">
                     <input
                       type="number"
-                      class=" bg-transparent border-bottom py-2"
+                      className=" bg-transparent border-bottom py-2"
                       placeholder="Phone Number"
                     />
                   </div>
-                  <div class="mb-md-3 ms-md-1 input_field_names">
+                  <div className="mb-md-3 ms-md-1 input_field_names">
                     <input
                       type="email"
-                      class="border-bottom  bg-transparent py-2"
+                      className="border-bottom  bg-transparent py-2"
                       placeholder="Email ID"
                     />
                   </div>
@@ -110,7 +110,7 @@ const Contact = () => {
             <div   onClick={toggleDropdown}  className={` ${!isOpen ? "boxinactive rounded-2" : "boxactive rounded-2"}`}>
               <h2>Do you outcome your work overseas?</h2>
               <h2>
-              <i class={` ${!isOpen ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
+              <i className={` ${!isOpen ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
               </h2>
             </div>
             {isOpen && (
@@ -121,7 +121,7 @@ const Contact = () => {
             <div    onClick={toggletwo}  className={` ${!isTwo ? "boxinactive rounded-2  mt-md-3 mt-3" : "boxactive rounded-2  mt-md-3 mt-3"}`}>
               <h2>Is your support 24 hours?</h2>
               <h2>
-              <i class={` ${!isTwo ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
+              <i className={` ${!isTwo ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
               </h2>
             </div>
             {isTwo && (
@@ -132,7 +132,7 @@ const Contact = () => {
             <div  onClick={togglethree}  className={` ${!isThree ? "boxinactive rounded-2 mt-md-3 mt-3" : "boxactive rounded-2 mt-md-3 mt-3"}`}>
               <h2>Are your service customised for my bussiness?</h2>
               <h2>
-              <i class={` ${!isThree ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
+              <i className={` ${!isThree ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
               </h2>
             </div>
             {isThree && (
@@ -143,7 +143,7 @@ const Contact = () => {
             <div   onClick={togglefour}  className={` ${!isFour ? "boxinactive rounded-2 mt-md-3 mt-3" : "boxactive rounded-2 mt-md-3 mt-3"}`} >
               <h2>Are your service expensive?</h2>
               <h2>
-              <i class={` ${!isFour ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
+              <i className={` ${!isFour ? "fa-solid fa-plus" : "fa-solid fa-minus"}`}></i>
               </h2>
             </div>
             {isFour && (
@@ -155,11 +155,11 @@ const Contact = () => {
               Follow Us:
               <span className='mx-3'>
               <NavLink to='https://www.facebook.com/appiesoftwebsolutions/' target="_blank">
-                <i class="fa fa-facebook " aria-hidden="true"></i></NavLink>
+                <i className="fa fa-facebook " aria-hidden="true"></i></NavLink>
               </span>
               <span>
               <NavLink to='https://www.instagram.com/appiesoftweb/?hl=en' target="_blank">
-              <i class="fa-brands fa-instagram "></i>
+              <i className="fa-brands fa-instagram "></i>
               </NavLink>
               </span>
             </p>

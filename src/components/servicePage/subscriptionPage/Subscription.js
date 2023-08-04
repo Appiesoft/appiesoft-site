@@ -19,25 +19,25 @@ const Subscription = () => {
               <Col className="col-11 text-start mx-auto">
                 <Col className="d-flex">
                   <span className="p-2 me-2">
-                    <i class="fa-solid fa-check"></i>{" "}
+                    <i className="fa-solid fa-check"></i>{" "}
                   </span>
-                  <p class="subscription_para mb-4 text-black">
+                  <p className="subscription_para mb-4 text-black">
                   8 hours a day & 24 working Days in a Month.
                   </p>
                 </Col>
                 <Col className="d-flex">
                   <span className="p-2 me-2">
-                    <i class="fa-solid fa-check"></i>{" "}
+                    <i className="fa-solid fa-check"></i>{" "}
                   </span>
-                  <p class="subscription_para mb-4 text-black">
+                  <p className="subscription_para mb-4 text-black">
                   Total : 192 hours, period of Hiring : 1 Month with Billing
                   </p>
                 </Col>
                 <Col className="d-flex">
                   <span className="p-2 me-2">
-                    <i class="fa-solid fa-check"></i>{" "}
+                    <i className="fa-solid fa-check"></i>{" "}
                   </span>
-                  <p class="subscription_para mb-4 text-black">
+                  <p className="subscription_para mb-4 text-black">
                   40% advance, 60% at the mid of month.
                   </p>
                 </Col>
@@ -60,25 +60,25 @@ const Subscription = () => {
               <Col className="col-11 text-start mx-auto">
                 <Col className="d-flex">
                   <span className="p-2 me-2">
-                    <i class="fa-solid fa-check"></i>{" "}
+                    <i className="fa-solid fa-check"></i>{" "}
                   </span>
-                  <p class="subscription_para mb-4 text-black">
+                  <p className="subscription_para mb-4 text-black">
                   80 hours of work in total, 40 hours each week and 8 hours daily, total : 80 hours.
                   </p>
                 </Col>
                 <Col className="d-flex">
                   <span className="p-2 me-2">
-                    <i class="fa-solid fa-check"></i>{" "}
+                    <i className="fa-solid fa-check"></i>{" "}
                   </span>
-                  <p class="subscription_para mb-4 text-black">
+                  <p className="subscription_para mb-4 text-black">
                   Minimum Period of Hiring : 2 Weeks.
                   </p>
                 </Col>
                 <Col className="d-flex">
                   <span className="p-2 me-2">
-                    <i class="fa-solid fa-check"></i>{" "}
+                    <i className="fa-solid fa-check"></i>{" "}
                   </span>
-                  <p class="subscription_para mb-4 text-black">
+                  <p className="subscription_para mb-4 text-black">
                   Billing : Full payment in advance or Hourly basis.
                   </p>
                 </Col>
@@ -102,25 +102,25 @@ const Subscription = () => {
               <Col className="col-11 text-start mx-auto">
                 <Col className="d-flex">
                   <span className="p-2 me-2">
-                    <i class="fa-solid fa-check"></i>{" "}
+                    <i className="fa-solid fa-check"></i>{" "}
                   </span>
-                  <p class="subscription_para mb-4 text-black">
+                  <p className="subscription_para mb-4 text-black">
                   No hiring commitment. Hire us when you require.
                   </p>
                 </Col>
                 <Col className="d-flex">
                   <span className="p-2 me-2">
-                    <i class="fa-solid fa-check"></i>{" "}
+                    <i className="fa-solid fa-check"></i>{" "}
                   </span>
-                  <p class="subscription_para mb-4 text-black">
+                  <p className="subscription_para mb-4 text-black">
                   Period of Hiring : Minimum 1 week i.e. 40 hours.
                   </p>
                 </Col>
                 <Col className="d-flex">
                   <span className="p-2 me-2">
-                    <i class="fa-solid fa-check"></i>{" "}
+                    <i className="fa-solid fa-check"></i>{" "}
                   </span>
-                  <p class="subscription_para mb-4 text-black">
+                  <p className="subscription_para mb-4 text-black">
                   Billing : Full payment in advance or Hourly basis.
                   </p>
                 </Col>

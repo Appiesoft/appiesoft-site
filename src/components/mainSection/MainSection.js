@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const MainSection = () => {
   return (
     <>
-      <section id="hero" class="d-flex align-items-center">
+      <section id="hero" className="d-flex align-items-center">
         <Container >
           <Row className="mx-auto">
             <Col md={12} lg={12} xl={11} xxl={12} className="px-0 mx-auto">
@@ -34,7 +34,7 @@ const MainSection = () => {
       </section>
 
       <div className="bg-ligt">
-        <section class="d-flex align-items-center pt-5 bg-light">
+        <section className="d-flex align-items-center pt-5 bg-light">
           <div className="container mt-5 ">
             <Row className="bg-light mx-auto">
               <Col lg={6} >

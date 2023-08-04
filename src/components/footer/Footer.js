@@ -145,7 +145,7 @@ const Footer = () => {
                   </h2>
                   <nav className="list-none mb-10 inner_links text-start">
                   <li className="my-2">
-                      <NavLink to='web-development'>React Development</NavLink>
+                      <NavLink to='react-development'>React Development</NavLink>
                     </li>
                     <li>
                       <NavLink to='web-and-graphic'>Web & Graphics Design</NavLink>

@@ -275,7 +275,6 @@ color: #ff6600 !important;
         transition: 0.7s;
     }
  
-
       h6 {
         font-size: 20px;
         font-weight: 700;
@@ -295,7 +294,10 @@ color: #ff6600 !important;
     }
   }
   @media only screen and (min-width: 0px) and (max-width:992px)  {
-  
+  .mobile_nav h6:hover{
+    background-color: #f47421;
+    color: white !important;
+  }
     #hero h1 {
       font-size: 45px !important;
     }
