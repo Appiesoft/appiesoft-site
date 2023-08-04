@@ -10,10 +10,8 @@ import teamone from "../../../../asset/about/teamone.jpg";
 import teamtwo from "../../../../asset/about/teamtwo.jpg";
 import teamthree from "../../../../asset/about/teamthree.jpg";
 import teamfour from "../../../../asset/about/teamfour.jpg";
-import fourimgg from "../../../../asset/herosection/fourimgg.png";
 
 import { Container } from "react-bootstrap";
-import InnerHeader from "../../innerHeader/InnerHeader";
 import { NavLink } from "react-router-dom";
 const AboutUs = () => {
   return (
@@ -138,35 +136,36 @@ const AboutUs = () => {
           </p>
         </div>
       </div> */}
-      <section class="text-gray-600 body-font">
-        <div class="container  mx-auto flex flex-col">
-          <div class="lg:w-4/3 mx-auto">
-            <div class="flex flex-col sm:flex-row mt-10">
-              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                <div class="w-36 h-36 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+      <section className="text-gray-600 body-font">
+      
+        <div className="container  mx-auto flex flex-col">
+          <div className="lg:w-4/3 mx-auto" data-aos="fade-left" >
+            <div className="flex flex-col sm:flex-row mt-10">
+              <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div className="w-36 h-36 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                   <svg
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-10 h-10"
+                    className="w-10 h-10"
                     viewBox="0 0 24 24"
                   >
                     <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>
                 </div>
-                <div class="flex flex-col items-center text-center justify-center">
-                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
-                    Mandeep Singh
+                <div className="flex flex-col items-center text-center justify-center">
+                  <h2 className="font-medium title-font mt-4 text-orange-500 text-lg">
+                    MANDEEP SINGH
                   </h2>
-                  <div class="w-12 h-1 bgborder rounded mt-2 mb-2"></div>
-                  <p class="text-base">DIRECTOR SALES</p>
+                  <div className="w-12 h-1 bgborder rounded mt-2 mb-2"></div>
+                  <p className=" direct">DIRECTOR SALES</p>
                 </div>
               </div>
-              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <p class="leading-relaxed text-lg mb-4">
+              <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p className="leading-relaxed text-lg mb-4">
                   “Serial entrepreneur and Founder of AppieSoft and analytics
                   services company. At RTL, we go beyond helping businesses
                   transform through technology. We help them make a meaningful
@@ -199,33 +198,34 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div class="lg:w-4/3 mx-auto mt-4">
-            <div class="flex flex-col sm:flex-row">
-              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                <div class="w-36 h-36 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+        
+          <div className="lg:w-4/3 mx-auto mt-4" data-aos="fade -right" >
+            <div className="flex flex-col sm:flex-row">
+              <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div className="w-36 h-36 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                   <svg
                     fill="none"
                     stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-10 h-10"
+                    className="w-10 h-10"
                     viewBox="0 0 24 24"
                   >
                     <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>
                 </div>
-                <div class="flex flex-col items-center text-center justify-center">
-                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
-                    Sharad Sharma
+                <div className="flex flex-col items-center text-center justify-center">
+                  <h2 className="font-medium title-font mt-4 text-orange-500 text-lg">
+                    SHARAD SHARMA
                   </h2>
-                  <div class="w-12 h-1 bgborder rounded mt-2 mb-2"></div>
-                  <p class="text-base">DIRECTOR SALES</p>
+                  <div className="w-12 h-1 bgborder  rounded mt-2 mb-2"></div>
+                  <p className=" direct">DIRECTOR SALES</p>
                 </div>
               </div>
-              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <p class="leading-relaxed text-lg mb-4">
+              <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p className="leading-relaxed text-lg mb-4">
                   “Serial entrepreneur and Founder of AppieSoft and analytics
                   services company. At RTL, we go beyond helping businesses
                   transform through technology. We help them make a meaningful

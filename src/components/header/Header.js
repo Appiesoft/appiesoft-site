@@ -6,11 +6,30 @@ import mainlogo from "../../asset/mainlogoappie.png";
 import maillogo from "../../asset/maillogo.png";
 import phonelogo from "../../asset/phonelogo.png";
 import { NavLink } from "react-router-dom";
-import MenuComponent from "./menu/MenuItems";
+// import MenuComponent from "./menu/MenuItems";
 
+
+const MenuItem = ({ item }) => {
+    if (item.sub_menu.length === 0) {
+      return (
+        <li key={item.ID}>
+          <NavLink to={item.url}>{item.title}</NavLink>
+        </li>
+      );
+    } else {
+      return (
+        <li key={item.ID}  className="dropdown">
+          <NavLink href={item.url}>{item.title}</NavLink>
+        {item.sub_menu.map(subItem => (
+              <li className="dropdown-content"><MenuItem key={subItem.ID} item={subItem} /></li>
+            ))}
+        </li>
+      );
+    }
+  };
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [menuItems, setMenuItems] = useState([]);
+    const [menuItems, setMenuItems] = useState([]);
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
@@ -20,18 +39,30 @@ const Header = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  useEffect(() => {
+        const apiUrl = 'https://xploreseo.com/react-wordpress-api/wp-json/custom/v1/menu/main-menu';
+    
+        axios
+          .get(apiUrl)
+          .then(response => {
+            setMenuItems(response.data);
+          })
+          .catch(error => {
+            console.error('Error fetching menu data:', error);
+          });
+      }, []);
 
   return (
     <>
-      <header id="masthead" class="site-header d-none d-lg-block d-xl-block">
-        <div class="container">
-          <div class="head-three">
-            <div class="head-one">
+      <header id="masthead" className="site-header d-none d-lg-block d-xl-block">
+        <div className="container">
+          <div className="head-three">
+            <div className="head-one">
               <NavLink to="/">
                 <img src={mainlogo} alt="" className="rounded-2" />{" "}
               </NavLink>
             </div>
-            <div class="head-two">
+            <div className="head-two">
               <ul>
               <NavLink to="mailto:info@appiesoftwebsolutions.com" target="_blank"> 
                 <li className="d-flex  justify-content-between align-items-center">
@@ -58,13 +89,23 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div class="nav-bar-sec">
-          <MenuComponent/>
+          <div className="nav-bar-sec">
+            <ul id="menu-main-menu" className="menu">
+              {menuItems.map((item) => {
+                return (
+                  <>
+                    <li key={item.ID} className="py-3">
+                    <MenuItem key={item.ID} item={item} />
+                    </li>
+                  </>
+                );
+              })}
+            </ul>
           </div>
 
-            {/* Custom */}
-          {/* <div class="nav-bar-sec">
-            <ul id="menu-main-menu" class="menu">
+            {/* Custom css navbar */}
+          {/* <div className="nav-bar-sec">
+            <ul id="menu-main-menu" className="menu">
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>
@@ -75,13 +116,13 @@ const Header = () => {
               <div className="hover_box"></div>
               <li>
                 <div className="col-auto  px-0">
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <span className="navbar_linkFont  navbar">
                       Services
-                      <i class="fa fa-angle-down ms-2" aria-hidden="true"></i>
+                      <i className="fa fa-angle-down ms-2" aria-hidden="true"></i>
                     </span>
                     <div className="hover_box"></div>
-                    <div class="dropdown-content">
+                    <div className="dropdown-content">
                       <p className="my-2">
                         <NavLink to='web-and-graphic'className="text-decoration-none text-capitalize  navbar_linkFont inner_linkFont">
                           Web & Graphic Design
@@ -130,9 +171,9 @@ const Header = () => {
               </li>
             </ul>
           </div> */}
-  {/* Custom end*/}
+  {/* Custom css navbar end*/}
         </div>
-        <div class="clr"></div>
+        <div className="clr"></div>
       </header>
 
       {/* mobile view */}
@@ -174,7 +215,7 @@ const Header = () => {
                     onClick={handleShow}
                     className="bg-white px-2 rounded-1 py-1"
                   >
-                    <i class="fa-solid fa-bars "></i>
+                    <i className="fa-solid fa-bars "></i>
                   </span>
                 </div>
               </Col>
@@ -194,10 +235,10 @@ const Header = () => {
               <span className="mt-1"></span>
             </Offcanvas.Title>
             <span className="icon_close rounded-2" onClick={handleClose}>
-              <i class="fa-solid fa-xmark px-2 "></i>
+              <i className="fa-solid fa-xmark px-2 "></i>
             </span>
           </Offcanvas.Header>
-          <Offcanvas.Body style={{ overflowY: "auto" }}>
+          <Offcanvas.Body style={{ overflowY: "auto" }} className="px-0">
           <Container
             fluid
             className="d-block  d-lg-none d-xxl-none mobile_nav p-0"
@@ -211,6 +252,7 @@ const Header = () => {
                 </>
               );
             })}
+          
           </Container>
           </Offcanvas.Body>
           {/* <Container

@@ -10,55 +10,52 @@ const WebService = () => {
   return (
     <div>
       <Header />
-      <div class="web_inner_banner">
-        <div class="container">
+      <div className="web_inner_banner">
+        <div className="container">
           <h1>Web Development Services</h1>
         </div>
       </div>
-      <section class="ict-sec-one">
-        <div class="my_wrap">
-          <div class="business-commun-text">
+      <section className="ict-sec-one">
+        <div className="my_wrap">
+          <div className="business-commun-text">
             <h2>Web Development</h2>
             <p>
             We at AppieSoft web solutions are establishing service providers of custom web development ,web programming services in London. We had made a lively website as per customer precondition,counting the programming platform which they put forward. We have an expert team of web developers,web programmers which deliver pioneering website programming services at a variety of web programming platforms.
             </p>
-            <p>
-            AppieSoft Web Solutions is a web development company having 5 years of experience in building web applications. Our dedicated web app developers have successfully completed over 300 projects for a variety of industries and business domains, including e-Commerce, e-Learning, Analytics, Finance, Magento. Web development services will come into portrait
-            </p>
             <button type="button">Talk To An Expert Now</button>
           </div>
-          <div class="commun-img-area">
+          <div className="commun-img-area">
             <img src={groupImg} alt="appiesoft Consulting" />
           </div>
-          <div class="clr"></div>
+          <div className="clr"></div>
         </div>
       </section>
-      <section class="ict-sec-six ">
-        <div class="container">
-          <div class="service_Australia aos-init aos-animate"  >
-            <div class="share_point" data-aos="fade-up" >
+      <section className="ict-sec-six ">
+        <div className="container">
+          <div className="service_Australia aos-init aos-animate"  >
+            <div className="share_point" data-aos="fade-up" >
               <h3>
                 Our team specialise in providing
                 <br /> advice and assistance on cloud
                 <br /> services Australia via OneDrive,
                 <br /> SharePoint or Microsoft Teams.
               </h3>
-              <div class="image_part">
-                <div class="drive">
+              <div className="image_part">
+                <div className="drive">
                   <img
                     src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/04/Group-512708-4.png"
                     alt="Cloud Collabrations"
                   />
                   <p>OneDrive</p>
                 </div>
-                <div class="drive">
+                <div className="drive">
                   <img
                     src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/04/icon61.png"
                     alt="Cloud Collabrations"
                   />
                   <p>SharePoint</p>
                 </div>
-                <div class="drive">
+                <div className="drive">
                   <img
                     src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/04/icon62.png"
                     alt="Cloud Collabrations"
@@ -70,7 +67,7 @@ const WebService = () => {
             <button type="button">Talk To An Expert Now</button>
             </span>
             </div>
-            <div class="one_drive">
+            <div className="one_drive">
               <div data-aos="fade-up">
                 <h2>SharePoint</h2>
                 <p >
@@ -123,9 +120,9 @@ const WebService = () => {
           </div>
         </div>
       </section>
-      <div class="ict-last-section">
-        <div class="container">
-            <div class="prple-sctn-light">
+      <div className="ict-last-section">
+        <div className="container">
+            <div className="prple-sctn-light">
                 <p>Appiesoft Web Solutions is a team of Digital Marketing experts, Website Designers, and Developers that understand the value of your Brand or Product. As a Digital Marketing expert/Website Design and Development organization, we have finished 500+ projects over the world.</p>
                <span>Talk To An Expert Now</span>
             </div>

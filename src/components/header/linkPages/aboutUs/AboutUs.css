@@ -7,7 +7,12 @@ width: 100%;
 
 }
 .bgborder{
-	border-bottom: 3px solid #f47421;
+	border-bottom: 2px solid rgb(249 115 22) !important ;
+}
+.direct{
+	color: #000000 !important;
+    font-size: 20px !important;
+    font-weight: 500;
 }
 .secnd-section-abt {
     margin-bottom: 70px;
@@ -196,7 +201,7 @@ li.img-li.s-img {
 }
 .digi-head h2 {
     font-size: 48px;
-    color: #000;
+    color: #f47421;
     font-weight: 600;
 }
 .digi-para {
@@ -212,9 +217,7 @@ li.img-li.s-img {
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
     .thrd-sctn-abt p {
         font-size: 18px;
-       
     }
-
     .thrd-sctn-abt h2 {
         font-size: 37px;
         line-height: 68x;

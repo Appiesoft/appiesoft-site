@@ -14,8 +14,8 @@ const OurPartners = () => {
     return (
         <div>
             <section className='py-md-5 py-3'>
-                <div class="container">
-                    <header class="inner_head_line text-center">
+                <div className="container">
+                    <header className="inner_head_line text-center">
                         <h3>Our Trusted Partners</h3>
                     </header>
                     <Container>
@@ -23,31 +23,31 @@ const OurPartners = () => {
                     <Row className="align-items-center flex-wrap">
                         <Col xxl={9} xl={11} lg={12} className=' py-4 mx-auto flex-wrap d-flex justify-content-evenly partner_img '>
                             <div className="col-auto">
-                                <img src={image2} class="img-fluid " alt="" />
+                                <img src={image2} className="img-fluid " alt="" />
                             </div>
                             <div className="col-auto">
-                                <img src={image8} class="img-fluid " alt="" />
+                                <img src={image8} className="img-fluid " alt="" />
                             </div>
                             <div className="col-auto">
-                                <img src={image3} class="img-fluid " alt="" />
+                                <img src={image3} className="img-fluid " alt="" />
                             </div>
                             <div className="col-auto">
-                                <img src={image4} class="img-fluid " alt="" />
+                                <img src={image4} className="img-fluid " alt="" />
                             </div>
                             <div className="col-auto mt-4">
-                                <img src={image5} class="img-fluid " alt="" />
+                                <img src={image5} className="img-fluid " alt="" />
                             </div>
                             <div className="col-auto mt-4">
-                                <img src={image6} class="img-fluid " alt="" />
+                                <img src={image6} className="img-fluid " alt="" />
                             </div>
                             <div className="col-auto mt-4">
-                                <img src={image7} class="img-fluid " alt="" />
+                                <img src={image7} className="img-fluid " alt="" />
                             </div>
                             <div className="col-auto mt-4">
-                                <img src={image11} class="img-fluid " alt="" />
+                                <img src={image11} className="img-fluid " alt="" />
                             </div>
                             <div className="col-auto mt-4">
-                                <img src={image12} class="img-fluid " alt="" />
+                                <img src={image12} className="img-fluid " alt="" />
                             </div>
 
                         </Col>

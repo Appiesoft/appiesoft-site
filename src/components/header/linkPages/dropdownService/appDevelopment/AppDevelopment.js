@@ -8,14 +8,14 @@ const AppDevelopment = () => {
   return (
     <div>
     <Header/>
-      <div class="inner_banner">
-        <div class="container">
+      <div className="inner_banner">
+        <div className="container">
           <h1>Mobile App Development</h1>
         </div>
       </div>
-      <section class="ict-sec-one">
-        <div class="my_wrap">
-          <div class="business-commun-text">
+      <section className="ict-sec-one">
+        <div className="my_wrap">
+          <div className="business-commun-text">
             <h2>
               Be where your <br />
               customers are – 24/7
@@ -25,29 +25,29 @@ const AppDevelopment = () => {
             </p>
             <button type="button">Talk To An Expert Now</button>
           </div>
-          <div class="commun-img-area">
+          <div className="commun-img-area">
             <img
               src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/03/Group-1.png"
               alt="Mobile App Development"
             />
           </div>
-          <div class="clr"></div>
+          <div className="clr"></div>
         </div>
       </section>
-      <section class="discovery-our-service">
-        <div class="container">
-          <h2 class="disc_main-heading">
+      <section className="discovery-our-service">
+        <div className="container">
+          <h2 className="disc_main-heading">
             When creating your app, we follow
             <br />a proven four-step process…
           </h2>
 
-          <div class="discovery-area">
-            <div class="discovery-area-1">
-              <div class="discovery-content-1">
-                <div class="discovery-number-1">
+          <div className="discovery-area">
+            <div className="discovery-area-1">
+              <div className="discovery-content-1">
+                <div className="discovery-number-1">
                   <h2>1.</h2>
                 </div>
-                <div class="discovery-number-2">
+                <div className="discovery-number-2">
                   <h3>Discovery</h3>
                   <p>
                     A face-to-face meeting with our digital marketing team to
@@ -58,11 +58,11 @@ const AppDevelopment = () => {
                   </p>
                 </div>
               </div>
-              <div class="discovery-content-2">
-                <div class="discovery-number-1">
+              <div className="discovery-content-2">
+                <div className="discovery-number-1">
                   <h2>2.</h2>
                 </div>
-                <div class="discovery-number-2">
+                <div className="discovery-number-2">
                   <h3>Writing and coding</h3>
                   <p>
                     With a thorough brief in hand, our team will create and
@@ -72,12 +72,12 @@ const AppDevelopment = () => {
                 </div>
               </div>
             </div>
-            <div class="discovery-area-2">
-              <div class="discovery-content-3">
-                <div class="discovery-number-1">
+            <div className="discovery-area-2">
+              <div className="discovery-content-3">
+                <div className="discovery-number-1">
                   <h2>3.</h2>
                 </div>
-                <div class="discovery-number-2">
+                <div className="discovery-number-2">
                   <h3>Graphic Design</h3>
                   <p>
                     Here’s where the fun begins. Following your brand and goals,
@@ -86,11 +86,11 @@ const AppDevelopment = () => {
                   </p>
                 </div>
               </div>
-              <div class="discovery-content-4">
-                <div class="discovery-number-1">
+              <div className="discovery-content-4">
+                <div className="discovery-number-1">
                   <h2>4.</h2>
                 </div>
-                <div class="discovery-number-2">
+                <div className="discovery-number-2">
                   <h3>Test and launch</h3>
                   <p>
                     It’s time to test. Using a control test group, we address
@@ -107,20 +107,20 @@ const AppDevelopment = () => {
           </div>
         </div>
       </section>
-      <div class="mobile-development">
-        <div class="container">
-          <div class="mobile-development-heading">
+      <div className="mobile-development">
+        <div className="container">
+          <div className="mobile-development-heading">
             <h2>Talk to us about mobile development today!</h2>
           </div>
-          <div class="mobile-development-area">
-            <div class="mobile-development1">
-              <div class="mobile-development-logo">
+          <div className="mobile-development-area">
+            <div className="mobile-development1">
+              <div className="mobile-development-logo">
                 <img
                   src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/03/Group-512655.png"
                   alt="Mobile App Development"
                 />
               </div>
-              <div class="mobile-development-content">
+              <div className="mobile-development-content">
                 <p>
                   Did you know? 81% of released apps by Australian publishers
                   are apps and 19% are games, compared to the worldwide market,
@@ -135,14 +135,14 @@ const AppDevelopment = () => {
                 <button type="button">Talk To An Expert Now</button>
               </div>
             </div>
-            <div class="mobile-development2">
+            <div className="mobile-development2">
               <img
                 src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/03/newimg3.png"
                 alt="Mobile App Development"
               />
             </div>
           </div>
-          <div class="clr"></div>
+          <div className="clr"></div>
         </div>
       </div>
       <OurPartners/>

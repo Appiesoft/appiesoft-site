@@ -41,14 +41,14 @@ const Ecommerce = () => {
   return (
     <div>
     <Header/>
-      <div class="inner_banner">
-        <div class="container">
+      <div className="inner_banner">
+        <div className="container">
           <h1>Ecommerce</h1>
         </div>
       </div>
-      <section class="ict-sec-one">
-        <div class="my_wrap">
-          <div class="business-commun-text">
+      <section className="ict-sec-one">
+        <div className="my_wrap">
+          <div className="business-commun-text">
             <h2>
               Selling online <br />
               made easy
@@ -58,28 +58,28 @@ const Ecommerce = () => {
             </p>
             <button type="button">Talk To An Expert Now</button>
           </div>
-          <div class="commun-img-area">
+          <div className="commun-img-area">
             <img
               src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/03/Group-512660.png"
               alt="Ecommerce"
             />
           </div>
-          <div class="clr"></div>
+          <div className="clr"></div>
         </div>
       </section>
-      <section class="box_sect box_sect1 new_box_sec1">
-        <div class="container">
-          <div class="box_sec_enterprice">
-            <h2 class="box_sec_enterprice-heading-2">
+      <section className="box_sect box_sect1 new_box_sec1">
+        <div className="container">
+          <div className="box_sec_enterprice">
+            <h2 className="box_sec_enterprice-heading-2">
             AppieSoft Web Solutions specialises in developing individualised Ecommerce
               website design
             </h2>
-            <p class="box_sec_enterprice-paragraph tmm">
+            <p className="box_sec_enterprice-paragraph tmm">
               Our team is renowned for providing some of the best ecommerce
               <br />
               websites in London, including 5+ years.
             </p>
-            <div class="teams">
+            <div className="teams">
 
             <Carousel
                     className='pt-3 pt-md-0'
@@ -91,7 +91,7 @@ const Ecommerce = () => {
                             <Row className="mx-auto">
                         <Col lg={12} className='d-flex  flex-wrap'>
                             <Col lg={12} >
-                                <Row class='mx-auto'>
+                                <Row className='mx-auto'>
                                  
                                         <Col lg={12} className='d-flex justify-content-evenly'>
                                             
@@ -110,16 +110,16 @@ const Ecommerce = () => {
           </div>
         </div>
       </section>
-      <section class="digital-our-service">
-        <div class="container">
-          <div class="we-got-area we-got-area1">
-            <div class="we-got-image">
+      <section className="digital-our-service">
+        <div className="container">
+          <div className="we-got-area we-got-area1">
+            <div className="we-got-image">
               <img
                 src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/03/Untitled-14.png"
                 alt="Ecommerce"
               />
             </div>
-            <div class="we-got-content">
+            <div className="we-got-content">
               <p>
               Appiesoft Web Solutions is a team of Digital Marketing experts, Website Designers and Developers that understand the value of your Brand or Product. As an Digital Marketing expert/Website Design and Development organization we have finished 500+ projects over the world.
                 <br />
@@ -132,17 +132,17 @@ const Ecommerce = () => {
           </div>
         </div>
       </section>
-      <div class="mobile-development">
-        <div class="container">
-          <div class="mobile-development-area">
-            <div class="mobile-development1">
-              <div class="mobile-development-logo">
+      <div className="mobile-development">
+        <div className="container">
+          <div className="mobile-development-area">
+            <div className="mobile-development1">
+              <div className="mobile-development-logo">
                 <img
                   src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/03/Group-512655.png"
                   alt="Ecommerce"
                 />
               </div>
-              <div class="mobile-development-content">
+              <div className="mobile-development-content">
                 <p>
                   In 2022, 75% of Australians went online to do their shopping,
                   creating a large spike in a wide range of markets; fashion,
@@ -155,14 +155,14 @@ const Ecommerce = () => {
                 </a>
               </div>
             </div>
-            <div class="mobile-development2">
+            <div className="mobile-development2">
               <img
                 src="https://telcoictgroup.com/telcoict/wp-content/uploads/2023/03/newimg5.png"
                 alt="Ecommerce"
               />
             </div>
           </div>
-          <div class=" clr"></div>
+          <div className=" clr"></div>
         </div>
       </div>
       <OurPartner/>
