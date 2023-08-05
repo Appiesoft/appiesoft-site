@@ -35,10 +35,11 @@ section.ict-sec-one {
   margin: 0px 0px 0px 0px;
 }
 .business-commun-text p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 500;
   line-height: 32px;
   color: #0b0d17;
+  text-align: justify;
   padding: 0px 100px 30px 0px;
   margin: 0px 0px 0px 0px;
 }
@@ -76,11 +77,9 @@ section.ict-sec-six {
 }
 
 .share_point h3 {
-  font-family: "Space Grotesk";
-  font-style: normal;
   font-weight: 700 !important;
   font-size: 32px !important;
-  line-height: 48px !important;
+  line-height: 48px;
   color: #ffffff;
   margin: 23px 0px;
 }
@@ -93,8 +92,6 @@ section.ict-sec-six {
   text-align: center;
 }
 .drive p {
-  font-family: "Space Grotesk";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -117,8 +114,6 @@ section.ict-sec-six {
 }
 .one_drive h2 {
   text-align: left !important;
-  font-family: "Space Grotesk";
-  font-style: normal;
   font-weight: 700 !important;
   font-size: 40px !important;
   line-height: 55px !important;
@@ -127,8 +122,6 @@ section.ict-sec-six {
 }
 .one_drive p {
   color: #fff;
-  font-family: "Space Grotesk";
-  font-style: normal;
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 26px !important;
@@ -155,6 +148,7 @@ section.ict-sec-six {
   font-size: 28px;
   line-height: 44px;
   color: #0b0d17;
+  text-align: justify;
 }
 .prple-sctn-light span {
   background-color: #f47421;
@@ -288,7 +282,7 @@ header.inner_head_line.text-center {
   }
   .business-commun-text button {
     margin-top: 22px;
-    padding: 6px 16px 6px 16px;
+    line-height: 21px !important;
   }
   section.ict-sec-six {
     margin: 0px 0px;
@@ -313,9 +307,9 @@ header.inner_head_line.text-center {
     flex-direction: column !important;
   }
   .business-commun-text {
-    padding: 0 25px 30px 33px;
+    padding: 0 0px 23px 0px;
     width: 100%;
-  }
+}
   .business-commun-text h2 {
     font-size: 36px;
     line-height: 31.25px;
@@ -323,7 +317,13 @@ header.inner_head_line.text-center {
   .business-commun-text p {
     padding: 18px 0px;
     font-size: 20px;
-  }
+    text-align: justify;
+}
+.business-commun-text button {
+  margin-top: 22px;
+  padding: 13px 10px 13px 10px;
+  line-height: 11px !important;
+}
   .commun-img-area {
     width: 90%;
     margin: 0 auto;
@@ -341,13 +341,14 @@ header.inner_head_line.text-center {
     column-gap: 22px;
     justify-content: center;
   }
-  .business-commun-text button {
-    margin-top: 22px;
-    padding: 6px 16px 6px 16px;
-  }
   section.ict-sec-six {
     margin: 0px 0px;
     padding: 22px 0px;
+  }
+  .share_point  span{
+   display: flex;
+   justify-content: center;
+   margin-top: 22px;
   }
   .share_point h3 br {
     display: none;
@@ -367,6 +368,7 @@ header.inner_head_line.text-center {
     text-align: justify;
     font-size: 28px !important;
     line-height: 31px !important;
+    font-weight: 500 !important;
   }
   .share_point button {
     padding: 6px 16px 6px 16px;
@@ -391,6 +393,10 @@ header.inner_head_line.text-center {
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
+  .share_point  span{
+    display: flex;
+    justify-content: start;
+   }
     .web_inner_banner h1 {
         font-size: 31px;
         line-height: 29px;
@@ -418,6 +424,7 @@ header.inner_head_line.text-center {
     font-size: 22px !important;
     line-height: 31px !important;
     letter-spacing: -1px;
+    font-weight: 500 !important;
   }
   .share_point button {
     margin: 19px 0px;
@@ -427,15 +434,20 @@ header.inner_head_line.text-center {
     line-height: 32px;
   }
   .business-commun-text p {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 17px;
+    line-height: 25px;
     padding: 4px 0px;
+  }
+  .business-commun-text button {
+    line-height: 19px !important;
+    font-size: 13px;
+    padding: 8px 10px 8px 10px;
   }
 
   .prple-sctn-light p {
     font-size: 20px;
     line-height: 32px;
-    text-align: center;
+  
   }
   .white-sctn2 p {
     font-size: 17px;

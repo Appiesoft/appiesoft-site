@@ -21,16 +21,24 @@
 }
 .reactwebtext p{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     color: #0b0d17;
     margin-top: 12px;
+    text-align: justify;
 }
-.leading-relaxed{
+.reactpara p{
     color: #000000 !important;
     font-weight: 500;
+    text-align: justify;
 }
 .reactpara h2{
     color: #f47421 !important;
+}
+.slider__content3 p{
+    color: #000000 !important;
+    font-weight: 500;
+    font-size: 24px;
+
 }
 .react-container{
 background: rgb(255 233 220 / 10%);

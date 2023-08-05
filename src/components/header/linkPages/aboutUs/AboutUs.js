@@ -28,8 +28,7 @@ const AboutUs = () => {
             <div className="appie-group-text-area img-sctn">
               <h5>About Appiesoft Web Solution</h5>
               <h2>Passion, Dedication and A lot of Coffee.</h2>
-
-              <img src={aboutusinner} />
+              <img src={aboutusinner} alt="" />
             </div>
             <div className="para-sctn">
               <p>
@@ -94,13 +93,13 @@ const AboutUs = () => {
               </h2>
             </li>
             <li className="img-li">
-              <img src={teamone} />
+              <img src={teamone} alt=""/>
             </li>
             <li className="img-li" id="img-one-li">
-              <img src={teamtwo} />
+              <img src={teamtwo} alt=""/>
             </li>
             <li className="img-li f-img">
-              <img src={teamthree} />
+              <img src={teamthree} alt=""/>
             </li>
             <li className="para-li">
               <p>
@@ -111,7 +110,7 @@ const AboutUs = () => {
               </p>
             </li>
             <li className="img-li  s-img">
-              <img src={teamfour} />
+              <img src={teamfour} alt=""/>
             </li>
           </ul>
         </div>
@@ -139,7 +138,7 @@ const AboutUs = () => {
       <section className="text-gray-600 body-font">
       
         <div className="container  mx-auto flex flex-col">
-          <div className="lg:w-4/3 mx-auto" data-aos="fade-left" >
+          <div className="lg:w-4/3 mx-auto" data-aos="fade-up" >
             <div className="flex flex-col sm:flex-row mt-10">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                 <div className="w-36 h-36 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
@@ -165,7 +164,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <p className="leading-relaxed text-lg mb-4">
+                <p className="director_text  mb-4">
                   “Serial entrepreneur and Founder of AppieSoft and analytics
                   services company. At RTL, we go beyond helping businesses
                   transform through technology. We help them make a meaningful
@@ -199,7 +198,7 @@ const AboutUs = () => {
             </div>
           </div>
         
-          <div className="lg:w-4/3 mx-auto mt-4" data-aos="fade -right" >
+          <div className="lg:w-4/3 mx-auto mt-4" data-aos="fade-up" >
             <div className="flex flex-col sm:flex-row">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                 <div className="w-36 h-36 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
@@ -225,7 +224,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <p className="leading-relaxed text-lg mb-4">
+                <p className="director_text mb-4">
                   “Serial entrepreneur and Founder of AppieSoft and analytics
                   services company. At RTL, we go beyond helping businesses
                   transform through technology. We help them make a meaningful

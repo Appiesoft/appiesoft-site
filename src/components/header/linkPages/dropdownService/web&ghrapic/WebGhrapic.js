@@ -1,17 +1,17 @@
-import React from 'react'
+import React from "react";
 import "./WebGhrapic.css";
 import groupImg from "../../../../../asset/Groupimg.png";
 import user from "../../../../../asset/service/user.png";
-import OurPartners from '../../../../servicePage/ourPartners/OurPartners'
+import OurPartners from "../../../../servicePage/ourPartners/OurPartners";
 import Contact from "../../../../servicePage/contactUS/Contact";
-import Header from '../../../../header/Header'
-import Footer from '../../../../footer/Footer'
+import Header from "../../../../header/Header";
+import Footer from "../../../../footer/Footer";
 
 const WebGhrapic = () => {
   return (
     <div>
-   <Header/>
-   <div className="inner_banner">
+      <Header />
+      <div className="inner_banner">
         <div className="container">
           <h1>Web & Graphic Services</h1>
         </div>
@@ -25,15 +25,13 @@ const WebGhrapic = () => {
               by design
             </h2>
             <p>
-              Every business has unique technology needs.
-              <br /> Your team needs the right tools to analyse <br />
-              performance, set and reach targets, <br />
+              Every business has unique technology needs. Your team needs the
+              right tools to analyse performance, set and reach targets,
               communicate effectively and achieve goals.
             </p>
             <p>
-              Your customers and clients need access to
-              <br /> tailored software and apps for efficient, high <br />
-              quality service delivery.
+              Your customers and clients need access to tailored software and
+              apps for efficient, high quality service delivery.
             </p>
             <button type="button">Talk To An Expert Now</button>
           </div>
@@ -81,11 +79,11 @@ const WebGhrapic = () => {
           </div>
         </div>
       </div>
-      <OurPartners/>
-      <Contact/>
-   <Footer/>
+      <OurPartners />
+      <Contact />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default WebGhrapic
+export default WebGhrapic;

@@ -4,6 +4,7 @@ import Header from "../../../Header";
 import OurPartners from "../../../../servicePage/ourPartners/OurPartners";
 import Contact from "../../../../servicePage/contactUS/Contact";
 import Footer from "../../../../footer/Footer";
+import { NavLink } from "react-router-dom";
 const AppDevelopment = () => {
   return (
     <div>
@@ -23,7 +24,8 @@ const AppDevelopment = () => {
             <p>
             Mobile application is the latest to join the technology revolution.We’ll take you through the basics of Android Studio, the default integrated development environment (IDE) supported by Google to develop Android apps, including user interfaces, activities, controls, layouts, services, content providers, location, multimedia APIs.
             </p>
-            <button type="button">Talk To An Expert Now</button>
+            <NavLink to="/contact">
+            <button type="button">Talk To An Expert Now</button> </NavLink>
           </div>
           <div className="commun-img-area">
             <img
@@ -132,7 +134,10 @@ const AppDevelopment = () => {
                   downloads per app, compared to the average of all apps at
                   220.12k.
                 </p>
+                <NavLink to="/contact">
                 <button type="button">Talk To An Expert Now</button>
+                </NavLink>
+                
               </div>
             </div>
             <div className="mobile-development2">

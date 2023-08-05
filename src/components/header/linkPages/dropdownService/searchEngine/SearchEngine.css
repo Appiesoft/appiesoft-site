@@ -36,12 +36,13 @@ section.ict-sec-one {
   margin: 0px 0px 0px 0px;
 }
 .business-commun-text p {
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 23px;
+  font-weight: 500;
   line-height: 32px;
   color: #0b0d17;
   padding: 0px 50px 30px 0px;
   margin: 0px 0px 0px 0px;
+  text-align: justify;
 }
 .commun-img-area {
   width: 50%;
@@ -101,14 +102,13 @@ section.Search-Engine-icon-sec {
   padding-left: 10px !important;
 }
 .we-got-content p {
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 25px;
   line-height: 32px;
   color: #ffffff;
   padding: 0;
   margin: 0;
+  text-align: justify;
 }
 section.SEO-Myths-out-watch {
   padding: 0 0 20px 0;
@@ -154,7 +154,11 @@ span.seo-myth-conent {
   margin-left: 121px;
 }
 .SEO-Myths-out-watch p {
-  margin-top: 22px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .SEO-Myths-out-watch h2 {
@@ -278,12 +282,13 @@ header.inner_head_line.text-center {
     margin-left: 0px;
     padding: 0 17px;
   }
+ 
+}
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .SEO-Myths-out-watch p {
     margin-top: 11px;
-    font-size: 22px;
+    font-size: 17px;
   }
-}
-@media only screen and (min-width: 0px) and (max-width: 576px) {
   .search_inner_banner h1 {
     font-size: 29px;
     line-height: 41px;

@@ -18,7 +18,7 @@ const MainSection = () => {
                   <br />
                   crisp, easy to navigate and quick to download.
                 </h2>
-                <h2 className="text-white text-md-center text-lg-start mt-5">
+                <h2 className="text-white text-md-center text-lg-start mt-4 mt-lg-5">
                   From simple to complex, our website design team <br />
                   will create, host, and update the site for you.
                 </h2>
@@ -49,7 +49,7 @@ const MainSection = () => {
                   Passion, Dedication and A lot of Coffee.
                 </p>
 
-                <p className="inner_paragraph mt-lg-4 mt-md-3  mt-sm-3 text-center text-lg-start">
+                <p className="inner_paragraph mt-lg-4 mt-md-3  mt-sm-3 text-lg-start">
                   We at Appiesoft Web Solutions are answering real business
                   challenges for our clients through innovation and deep
                   industry knowledge. <br /> Appiesoft Web Solutions is a team
@@ -59,7 +59,7 @@ const MainSection = () => {
                   organization, we have finished 500+ projects over the world.
                 </p>
 
-                <p className="inner_paragraph mt-3 pt-3 pt-sm-0 mt-sm-2 text-center text-lg-start">
+                <p className="inner_paragraph mt-3 pt-3 pt-sm-0 mt-sm-2  text-lg-start">
                   We are energetic about creating Brand value and Development
                   and this nearly keep running into our veins. We are altogether
                   dedicated toward our work, looking for chances to make stylish

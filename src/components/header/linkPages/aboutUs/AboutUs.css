@@ -14,6 +14,13 @@ width: 100%;
     font-size: 20px !important;
     font-weight: 500;
 }
+.director_text{
+    color: #0B0D17;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 500;
+
+}
 .secnd-section-abt {
     margin-bottom: 70px;
 }
@@ -212,7 +219,7 @@ li.img-li.s-img {
     font-size: 18px;
     line-height: 28px;
     font-weight: 500;
-    color: #0B0D17;
+    /* color: #0B0D17; */
 }
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
     .thrd-sctn-abt p {
@@ -308,6 +315,9 @@ li.para-li p {
 }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .director_text {
+        font-size: 17px;
+    }   
     .para-sctn p {
         font-size: 14px;
         line-height: 28px;
@@ -385,6 +395,9 @@ li.para-li {
 }
 
 @media only screen and (min-width: 576px) and (max-width:768px) {
+    .director_text {
+        font-size: 17px;
+    }
 .two-sctn {
     margin-top: 0;
     /* padding: 30px 0; */
@@ -402,14 +415,22 @@ li.para-li {
 .appie-group-text-area h5 {
     padding: 0px 0px 0px 0px;
 }
+.para-sctn{
+    width: 100%;
+}
 .para-sctn p {
+    font-size: 21px;
     padding: 11px;
+    text-align: justify;
 }
 .thrd-sctn-abt h2 {
     font-size: 33px;
 }
+.thrd-sctn-abt p br{
+    display: none;
+}
 .thrd-sctn-abt p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 21px;
 }
 .thrd-sctn-abt {
@@ -472,17 +493,33 @@ li.img-li.s-img {
     align-items: unset;
 }
 .digi-head h2 {
-    font-size: 20px;
+    font-size: 24px;
 }
 .digi-para p{
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 12px;
 }
+
 .digi-para {
     max-width:100%;
 }
 }
 @media only screen and (min-width: 0px) and (max-width:640px) {
+    .para-sctn p {
+        text-align: justify;
+    }
+    .digi-para p {
+        text-align: justify;
+    }
+    .director_text {
+        color: #000000 !important;
+        font-weight: 500;
+        text-align: justify;
+        font-size: 15px;
+    }
+    .thrd-sctn-abt p br{
+        display: none;
+    }
     ul.dedcted {
         display: inline-block;
         padding: -120px 22px;
@@ -515,6 +552,9 @@ li.img-li.s-img {
     }
 }
 @media only screen  and (min-width: 0px) and (max-width: 576px){
+    .director_text {
+        font-size: 15px;
+    }
 .telco-group-text-area h5 {
     padding: 30px 0px 0px 0px;
 }
@@ -541,15 +581,16 @@ li.img-li.s-img {
     width: 100%;
 }
 .para-sctn p {
-    padding: 11px;
+    padding: 17px;
 }
 .thrd-sctn-abt h2 {
     font-size: 26px;
     line-height: 33px;
 }
 .thrd-sctn-abt p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 21px;
+    margin-top: 20px;
 }
 .thrd-sctn-abt {
     padding: 27px 0px 92px;
@@ -558,9 +599,12 @@ ul.dedcted {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 22px;
 }
+.hdd-li h2 br{
+    display: none;
+}
 .hdd-li h2 {
     padding: 20px;
-    font-size: 33px;
+    font-size: 29px;
 }
 li.para-li p {
     padding: 27px 21px;
@@ -611,11 +655,14 @@ li.img-li.s-img {
     flex-flow: column;
     align-items: unset;
 }
+.digi-head h2 br{
+    display: none;
+}
 .digi-head h2 {
-    font-size: 17px;
+    font-size: 21px;
 }
 .digi-para p{
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 12px;
 }
 .digi-para {

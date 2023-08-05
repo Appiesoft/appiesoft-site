@@ -127,6 +127,9 @@ ul.mmk {
 }
 
 @media only screen and (min-width: 0px) and (max-width:992px)  {
+    .react-multi-carousel-track {
+        column-gap: 0px !important;
+    }
     .section-five {
         padding: 43px 0px 43px 0px;
     }
