@@ -10,7 +10,6 @@
 }
 
 #hero h1 {
-  font-family: "Space Grotesk", sans-serif;
   margin: 0;
   font-size: 64px;
   font-weight: 700;
@@ -22,7 +21,6 @@
 }
 
 #hero h2 {
-  font-family: "Space Grotesk", sans-serif;
   font-size: 24px;
   font-weight: 500;
 
@@ -68,11 +66,11 @@
   background-color: #f76300;
 }
 .appisoft_button{
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   background-color: #f47421;
   border: 0;
-  padding: 19px;
+  padding: 31px;
   border-radius: 7px;
 }
 .appisoft_button:hover{
@@ -104,6 +102,12 @@
 .main_content {
   width:auto;
   margin: 0px 0px 0px 0px;
+}
+.main_content p br {
+  display: none;
+}
+.inner_paragraph {
+  text-align: justify;
 }
 .inner_paragraph_head {
   font-size: 21px;
@@ -143,13 +147,21 @@
 }
 @media only screen and (min-width: 0px) and (max-width:576px)  {
   #hero {
-    height: 600px !important;
+    height: 520px !important;
         padding: 17px;
 }
+#hero br{
+  display: none;
+}
   #hero h1 {
- 
-    font-size: 43px;
+    font-size: 35px !important ;
   }
+  #hero h2 {
+    font-size: 23px;
+    font-weight: 400;
+    text-align: left;
+    text-align: justify;
+}
   .graphic_button {
     font-size: 15px;
     padding: 9px 12px;

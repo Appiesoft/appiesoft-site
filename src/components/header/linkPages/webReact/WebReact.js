@@ -46,7 +46,7 @@ const WebReact = () => {
               <h2 className="sm:text-3xl text-2xl title-font font-medium text-dark-900  mb-2">
                 React Js
               </h2>
-              <p className="leading-relaxed">
+              <p>
                 The React.js framework is an open-source JavaScript framework
                 and library developed by Facebook. It's used for building
                 interactive user interfaces and web applications quickly and
@@ -59,7 +59,7 @@ const WebReact = () => {
               <h2 className="sm:text-3xl text-2xl title-font font-medium text-dark-900  mt-0 mb-2">
                 React Native
               </h2>
-              <p className="leading-relaxed">
+              <p>
                 Also You can use React Native today in your existing Android and
                 iOS projects or you can create a whole new app from
                 scratch.Meanwhile, React Native – which is powered by React –
@@ -76,7 +76,7 @@ const WebReact = () => {
             <h1 className="sm:text-3xl text-2xl font-medium text-center title-font mb-4 slider__content3">
               Why we Choose React
             </h1>
-            <p className="text-base leading-relaxed xl:w-2/3 lg:w-3/4 mx-auto">
+            <p className="text-base xl:w-2/3 lg:w-3/4 mx-auto text-center">
               Four Reasons You Need To Refresh Your Website
             </p>
           </div>

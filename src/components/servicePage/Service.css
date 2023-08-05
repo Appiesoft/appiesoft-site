@@ -5,9 +5,10 @@
 }
 .service_para {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
-  text-align: -webkit-center;
+  text-align: justify;
+  word-spacing: 1px;
 }
 .service_button {
   background-color: #f47421;
@@ -94,8 +95,8 @@
 }
 .six-way-help-box li {
   padding: 28px 0px 28px 0px;
-  border-bottom: 2px solid #f2f2f2;
-  border-right: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2 !important;
+  border-right: 2px solid #f2f2f2 !important;
   text-align: -webkit-center;
 }
 .six-way-help-box p {
@@ -121,6 +122,10 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .six-way-help-box li {
+    border-bottom: 2px solid #f2f2f2 !important;
+    border-right: 2px solid #f2f2f2 !important;
+  }
   .service_para {
     font-size: 14px;
   }
@@ -143,6 +148,14 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .service_para {
+    text-align: justify;
+    word-spacing: -1px;
+}
+.six-way-help-box li {
+  border-bottom: 2px solid #f2f2f2 !important;
+  border-left: 2px solid #f2f2f2 !important;
+}
   .six-way-help-box p {
     font-size: 15px !important;
   }
@@ -167,9 +180,13 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+  .six-way-help-box li {
+    border-right:none !important;
+  }
   .card-boxes {
     box-shadow: 0px 0px 18px 10px #bdbdbd57;
     margin: 0px 70px 36px 70px;
+    padding: 0px 34px;
   }
   .card-boxes .service_button {
     padding: 8  px 12px !important;
@@ -215,9 +232,12 @@
  
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
+  .six-way-help-box li {
+    border-right:none !important;
+  }
   .card-boxes {
     box-shadow: 0px 0px 18px 10px #bdbdbd57;
-    margin: 0px 50px 36px 50px;
+    margin: 0px 20px 36px 20px;
   }
   .six-way-help-box ul {
     grid-template-columns: auto;
@@ -227,6 +247,8 @@
   }
   .service_para {
     font-size: 15px;
+    text-align: justify;
+    word-spacing: -1px;
   }
   .service_text {
     font-size: 22px;
